@@ -3,13 +3,8 @@
 //  LoveFreshBeen
 //
 
-
-
-
-
-
 import UIKit
-
+import SVProgressHUD
 
 class ProgressHUDManager {
     

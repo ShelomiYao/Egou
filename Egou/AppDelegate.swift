@@ -1,5 +1,6 @@
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -9,6 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK:- public方法
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         NSThread.sleepForTimeInterval(1.0)
+        
+        Bmob.registerWithAppKey("b4eb04b9eaaf7bb8cd99fe26504ce04a")
         
         setUM()
         
