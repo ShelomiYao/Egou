@@ -38,7 +38,7 @@ extension UIImage {
         
         return image
     }
-    
+
     func imageClipOvalImage() -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
         let ctx = UIGraphicsGetCurrentContext()

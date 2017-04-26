@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0405A7E41EABC36B001C897B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0405A72C1EABC36B001C897B /* Info.plist */; };
 		0405A7E51EABC36B001C897B /* LoveFreshBeenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405A72D1EABC36B001C897B /* LoveFreshBeenTests.swift */; };
-		0405A7E61EABC36B001C897B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0405A72F1EABC36B001C897B /* Info.plist */; };
 		0405A7E71EABC36B001C897B /* LoveFreshBeenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405A7301EABC36B001C897B /* LoveFreshBeenUITests.swift */; };
 		0405A8F91EABCE33001C897B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405A7E91EABCE32001C897B /* AppDelegate.swift */; };
 		0405A8FA1EABCE33001C897B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0405A7EA1EABCE32001C897B /* Assets.xcassets */; };
@@ -189,7 +187,6 @@
 		0405A9A81EABCE33001C897B /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8EF1EABCE33001C897B /* TencentOpenApi_IOS_Bundle.bundle */; };
 		0405A9A91EABCE33001C897B /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0405A8F21EABCE33001C897B /* libSocialWechat.a */; };
 		0405A9AA1EABCE33001C897B /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0405A8F31EABCE33001C897B /* libWeChatSDK.a */; };
-		0405A9AB1EABCE33001C897B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8F81EABCE33001C897B /* Info.plist */; };
 		B34711651C508017000FE63E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711641C508017000FE63E /* Security.framework */; };
 		B34711671C508041000FE63E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711661C508041000FE63E /* libiconv.tbd */; };
 		B34711691C50804B000FE63E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711681C50804B000FE63E /* SystemConfiguration.framework */; };
@@ -1171,15 +1168,12 @@
 			files = (
 				0405A9981EABCE33001C897B /* UMSocialLocalizable.strings in Resources */,
 				0405A9511EABCE33001C897B /* MyAdress in Resources */,
-				0405A7E61EABC36B001C897B /* Info.plist in Resources */,
 				0405A9831EABCE33001C897B /* MJRefresh.bundle in Resources */,
 				0405A94D1EABCE33001C897B /* FocusURL.plist in Resources */,
 				0405A9A11EABCE33001C897B /* UMSShareListController.xib in Resources */,
 				0405A9A21EABCE33001C897B /* UMSocialSDKResourcesNew.bundle in Resources */,
 				0405A8FA1EABCE33001C897B /* Assets.xcassets in Resources */,
 				0405A9571EABCE33001C897B /* SystemMessage in Resources */,
-				0405A7E41EABC36B001C897B /* Info.plist in Resources */,
-				0405A9AB1EABCE33001C897B /* Info.plist in Resources */,
 				0405A99C1EABCE33001C897B /* UMSCommentInputControlleriPad.xib in Resources */,
 				0405A99A1EABCE33001C897B /* UMSCommentDetailController.xib in Resources */,
 				0405A9591EABCE33001C897B /* 促销 in Resources */,
@@ -1560,7 +1554,7 @@
 					"$(PROJECT_DIR)/Egou/Class/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Egou/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1598,7 +1592,7 @@
 					"$(PROJECT_DIR)/Egou/Class/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Egou/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

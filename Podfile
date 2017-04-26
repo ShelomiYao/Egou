@@ -1,8 +1,9 @@
-platform :ios, '7.0'
 
 target 'Egou' do
 
-pod "SVProgressHUD"
+use_frameworks!
+platform :ios, '9.0'
+pod 'SVProgressHUD', '~> 2.1'
 
 end
 

@@ -44,7 +44,7 @@ class CouponViewController: BaseViewController {
     private func setNavigationItem() {
         navigationItem.title = "优惠劵"
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem.barButton("使用规则", titleColor: UIColor.colorWithCustom(100, g: 100, b: 100), target: self, action: "rightItemClick")
+        navigationItem.rightBarButtonItem = UIBarButtonItem.barButton("使用规则", titleColor: UIColor.colorWithCustom(100, g: 100, b: 100), target: self, action: #selector(CouponViewController.rightItemClick))
     }
     
     func buildBindingCouponView() {
