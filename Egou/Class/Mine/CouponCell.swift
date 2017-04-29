@@ -134,7 +134,7 @@ class CouponCell: UITableViewCell {
                 statusLabel?.text = "已过期"
                 break
             }
-            priceLabel?.text = "$" + (coupon!.value?.cleanDecimalPointZear())!
+            priceLabel?.text = "￥" + (coupon!.value?.cleanDecimalPointZear())!
             titleLabel?.text = " " + (coupon?.name)! + "  "
             dateLabel?.text = "有效期:  " + coupon!.start_time! + "至" + coupon!.end_time!
             descLabel?.text = coupon?.desc

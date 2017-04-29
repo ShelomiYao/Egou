@@ -27,7 +27,7 @@ class CostDetailView: UIView {
         addSubview(lineView1)
         
         buildLabel(CGRectMake(15, 35, 100, 20), text: "商品总额", font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Left)
-        buildLabel(CGRectMake(100, 35, ScreenWidth - 110, 20), text: "$" + UserShopCarTool.sharedUserShopCar.getAllProductsPrice(), font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Right)
+        buildLabel(CGRectMake(100, 35, ScreenWidth - 110, 20), text: "￥" + UserShopCarTool.sharedUserShopCar.getAllProductsPrice(), font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Right)
         buildLabel(CGRectMake(15, 60, 100, 20), text: "配送费", font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Left)
         
         var distribution: String?
@@ -40,11 +40,11 @@ class CostDetailView: UIView {
             coupon = "0"
         }
         
-        buildLabel(CGRectMake(100, 60, ScreenWidth - 110, 20), text: "$" + distribution!, font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Right)
+        buildLabel(CGRectMake(100, 60, ScreenWidth - 110, 20), text: "￥" + distribution!, font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Right)
         buildLabel(CGRectMake(15, 85, 100, 20), text: "服务费", font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Left)
-        buildLabel(CGRectMake(100, 85, ScreenWidth - 110, 20), text: "$0", font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Right)
+        buildLabel(CGRectMake(100, 85, ScreenWidth - 110, 20), text: "￥0", font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Right)
         buildLabel(CGRectMake(15, 110, 100, 20), text: "优惠劵", font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Left)
-        buildLabel(CGRectMake(100, 110, ScreenWidth - 110, 20), text: "$" + coupon!, font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Right)
+        buildLabel(CGRectMake(100, 110, ScreenWidth - 110, 20), text: "￥" + coupon!, font: UIFont.systemFontOfSize(14), textColor: UIColor.blackColor(), textAlignment: NSTextAlignment.Right)
         
         let lineView2 = UIView(frame: CGRectMake(0, 135 - 1, ScreenWidth, 1))
         lineView2.backgroundColor = UIColor.blackColor()

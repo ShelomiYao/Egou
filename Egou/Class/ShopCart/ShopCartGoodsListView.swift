@@ -104,7 +104,7 @@ class PayGoodsDetailView: UIView {
             }
             
             numberLabel.text = "x" + "\(goods!.userBuyNumber)"
-            priceLabel.text = "$" + (goods!.price)!.cleanDecimalPointZear()
+            priceLabel.text = "￥" + (goods!.price)!.cleanDecimalPointZear()
             
             if !(goods!.pm_desc == "买一赠一") {
                 giftImageView.hidden = true

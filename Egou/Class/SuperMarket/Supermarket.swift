@@ -22,6 +22,25 @@ class Supermarket: NSObject, DictModelProtocol {
         
         if data != nil {
             let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
+            
+//            print("-------------------------------------------------")
+//            let gamescore:BmobObject = BmobObject(className: "Supermarket")
+//            //设置playerName列的值为小黑和age列的值18
+//            gamescore.saveAllWithDictionary(dict as [NSObject:AnyObject])
+//            gamescore.saveInBackgroundWithResultBlock { [weak gamescore] (isSuccessful, error) in
+//                if error != nil{
+//                    //发生错误后的动作
+//                    print("error is \(error.localizedDescription)")
+//                }else{
+//                    //创建对象成功，打印对象值
+//                    if let game = gamescore {
+//                        print("save success \(game)")
+//                    }
+//                }
+//            }
+//            print("-------------------------------------------------")
+
+            
             let modelTool = DictModelManager.sharedManager
             let data = modelTool.objectWithDictionary(dict, cls: Supermarket.self) as? Supermarket
             completion(data: data, error: nil)

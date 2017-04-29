@@ -32,7 +32,7 @@ class MyOrderCell: UITableViewCell {
             statusTextLabel?.text = order?.textStatus
             goodsImageViews?.order_goods = order?.order_goods
             productNumsLabel?.text = "共" + "\(order!.buy_num)" + "件商品"
-            productsPriceLabel?.text = "$" + (order!.user_pay_amount)!
+            productsPriceLabel?.text = "￥" + (order!.user_pay_amount)!
             buttons?.buttons = order?.buttons
         }
     }

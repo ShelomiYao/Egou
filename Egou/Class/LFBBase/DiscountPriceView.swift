@@ -63,12 +63,12 @@ class DiscountPriceView: UIView {
         self.init()
         
         if price != nil && price?.characters.count != 0 {
-            priceLabel!.text = "$" + price!.cleanDecimalPointZear()
+            priceLabel!.text = "￥" + price!.cleanDecimalPointZear()
             priceLabel!.sizeToFit()
         }
         
         if marketPrice != nil && marketPrice?.characters.count  != 0 {
-            marketPriceLabel?.text = "$" + marketPrice!.cleanDecimalPointZear()
+            marketPriceLabel?.text = "￥" + marketPrice!.cleanDecimalPointZear()
             hasMarketPrice = true
             marketPriceLabel?.sizeToFit()
         } else {

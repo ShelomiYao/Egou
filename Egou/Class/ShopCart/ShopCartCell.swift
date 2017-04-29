@@ -24,7 +24,7 @@ class ShopCartCell: UITableViewCell {
                 titleLabel.text = goods?.name
             }
             
-            priceLabel.text = "$" + goods!.price!.cleanDecimalPointZear()
+            priceLabel.text = "￥" + goods!.price!.cleanDecimalPointZear()
             
             buyView.goods = goods
         }

@@ -120,7 +120,7 @@ class OrderPayWayViewController: BaseViewController {
         if (priceText as NSString).floatValue < 30 {
             priceText = "\((priceText as NSString).floatValue + 8)".cleanDecimalPointZear()
         }
-        buildLabel(CGRectMake(85, 0, 150, 50), textColor: UIColor.redColor(), font: UIFont.systemFontOfSize(14), addView: bottomView, text: "$" + priceText)
+        buildLabel(CGRectMake(85, 0, 150, 50), textColor: UIColor.redColor(), font: UIFont.systemFontOfSize(14), addView: bottomView, text: "￥" + priceText)
         
         let payButton = UIButton(frame: CGRectMake(ScreenWidth - 100, 1, 100, 49))
         payButton.titleLabel?.font = UIFont.systemFontOfSize(14)

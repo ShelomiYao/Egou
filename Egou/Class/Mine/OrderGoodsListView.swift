@@ -39,7 +39,7 @@ class OrderGoodsListView: UIView {
             orderGoodsViewHeight = goodsListView.orderGoodsViewHeight
             feeListView.fee_list = order!.fee_list
             feeListViewHeight = feeListView.feeListViewHeight
-            payMoneyLabel.text = "$" + (order?.real_amount)!
+            payMoneyLabel.text = "￥" + (order?.real_amount)!
             payLabel.text = "实付"
         }
     }
@@ -170,7 +170,7 @@ class GoodsView: UIView {
         didSet {
             titleLabel.text = orderGoods?.name
             numberLabel.text = "x" + (orderGoods?.goods_nums)!
-            priceLabel.text = "$" + (orderGoods?.goods_price)!.cleanDecimalPointZear()
+            priceLabel.text = "￥" + (orderGoods?.goods_price)!.cleanDecimalPointZear()
             if orderGoods?.is_gift != -1 {
                 if orderGoods!.is_gift == 0 {
                     giftImageView.hidden = true
@@ -295,7 +295,7 @@ class FeeView: UIView {
     convenience init(frame: CGRect, fee: OrderFeeList) {
         self.init(frame: frame)
         titleLabel.text = fee.text
-        prictLabel.text = "$" + (fee.value?.cleanDecimalPointZear())!
+        prictLabel.text = "￥" + (fee.value?.cleanDecimalPointZear())!
     }
     
     override func layoutSubviews() {

@@ -25,7 +25,7 @@ class ShopCartSupermarketTableFooterView: UIView {
         backView.backgroundColor = UIColor.whiteColor()
         addSubview(backView)
         
-        titleLabel.text = "共$ "
+        titleLabel.text = "共￥"
         titleLabel.font = UIFont.systemFontOfSize(14)
         titleLabel.sizeToFit()
         titleLabel.textColor = UIColor.redColor()
