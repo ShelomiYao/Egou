@@ -1133,6 +1133,7 @@
 				TargetAttributes = {
 					B31252721BFC79EB0098B995 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = V3H373LFAW;
 					};
 					B31252861BFC79EB0098B995 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -1558,7 +1559,7 @@
 					"$(PROJECT_DIR)/Egou/Class/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Egou/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1571,7 +1572,7 @@
 					"$(PROJECT_DIR)/Egou/Class/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/Egou/Class/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Egou;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EgouMarket;
 				PRODUCT_NAME = Egou;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Egou/Egou-Bridging-Header.h";
@@ -1596,7 +1597,7 @@
 					"$(PROJECT_DIR)/Egou/Class/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Egou/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1609,7 +1610,7 @@
 					"$(PROJECT_DIR)/Egou/Class/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/Egou/Class/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Egou;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EgouMarket;
 				PRODUCT_NAME = Egou;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Egou/Egou-Bridging-Header.h";

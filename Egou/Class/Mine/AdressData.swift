@@ -44,3 +44,4 @@ class Adress: NSObject {
     var lat: String?
     var gender: String?
 }
+

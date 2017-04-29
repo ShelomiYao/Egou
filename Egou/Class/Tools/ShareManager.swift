@@ -14,7 +14,7 @@ class ShareManager: NSObject {
     
     static private let blogURLStr = "http://www.jianshu.com/users/5fe7513c7a57/latest_articles"
     static private let authorImage = UIImage(named: "author")
-    static private let shareText = "小ESwift全新开源作品,高仿爱鲜蜂,配有blog讲解思路,喜欢的同学star点起来"
+    static private let shareText = "小ESwift全新开源作品,高仿易购超市,配有blog讲解思路,喜欢的同学star点起来"
     
     class func shareToShareType(shareType: ShareType, vc: UIViewController) {
         
