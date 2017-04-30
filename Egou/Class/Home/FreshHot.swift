@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class FreshHot: NSObject, DictModelProtocol {
@@ -18,12 +14,13 @@ class FreshHot: NSObject, DictModelProtocol {
     var data: [Goods]?
     
     class func loadFreshHotData(completion:(data: FreshHot?, error: NSError?) -> Void) {
-        let path = NSBundle.mainBundle().pathForResource("首页新鲜热卖", ofType: nil)
+        let path = NSBundle.mainBundle().pathForResource("HotProduct", ofType: nil)
         let data = NSData(contentsOfFile: path!)
         if data != nil {
             let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
             
-//            print("-------------------------------------------------")
+            
+            //            print("-------------------------------------------------")
 //            let gamescore:BmobObject = BmobObject(className: "HotProduct")
 //            //设置playerName列的值为小黑和age列的值18
 //            gamescore.saveAllWithDictionary(dict as [NSObject:AnyObject])

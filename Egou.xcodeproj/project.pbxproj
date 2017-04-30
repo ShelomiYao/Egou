@@ -105,10 +105,10 @@
 		0405A9561EABCE33001C897B /* supermarket in Resources */ = {isa = PBXBuildFile; fileRef = 0405A84E1EABCE32001C897B /* supermarket */; };
 		0405A9571EABCE33001C897B /* SystemMessage in Resources */ = {isa = PBXBuildFile; fileRef = 0405A84F1EABCE32001C897B /* SystemMessage */; };
 		0405A9581EABCE33001C897B /* UserMessage in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8501EABCE32001C897B /* UserMessage */; };
-		0405A9591EABCE33001C897B /* 促销 in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8511EABCE32001C897B /* 促销 */; };
+		0405A9591EABCE33001C897B /* SalesPromotion in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8511EABCE32001C897B /* SalesPromotion */; };
 		0405A95A1EABCE33001C897B /* 系统消息 in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8521EABCE32001C897B /* 系统消息 */; };
-		0405A95B1EABCE33001C897B /* 首页新鲜热卖 in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8531EABCE32001C897B /* 首页新鲜热卖 */; };
-		0405A95C1EABCE33001C897B /* 首页焦点按钮 in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8541EABCE32001C897B /* 首页焦点按钮 */; };
+		0405A95B1EABCE33001C897B /* HotProduct in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8531EABCE32001C897B /* HotProduct */; };
+		0405A95C1EABCE33001C897B /* FocusButton in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8541EABCE32001C897B /* FocusButton */; };
 		0405A95D1EABCE33001C897B /* CostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405A8561EABCE32001C897B /* CostDetailView.swift */; };
 		0405A95E1EABCE33001C897B /* OrderPayWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405A8571EABCE32001C897B /* OrderPayWayViewController.swift */; };
 		0405A95F1EABCE33001C897B /* PayWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405A8581EABCE32001C897B /* PayWayView.swift */; };
@@ -316,10 +316,10 @@
 		0405A84E1EABCE32001C897B /* supermarket */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = supermarket; sourceTree = "<group>"; };
 		0405A84F1EABCE32001C897B /* SystemMessage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SystemMessage; sourceTree = "<group>"; };
 		0405A8501EABCE32001C897B /* UserMessage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserMessage; sourceTree = "<group>"; };
-		0405A8511EABCE32001C897B /* 促销 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "促销"; sourceTree = "<group>"; };
+		0405A8511EABCE32001C897B /* SalesPromotion */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SalesPromotion; sourceTree = "<group>"; };
 		0405A8521EABCE32001C897B /* 系统消息 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "系统消息"; sourceTree = "<group>"; };
-		0405A8531EABCE32001C897B /* 首页新鲜热卖 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "首页新鲜热卖"; sourceTree = "<group>"; };
-		0405A8541EABCE32001C897B /* 首页焦点按钮 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "首页焦点按钮"; sourceTree = "<group>"; };
+		0405A8531EABCE32001C897B /* HotProduct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HotProduct; sourceTree = "<group>"; };
+		0405A8541EABCE32001C897B /* FocusButton */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FocusButton; sourceTree = "<group>"; };
 		0405A8561EABCE32001C897B /* CostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostDetailView.swift; sourceTree = "<group>"; };
 		0405A8571EABCE32001C897B /* OrderPayWayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderPayWayViewController.swift; sourceTree = "<group>"; };
 		0405A8581EABCE32001C897B /* PayWayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayWayView.swift; sourceTree = "<group>"; };
@@ -710,10 +710,10 @@
 				0405A84E1EABCE32001C897B /* supermarket */,
 				0405A84F1EABCE32001C897B /* SystemMessage */,
 				0405A8501EABCE32001C897B /* UserMessage */,
-				0405A8511EABCE32001C897B /* 促销 */,
+				0405A8511EABCE32001C897B /* SalesPromotion */,
 				0405A8521EABCE32001C897B /* 系统消息 */,
-				0405A8531EABCE32001C897B /* 首页新鲜热卖 */,
-				0405A8541EABCE32001C897B /* 首页焦点按钮 */,
+				0405A8531EABCE32001C897B /* HotProduct */,
+				0405A8541EABCE32001C897B /* FocusButton */,
 			);
 			path = Resouce;
 			sourceTree = "<group>";
@@ -1181,7 +1181,7 @@
 				0405A9571EABCE33001C897B /* SystemMessage in Resources */,
 				0405A99C1EABCE33001C897B /* UMSCommentInputControlleriPad.xib in Resources */,
 				0405A99A1EABCE33001C897B /* UMSCommentDetailController.xib in Resources */,
-				0405A9591EABCE33001C897B /* 促销 in Resources */,
+				0405A9591EABCE33001C897B /* SalesPromotion in Resources */,
 				0405A95A1EABCE33001C897B /* 系统消息 in Resources */,
 				0405A99F1EABCE33001C897B /* UMSLoginViewController.xib in Resources */,
 				0405A9A51EABCE33001C897B /* WeiboSDK.bundle in Resources */,
@@ -1191,11 +1191,11 @@
 				0405A9521EABCE33001C897B /* MyCoupon in Resources */,
 				0405A9561EABCE33001C897B /* supermarket in Resources */,
 				0405A9531EABCE33001C897B /* MyOrders in Resources */,
-				0405A95B1EABCE33001C897B /* 首页新鲜热卖 in Resources */,
+				0405A95B1EABCE33001C897B /* HotProduct in Resources */,
 				0405A9541EABCE33001C897B /* Search in Resources */,
 				0405A99B1EABCE33001C897B /* UMSCommentInputController.xib in Resources */,
 				0405A9A01EABCE33001C897B /* UMSnsAccountViewController.xib in Resources */,
-				0405A95C1EABCE33001C897B /* 首页焦点按钮 in Resources */,
+				0405A95C1EABCE33001C897B /* FocusButton in Resources */,
 				0405A94E1EABCE33001C897B /* HelpPlist.plist in Resources */,
 				0405A9501EABCE33001C897B /* MinePlist.plist in Resources */,
 				0405A99E1EABCE33001C897B /* UMShareEditViewControlleriPad.xib in Resources */,

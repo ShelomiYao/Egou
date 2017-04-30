@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class Supermarket: NSObject, DictModelProtocol {
@@ -22,6 +18,8 @@ class Supermarket: NSObject, DictModelProtocol {
         
         if data != nil {
             let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
+            
+            
             
 //            print("-------------------------------------------------")
 //            let gamescore:BmobObject = BmobObject(className: "Supermarket")
@@ -43,6 +41,12 @@ class Supermarket: NSObject, DictModelProtocol {
             
             let modelTool = DictModelManager.sharedManager
             let data = modelTool.objectWithDictionary(dict, cls: Supermarket.self) as? Supermarket
+            print("66666666666666666-------------------------------------------------")
+            
+            print("66666666666666666supermarket = ------------------------",data.self)
+
+            print("66666666666666666-------------------------------------------------")
+
             completion(data: data, error: nil)
         }
     }

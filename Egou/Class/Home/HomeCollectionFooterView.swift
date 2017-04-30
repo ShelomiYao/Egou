@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class HomeCollectionFooterView: UICollectionReusableView {

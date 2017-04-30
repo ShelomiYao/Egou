@@ -13,7 +13,7 @@ class HeadResources: NSObject, DictModelProtocol {
     var data: HeadData?
     
     class func loadHomeHeadData(completion:(data: HeadResources?, error: NSError?) -> Void) {
-        let path = NSBundle.mainBundle().pathForResource("首页焦点按钮", ofType: nil)
+        let path = NSBundle.mainBundle().pathForResource("FocusButton", ofType: nil)
         let data = NSData(contentsOfFile: path!)
         if data != nil {
             let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
