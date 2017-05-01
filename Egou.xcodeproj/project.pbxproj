@@ -187,6 +187,14 @@
 		0405A9A81EABCE33001C897B /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0405A8EF1EABCE33001C897B /* TencentOpenApi_IOS_Bundle.bundle */; };
 		0405A9A91EABCE33001C897B /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0405A8F21EABCE33001C897B /* libSocialWechat.a */; };
 		0405A9AA1EABCE33001C897B /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0405A8F31EABCE33001C897B /* libWeChatSDK.a */; };
+		041A2EA91EB73A0700C3594A /* Assets2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041A2E931EB73A0600C3594A /* Assets2.xcassets */; };
+		041A2EAA1EB73A0700C3594A /* DMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E961EB73A0600C3594A /* DMLoginViewController.m */; };
+		041A2EAB1EB73A0700C3594A /* DMRegisterThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E981EB73A0600C3594A /* DMRegisterThreeViewController.m */; };
+		041A2EAC1EB73A0700C3594A /* DMRegisterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9A1EB73A0600C3594A /* DMRegisterTwoViewController.m */; };
+		041A2EAD1EB73A0700C3594A /* DMRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9C1EB73A0600C3594A /* DMRegisterViewController.m */; };
+		041A2EAE1EB73A0700C3594A /* ForgotPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */; };
+		041A2EAF1EB73A0700C3594A /* GetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EA01EB73A0600C3594A /* GetPassWordViewController.m */; };
+		041A2EB01EB73A0700C3594A /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EA81EB73A0600C3594A /* UITextField+Shake.m */; };
 		173966D05D1CD356D49D6A2A /* Pods_Egou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9AF2BB06E86E83238DE125 /* Pods_Egou.framework */; };
 		B34711651C508017000FE63E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711641C508017000FE63E /* Security.framework */; };
 		B34711671C508041000FE63E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711661C508041000FE63E /* libiconv.tbd */; };
@@ -463,6 +471,21 @@
 		0405A8F61EABCE33001C897B /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		0405A8F71EABCE33001C897B /* Egou-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Egou-Bridging-Header.h"; sourceTree = "<group>"; };
 		0405A8F81EABCE33001C897B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041A2E931EB73A0600C3594A /* Assets2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets2.xcassets; sourceTree = "<group>"; };
+		041A2E951EB73A0600C3594A /* DMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLoginViewController.h; sourceTree = "<group>"; };
+		041A2E961EB73A0600C3594A /* DMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLoginViewController.m; sourceTree = "<group>"; };
+		041A2E971EB73A0600C3594A /* DMRegisterThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRegisterThreeViewController.h; sourceTree = "<group>"; };
+		041A2E981EB73A0600C3594A /* DMRegisterThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRegisterThreeViewController.m; sourceTree = "<group>"; };
+		041A2E991EB73A0600C3594A /* DMRegisterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRegisterTwoViewController.h; sourceTree = "<group>"; };
+		041A2E9A1EB73A0600C3594A /* DMRegisterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRegisterTwoViewController.m; sourceTree = "<group>"; };
+		041A2E9B1EB73A0600C3594A /* DMRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRegisterViewController.h; sourceTree = "<group>"; };
+		041A2E9C1EB73A0600C3594A /* DMRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRegisterViewController.m; sourceTree = "<group>"; };
+		041A2E9D1EB73A0600C3594A /* ForgotPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPassWordViewController.h; sourceTree = "<group>"; };
+		041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPassWordViewController.m; sourceTree = "<group>"; };
+		041A2E9F1EB73A0600C3594A /* GetPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassWordViewController.h; sourceTree = "<group>"; };
+		041A2EA01EB73A0600C3594A /* GetPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassWordViewController.m; sourceTree = "<group>"; };
+		041A2EA71EB73A0600C3594A /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
+		041A2EA81EB73A0600C3594A /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
 		106E1BAB244C5E200BC6988F /* Pods-Egou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egou.release.xcconfig"; path = "Pods/Target Support Files/Pods-Egou/Pods-Egou.release.xcconfig"; sourceTree = "<group>"; };
 		3883B53AB34A62AD75F02FD9 /* Pods-Egou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egou/Pods-Egou.debug.xcconfig"; sourceTree = "<group>"; };
 		4C9AF2BB06E86E83238DE125 /* Pods_Egou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Egou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -555,6 +578,7 @@
 		0405A7EB1EABCE32001C897B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				041A2E921EB73A0600C3594A /* LoginView */,
 				0405A7EC1EABCE32001C897B /* Extension */,
 				0405A7F21EABCE32001C897B /* FreshReserve */,
 				0405A7F41EABCE32001C897B /* Home */,
@@ -1013,6 +1037,84 @@
 			path = Wechat;
 			sourceTree = "<group>";
 		};
+		041A2E921EB73A0600C3594A /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				041A2E931EB73A0600C3594A /* Assets2.xcassets */,
+				041A2E941EB73A0600C3594A /* bg4.imageset */,
+				041A2E951EB73A0600C3594A /* DMLoginViewController.h */,
+				041A2E961EB73A0600C3594A /* DMLoginViewController.m */,
+				041A2E971EB73A0600C3594A /* DMRegisterThreeViewController.h */,
+				041A2E981EB73A0600C3594A /* DMRegisterThreeViewController.m */,
+				041A2E991EB73A0600C3594A /* DMRegisterTwoViewController.h */,
+				041A2E9A1EB73A0600C3594A /* DMRegisterTwoViewController.m */,
+				041A2E9B1EB73A0600C3594A /* DMRegisterViewController.h */,
+				041A2E9C1EB73A0600C3594A /* DMRegisterViewController.m */,
+				041A2E9D1EB73A0600C3594A /* ForgotPassWordViewController.h */,
+				041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */,
+				041A2E9F1EB73A0600C3594A /* GetPassWordViewController.h */,
+				041A2EA01EB73A0600C3594A /* GetPassWordViewController.m */,
+				041A2EA11EB73A0600C3594A /* goback_back_orange_on.imageset */,
+				041A2EA21EB73A0600C3594A /* ic_landing_microblog.imageset */,
+				041A2EA31EB73A0600C3594A /* ic_landing_nickname.imageset */,
+				041A2EA41EB73A0600C3594A /* ic_landing_qq.imageset */,
+				041A2EA51EB73A0600C3594A /* ic_landing_wechat.imageset */,
+				041A2EA61EB73A0600C3594A /* mm_normal.imageset */,
+				041A2EA71EB73A0600C3594A /* UITextField+Shake.h */,
+				041A2EA81EB73A0600C3594A /* UITextField+Shake.m */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		041A2E941EB73A0600C3594A /* bg4.imageset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bg4.imageset;
+			sourceTree = "<group>";
+		};
+		041A2EA11EB73A0600C3594A /* goback_back_orange_on.imageset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = goback_back_orange_on.imageset;
+			sourceTree = "<group>";
+		};
+		041A2EA21EB73A0600C3594A /* ic_landing_microblog.imageset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ic_landing_microblog.imageset;
+			sourceTree = "<group>";
+		};
+		041A2EA31EB73A0600C3594A /* ic_landing_nickname.imageset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ic_landing_nickname.imageset;
+			sourceTree = "<group>";
+		};
+		041A2EA41EB73A0600C3594A /* ic_landing_qq.imageset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ic_landing_qq.imageset;
+			sourceTree = "<group>";
+		};
+		041A2EA51EB73A0600C3594A /* ic_landing_wechat.imageset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ic_landing_wechat.imageset;
+			sourceTree = "<group>";
+		};
+		041A2EA61EB73A0600C3594A /* mm_normal.imageset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mm_normal.imageset;
+			sourceTree = "<group>";
+		};
 		77FC2016DC7E5E33DA950B3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1188,6 +1290,7 @@
 				0405A9551EABCE33001C897B /* SearchProduct in Resources */,
 				0405A94F1EABCE33001C897B /* Mine in Resources */,
 				0405A9A81EABCE33001C897B /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				041A2EA91EB73A0700C3594A /* Assets2.xcassets in Resources */,
 				0405A9521EABCE33001C897B /* MyCoupon in Resources */,
 				0405A9561EABCE33001C897B /* supermarket in Resources */,
 				0405A9531EABCE33001C897B /* MyOrders in Resources */,
@@ -1326,6 +1429,8 @@
 				0405A9881EABCE33001C897B /* MKAnnotationView+WebCache.m in Sources */,
 				0405A9601EABCE33001C897B /* ReceiptAddressView.swift in Sources */,
 				0405A9421EABCE33001C897B /* OrderGoodsListView.swift in Sources */,
+				041A2EAF1EB73A0700C3594A /* GetPassWordViewController.m in Sources */,
+				041A2EAA1EB73A0700C3594A /* DMLoginViewController.m in Sources */,
 				0405A9221EABCE33001C897B /* SearchView.swift in Sources */,
 				0405A91E1EABCE33001C897B /* PageScrollView.swift in Sources */,
 				0405A9961EABCE33001C897B /* UIImageView+WebCache.m in Sources */,
@@ -1355,6 +1460,7 @@
 				0405A97A1EABCE33001C897B /* MJRefreshAutoGifFooter.m in Sources */,
 				0405A92B1EABCE33001C897B /* CoupinRuleViewController.swift in Sources */,
 				0405A9131EABCE33001C897B /* BuyView.swift in Sources */,
+				041A2EAE1EB73A0700C3594A /* ForgotPassWordViewController.m in Sources */,
 				0405A9821EABCE33001C897B /* MJRefreshStateHeader.m in Sources */,
 				0405A97E1EABCE33001C897B /* MJRefreshBackNormalFooter.m in Sources */,
 				0405A95F1EABCE33001C897B /* PayWayView.swift in Sources */,
@@ -1376,6 +1482,8 @@
 				0405A9331EABCE33001C897B /* HelpHeadView.swift in Sources */,
 				0405A9371EABCE33001C897B /* Mine.swift in Sources */,
 				0405A9891EABCE33001C897B /* NSData+ImageContentType.m in Sources */,
+				041A2EAB1EB73A0700C3594A /* DMRegisterThreeViewController.m in Sources */,
+				041A2EB01EB73A0700C3594A /* UITextField+Shake.m in Sources */,
 				0405A9861EABCE33001C897B /* UIScrollView+MJRefresh.m in Sources */,
 				0405A9671EABCE33001C897B /* String + Extension.swift in Sources */,
 				0405A96F1EABCE33001C897B /* FileToll.swift in Sources */,
@@ -1384,6 +1492,7 @@
 				0405A9401EABCE33001C897B /* OrderDetailView.swift in Sources */,
 				0405A95D1EABCE33001C897B /* CostDetailView.swift in Sources */,
 				0405A9621EABCE33001C897B /* ShopCartCommentsView.swift in Sources */,
+				041A2EAD1EB73A0700C3594A /* DMRegisterViewController.m in Sources */,
 				0405A9161EABCE33001C897B /* LFBActionSheet.swift in Sources */,
 				0405A9071EABCE33001C897B /* HomeViewController.swift in Sources */,
 				0405A9451EABCE33001C897B /* OrderUserDetailView.swift in Sources */,
@@ -1399,6 +1508,7 @@
 				0405A9321EABCE33001C897B /* HelpDetailViewController.swift in Sources */,
 				0405A9791EABCE33001C897B /* MJRefreshHeader.m in Sources */,
 				0405A9781EABCE33001C897B /* MJRefreshFooter.m in Sources */,
+				041A2EAC1EB73A0700C3594A /* DMRegisterTwoViewController.m in Sources */,
 				0405A9361EABCE33001C897B /* MessageViewController.swift in Sources */,
 				0405A91F1EABCE33001C897B /* QRCodeViewController.swift in Sources */,
 				0405A8FB1EABCE33001C897B /* Color+Extension.swift in Sources */,

@@ -12,3 +12,11 @@
 #import "UMSocialQQHandler.h"
 #import <BmobSDK/Bmob.h>
 //#import <SVProgressHUD/SVProgressHUD.h>
+
+
+#import "DMLoginViewController.h"
+#import "DMRegisterThreeViewController.h"
+#import "DMRegisterTwoViewController.h"
+#import "DMRegisterViewController.h"
+#import "ForgotPassWordViewController.h"
+#import "GetPassWordViewController.h"
