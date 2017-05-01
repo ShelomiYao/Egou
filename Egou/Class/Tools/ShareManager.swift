@@ -54,7 +54,7 @@ class ShareManager: NSObject {
             
         case .SinaWeiBo:
             
-            UMSocialDataService.defaultDataService().postSNSWithTypes([UMShareToSina], content: shareText + "   下载地址" + "https://github.com/ZhongTaoTian", image: authorImage, location: nil, urlResource: nil, presentedController: vc, completion: { (response) -> Void in
+            UMSocialDataService.defaultDataService().postSNSWithTypes([UMShareToSina], content: shareText + "   下载地址" + "https://github.com/ShelomiYao", image: authorImage, location: nil, urlResource: nil, presentedController: vc, completion: { (response) -> Void in
                 if response.responseCode.rawValue == UMSResponseCodeSuccess.rawValue {
                     showSuccessAlert()
                 } else {

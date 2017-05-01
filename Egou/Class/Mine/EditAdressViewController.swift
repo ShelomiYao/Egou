@@ -34,7 +34,7 @@ class EditAdressViewController: BaseViewController {
     var currentAdressRow: Int = -1
     
     private lazy var cityArray: [String]? = {
-        let array = ["北京市", "上海市", "天津市", "广州市", "佛山市", "深圳市", "廊坊市", "武汉市", "苏州市", "无锡市"]
+        let array = ["北京市", "上海市", "广州市", "深圳市", "杭州市", "苏州市", "武汉市", "南宁市", "桂林市", "柳州市"]
         return array
         }()
     
@@ -142,7 +142,7 @@ class EditAdressViewController: BaseViewController {
         buildTextField(contactsTextField!, frame: CGRectMake(x, 0, textFieldWidth, viewHeight), placeholder: "收货人姓名", tag: 1)
         
         phoneNumberTextField = UITextField()
-        buildTextField(phoneNumberTextField!, frame: CGRectMake(x, 2 * viewHeight, textFieldWidth, viewHeight), placeholder: "鲜蜂侠联系你的电话", tag: 2)
+        buildTextField(phoneNumberTextField!, frame: CGRectMake(x, 2 * viewHeight, textFieldWidth, viewHeight), placeholder: "易购侠联系你的电话", tag: 2)
         
         cityTextField = UITextField()
         buildTextField(cityTextField!, frame: CGRectMake(x, 3 * viewHeight, textFieldWidth, viewHeight), placeholder: "请选择城市", tag: 3)

@@ -79,7 +79,7 @@ class AboltAuthorViewController: BaseViewController {
             btn.tag = i
             btn.titleLabel?.font = UIFont.systemFontOfSize(10)
             btn.frame = CGRectMake(30 + CGFloat(i) * ((ScreenWidth - btnW * 3 - 60) / 2 + btnW), CGRectGetMaxY(blogLabel.frame) + 10, btnW, 30)
-            btn.addTarget(self, action: "btnClick:", forControlEvents: UIControlEvents.TouchUpInside)
+            btn.addTarget(self, action:#selector(AboltAuthorViewController.btnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             btn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
             view.addSubview(btn)
         }
@@ -105,7 +105,7 @@ class AboltAuthorViewController: BaseViewController {
         label.tag = tag
         view.addSubview(label)
         
-        let tap = UITapGestureRecognizer(target: self, action: "textLabelClick:")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(AboltAuthorViewController.textLabelClick(_:)))
         label.addGestureRecognizer(tap)
     }
     

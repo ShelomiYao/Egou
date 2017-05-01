@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 enum HelpCellType: Int {
@@ -29,7 +25,7 @@ class HelpViewController: BaseViewController {
         view.addSubview(backView)
         
         let phoneLabel = UILabel(frame: CGRectMake(20, 0, ScreenWidth - margin, 50))
-        creatLabel(phoneLabel, text: "客服电话: 400-8484-842", type: .Phone)
+        creatLabel(phoneLabel, text: "客服电话: 400-8000-842", type: .Phone)
         
         let arrowImageView = UIImageView(image: UIImage(named: "icon_go"))
         arrowImageView.frame = CGRectMake(ScreenWidth - 20, (50 - 10) * 0.5, 5, 10)
@@ -70,7 +66,7 @@ class HelpViewController: BaseViewController {
      
         switch tap.view!.tag {
         case HelpCellType.Phone.hashValue :
-            let alertView = UIAlertView(title: "", message: "400-8484-842", delegate: self, cancelButtonTitle: "取消", otherButtonTitles: "拨打")
+            let alertView = UIAlertView(title: "", message: "400-8000-842", delegate: self, cancelButtonTitle: "取消", otherButtonTitles: "拨打")
             alertView.show()
             break
         case HelpCellType.Question.hashValue :
@@ -87,7 +83,7 @@ class HelpViewController: BaseViewController {
 extension HelpViewController: UIAlertViewDelegate {
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         if buttonIndex == 1 {
-            UIApplication.sharedApplication().openURL(NSURL(string: "tel:4008484842")!)
+            UIApplication.sharedApplication().openURL(NSURL(string: "tel:4008000842")!)
         }
     }
 }

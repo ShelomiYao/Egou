@@ -125,7 +125,7 @@
 "navs": [
 {
 "id": 0,
-"name": "鲜蜂热卖",
+"name": "易购热卖",
 "type": "INDEX",
 "selected": 1
 },
@@ -307,7 +307,7 @@
 "hide_cart": "0",
 "trackid": "focus1|20575",
 "mimg": "http://img01.bqstatic.com/upload/activity/activity_v4_20575_1452217080_mblock.jpg@90Q",
-"customURL": "https://github.com/ZhongTaoTian"
+"customURL": "https://github.com/ShelomiYao"
 },
 {
 "id": "20626",

@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class MineCell: UITableViewCell {
@@ -69,7 +65,7 @@ class MineCell: UITableViewCell {
         let iconWH: CGFloat = 20
         iconImageView.frame = CGRectMake(rightMargin, (height - iconWH) * 0.5, iconWH, iconWH)
         titleLabel.frame = CGRectMake(CGRectGetMaxX(iconImageView.frame) + rightMargin, 0, 200, height)
-        
+
         let leftMarge: CGFloat = 20
         bottomLine.frame = CGRectMake(leftMarge, height - 0.5, width - leftMarge, 0.5)
     }

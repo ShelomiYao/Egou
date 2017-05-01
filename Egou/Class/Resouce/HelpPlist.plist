@@ -7,7 +7,7 @@
 		<string>易购超市的服务时间?</string>
 		<key>texts</key>
 		<array>
-			<string>鲜蜂人工客服的服务时间是9:00-24:00，鲜蜂侠的配送时间是10:00-02:00，智能客服的服务时间是7x24小时。</string>
+			<string>易购人工客服的服务时间是9:00-24:00，易购侠的配送时间是10:00-02:00，智能客服的服务时间是7x24小时。</string>
 		</array>
 	</dict>
 	<dict>
@@ -31,10 +31,10 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>什么是“鲜蜂精选”商品？</string>
+		<string>什么是“易购精选”商品？</string>
 		<key>texts</key>
 		<array>
-			<string>在商品名称前面显示“精选”二字标签的商品都是“鲜蜂精选”商品。</string>
+			<string>在商品名称前面显示“精选”二字标签的商品都是“易购精选”商品。</string>
 		</array>
 	</dict>
 	<dict>

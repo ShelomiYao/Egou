@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 // MARK: - 全局常用属性
@@ -48,8 +44,8 @@ public let CouponUserRuleURLString = "http://m.beequick.cn/show/webview/p/coupon
 public let LFBCachePath: String = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true).last!
 
 // MARK: - AuthorURL
-public let GitHubURLString: String = "https://github.com/ZhongTaoTian"
-public let SinaWeiBoURLString: String = "http://weibo.com/tianzhongtao"
+public let GitHubURLString: String = "https://github.com/ShelomiYao"
+public let SinaWeiBoURLString: String = "http://weibo.com/ShelomiYao"
 public let BlogURLString: String = "http://www.jianshu.com/users/5fe7513c7a57/latest_articles"
 
 // MARK: - 常用颜色
