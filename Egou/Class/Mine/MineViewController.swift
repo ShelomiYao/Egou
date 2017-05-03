@@ -1,10 +1,6 @@
 //
 //  MineViewController.swift
-//  LoveFreshBee
-
-
-
-
+//  
 
 
 import UIKit

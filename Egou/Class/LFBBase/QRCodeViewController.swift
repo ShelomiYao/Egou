@@ -63,7 +63,7 @@ class QRCodeViewController: BaseViewController, AVCaptureMetadataOutputObjectsDe
         titleLabel.text = "将店铺二维码对准方块内既可收藏店铺"
         let input = try? AVCaptureDeviceInput(device: captureDevice)
         if input == nil {
-            titleLabel.text = "没有摄像头你描个蛋啊~换真机试试"
+            titleLabel.text = "没有摄像头~换真机扫描试试"
             
             return
         }

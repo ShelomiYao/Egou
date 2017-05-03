@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class ShopCartViewController: BaseViewController {
@@ -74,6 +70,7 @@ class ShopCartViewController: BaseViewController {
     
     func shopCarProductsDidRemove() {
         
+        
         if UserShopCarTool.sharedUserShopCar.isEmpty() {
             showshopCarEmptyUI()
         }
@@ -89,7 +86,7 @@ class ShopCartViewController: BaseViewController {
     private func buildNavigationItem() {
         navigationItem.title = "购物车"
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem.barButton(UIImage(named: "v2_goback")!, target: self, action: "leftNavigitonItemClick")
+        navigationItem.leftBarButtonItem = UIBarButtonItem.barButton(UIImage(named: "v2_goback")!, target: self, action: #selector(ShopCartViewController.leftNavigitonItemClick))
     }
     
     private func buildEmptyUI() {

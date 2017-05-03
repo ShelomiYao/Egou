@@ -189,12 +189,11 @@
 		0405A9AA1EABCE33001C897B /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0405A8F31EABCE33001C897B /* libWeChatSDK.a */; };
 		041A2EA91EB73A0700C3594A /* Assets2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041A2E931EB73A0600C3594A /* Assets2.xcassets */; };
 		041A2EAA1EB73A0700C3594A /* DMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E961EB73A0600C3594A /* DMLoginViewController.m */; };
-		041A2EAB1EB73A0700C3594A /* DMRegisterThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E981EB73A0600C3594A /* DMRegisterThreeViewController.m */; };
-		041A2EAC1EB73A0700C3594A /* DMRegisterTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9A1EB73A0600C3594A /* DMRegisterTwoViewController.m */; };
 		041A2EAD1EB73A0700C3594A /* DMRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9C1EB73A0600C3594A /* DMRegisterViewController.m */; };
 		041A2EAE1EB73A0700C3594A /* ForgotPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */; };
-		041A2EAF1EB73A0700C3594A /* GetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EA01EB73A0600C3594A /* GetPassWordViewController.m */; };
 		041A2EB01EB73A0700C3594A /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EA81EB73A0600C3594A /* UITextField+Shake.m */; };
+		041A2EB41EB7518400C3594A /* UserSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EB31EB7518400C3594A /* UserSingle.swift */; };
+		04764B8A1EB86F8500B37825 /* MineEmptyViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04764B891EB86F8500B37825 /* MineEmptyViewControll.swift */; };
 		173966D05D1CD356D49D6A2A /* Pods_Egou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9AF2BB06E86E83238DE125 /* Pods_Egou.framework */; };
 		B34711651C508017000FE63E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711641C508017000FE63E /* Security.framework */; };
 		B34711671C508041000FE63E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711661C508041000FE63E /* libiconv.tbd */; };
@@ -474,18 +473,14 @@
 		041A2E931EB73A0600C3594A /* Assets2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets2.xcassets; sourceTree = "<group>"; };
 		041A2E951EB73A0600C3594A /* DMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLoginViewController.h; sourceTree = "<group>"; };
 		041A2E961EB73A0600C3594A /* DMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLoginViewController.m; sourceTree = "<group>"; };
-		041A2E971EB73A0600C3594A /* DMRegisterThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRegisterThreeViewController.h; sourceTree = "<group>"; };
-		041A2E981EB73A0600C3594A /* DMRegisterThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRegisterThreeViewController.m; sourceTree = "<group>"; };
-		041A2E991EB73A0600C3594A /* DMRegisterTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRegisterTwoViewController.h; sourceTree = "<group>"; };
-		041A2E9A1EB73A0600C3594A /* DMRegisterTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRegisterTwoViewController.m; sourceTree = "<group>"; };
 		041A2E9B1EB73A0600C3594A /* DMRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRegisterViewController.h; sourceTree = "<group>"; };
 		041A2E9C1EB73A0600C3594A /* DMRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRegisterViewController.m; sourceTree = "<group>"; };
 		041A2E9D1EB73A0600C3594A /* ForgotPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPassWordViewController.h; sourceTree = "<group>"; };
 		041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPassWordViewController.m; sourceTree = "<group>"; };
-		041A2E9F1EB73A0600C3594A /* GetPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPassWordViewController.h; sourceTree = "<group>"; };
-		041A2EA01EB73A0600C3594A /* GetPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPassWordViewController.m; sourceTree = "<group>"; };
 		041A2EA71EB73A0600C3594A /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
 		041A2EA81EB73A0600C3594A /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
+		041A2EB31EB7518400C3594A /* UserSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSingle.swift; sourceTree = "<group>"; };
+		04764B891EB86F8500B37825 /* MineEmptyViewControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineEmptyViewControll.swift; sourceTree = "<group>"; };
 		106E1BAB244C5E200BC6988F /* Pods-Egou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egou.release.xcconfig"; path = "Pods/Target Support Files/Pods-Egou/Pods-Egou.release.xcconfig"; sourceTree = "<group>"; };
 		3883B53AB34A62AD75F02FD9 /* Pods-Egou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egou/Pods-Egou.debug.xcconfig"; sourceTree = "<group>"; };
 		4C9AF2BB06E86E83238DE125 /* Pods_Egou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Egou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -706,6 +701,8 @@
 				0405A83E1EABCE32001C897B /* SettingViewController.swift */,
 				0405A83F1EABCE32001C897B /* SystemMessageCell.swift */,
 				0405A8401EABCE32001C897B /* UserMessage.swift */,
+				041A2EB31EB7518400C3594A /* UserSingle.swift */,
+				04764B891EB86F8500B37825 /* MineEmptyViewControll.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -1044,16 +1041,10 @@
 				041A2E941EB73A0600C3594A /* bg4.imageset */,
 				041A2E951EB73A0600C3594A /* DMLoginViewController.h */,
 				041A2E961EB73A0600C3594A /* DMLoginViewController.m */,
-				041A2E971EB73A0600C3594A /* DMRegisterThreeViewController.h */,
-				041A2E981EB73A0600C3594A /* DMRegisterThreeViewController.m */,
-				041A2E991EB73A0600C3594A /* DMRegisterTwoViewController.h */,
-				041A2E9A1EB73A0600C3594A /* DMRegisterTwoViewController.m */,
 				041A2E9B1EB73A0600C3594A /* DMRegisterViewController.h */,
 				041A2E9C1EB73A0600C3594A /* DMRegisterViewController.m */,
 				041A2E9D1EB73A0600C3594A /* ForgotPassWordViewController.h */,
 				041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */,
-				041A2E9F1EB73A0600C3594A /* GetPassWordViewController.h */,
-				041A2EA01EB73A0600C3594A /* GetPassWordViewController.m */,
 				041A2EA11EB73A0600C3594A /* goback_back_orange_on.imageset */,
 				041A2EA21EB73A0600C3594A /* ic_landing_microblog.imageset */,
 				041A2EA31EB73A0600C3594A /* ic_landing_nickname.imageset */,
@@ -1429,7 +1420,6 @@
 				0405A9881EABCE33001C897B /* MKAnnotationView+WebCache.m in Sources */,
 				0405A9601EABCE33001C897B /* ReceiptAddressView.swift in Sources */,
 				0405A9421EABCE33001C897B /* OrderGoodsListView.swift in Sources */,
-				041A2EAF1EB73A0700C3594A /* GetPassWordViewController.m in Sources */,
 				041A2EAA1EB73A0700C3594A /* DMLoginViewController.m in Sources */,
 				0405A9221EABCE33001C897B /* SearchView.swift in Sources */,
 				0405A91E1EABCE33001C897B /* PageScrollView.swift in Sources */,
@@ -1449,6 +1439,7 @@
 				0405A9921EABCE33001C897B /* UIImage+GIF.m in Sources */,
 				0405A9191EABCE33001C897B /* LFBSegmentedControl.swift in Sources */,
 				0405A9011EABCE33001C897B /* CouponData.swift in Sources */,
+				041A2EB41EB7518400C3594A /* UserSingle.swift in Sources */,
 				0405A9851EABCE33001C897B /* UIScrollView+MJExtension.m in Sources */,
 				0405A97D1EABCE33001C897B /* MJRefreshBackGifFooter.m in Sources */,
 				0405A9041EABCE33001C897B /* HomeCell.swift in Sources */,
@@ -1463,6 +1454,7 @@
 				041A2EAE1EB73A0700C3594A /* ForgotPassWordViewController.m in Sources */,
 				0405A9821EABCE33001C897B /* MJRefreshStateHeader.m in Sources */,
 				0405A97E1EABCE33001C897B /* MJRefreshBackNormalFooter.m in Sources */,
+				04764B8A1EB86F8500B37825 /* MineEmptyViewControll.swift in Sources */,
 				0405A95F1EABCE33001C897B /* PayWayView.swift in Sources */,
 				0405A9481EABCE33001C897B /* SettingViewController.swift in Sources */,
 				0405A9931EABCE33001C897B /* UIImage+MultiFormat.m in Sources */,
@@ -1482,7 +1474,6 @@
 				0405A9331EABCE33001C897B /* HelpHeadView.swift in Sources */,
 				0405A9371EABCE33001C897B /* Mine.swift in Sources */,
 				0405A9891EABCE33001C897B /* NSData+ImageContentType.m in Sources */,
-				041A2EAB1EB73A0700C3594A /* DMRegisterThreeViewController.m in Sources */,
 				041A2EB01EB73A0700C3594A /* UITextField+Shake.m in Sources */,
 				0405A9861EABCE33001C897B /* UIScrollView+MJRefresh.m in Sources */,
 				0405A9671EABCE33001C897B /* String + Extension.swift in Sources */,
@@ -1508,7 +1499,6 @@
 				0405A9321EABCE33001C897B /* HelpDetailViewController.swift in Sources */,
 				0405A9791EABCE33001C897B /* MJRefreshHeader.m in Sources */,
 				0405A9781EABCE33001C897B /* MJRefreshFooter.m in Sources */,
-				041A2EAC1EB73A0700C3594A /* DMRegisterTwoViewController.m in Sources */,
 				0405A9361EABCE33001C897B /* MessageViewController.swift in Sources */,
 				0405A91F1EABCE33001C897B /* QRCodeViewController.swift in Sources */,
 				0405A8FB1EABCE33001C897B /* Color+Extension.swift in Sources */,

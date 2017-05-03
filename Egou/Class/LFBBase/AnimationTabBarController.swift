@@ -245,17 +245,15 @@ class AnimationTabBarController: UITabBarController {
     }
     
     func setSelectIndex(from from: Int,to: Int) {
-        
+        let shopCar: UIViewController?
         if to == 2 {
             let vc = childViewControllers[selectedIndex]
-            let shopCar = ShopCartViewController()
-            let nav = BaseNavigationController(rootViewController: shopCar)
+            shopCar = ShopCartViewController()
+            let nav = BaseNavigationController(rootViewController: shopCar!)
             vc.presentViewController(nav, animated: true, completion: nil)
-            
             return
         }
-        
-        selectedIndex = to
+          selectedIndex = to
         let items = tabBar.items as! [RAMAnimatedTabBarItem]
         
         let fromIV = iconsView[from].icon

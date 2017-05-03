@@ -52,10 +52,25 @@ class MainTabBarController: AnimationTabBarController, UITabBarControllerDelegat
 // MARK: - Method
     // MARK: 初始化tabbar
     private func buildMainTabBarChildViewController() {
+        userSingle?.userName = "hehe"
+        userSingle?.userName = "dsafjl"
+        userSingle?.userName = "adsglhwerw"
+
         tabBarControllerAddChildViewController(HomeViewController(), title: "首页", imageName: "v2_home", selectedImageName: "v2_home_r", tag: 0)
         tabBarControllerAddChildViewController(SupermarketViewController(), title: "易购超市", imageName: "v2_order", selectedImageName: "v2_order_r", tag: 1)
         tabBarControllerAddChildViewController(ShopCartViewController(), title: "购物车", imageName: "shopCart", selectedImageName: "shopCart", tag: 2)
-        tabBarControllerAddChildViewController(MineViewController(), title: "我的", imageName: "v2_my", selectedImageName: "v2_my_r", tag: 3)
+        
+        if (nil != userSingle?.userName) {
+            tabBarControllerAddChildViewController(MineEmptyViewController(), title: "我的", imageName: "v2_my", selectedImageName: "v2_my_r", tag: 3)
+            print("111111111111111111111111111111-----",userSingle?.userName)
+        }
+        else{
+            tabBarControllerAddChildViewController(MineViewController(), title: "我的", imageName: "v2_my", selectedImageName: "v2_my_r", tag: 3)
+            print("2222222222222222222222222222222-----",userSingle?.userName)
+
+        }
+
+        
     }
     
     private func tabBarControllerAddChildViewController(childView: UIViewController, title: String, imageName: String, selectedImageName: String, tag: Int) {
@@ -79,4 +94,5 @@ class MainTabBarController: AnimationTabBarController, UITabBarControllerDelegat
         return true
     }
 }
+
 

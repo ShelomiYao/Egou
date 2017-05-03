@@ -127,6 +127,10 @@ class OrderPayWayViewController: BaseViewController {
         payButton.setTitle("确认付款", forState: UIControlState.Normal)
         payButton.backgroundColor = LFBNavigationYellowColor
         payButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        if bUsernameEmpty() {
+            payButton.addTarget(self, action:#selector(OrderPayWayViewController.showLoginView) , forControlEvents: UIControlEvents.TouchUpInside)
+        }
+
         bottomView.addSubview(payButton)
     }
     
@@ -145,5 +149,20 @@ class OrderPayWayViewController: BaseViewController {
         addView.addSubview(label)
     }
     
+    func bUsernameEmpty() -> Bool {
+        if userSingle?.userName?.isEmpty == nil {
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
+    func showLoginView() -> Void {
+        navigationController?.pushViewController(DMLoginViewController(), animated: true)
+    }
 }
+
+
+
 

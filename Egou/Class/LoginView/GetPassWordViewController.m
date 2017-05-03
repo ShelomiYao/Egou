@@ -21,8 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"找回密码2/2";
-    self.navigationController.navigationBarHidden = YES;
+    [self.navigationItem setTitle:@"找回密码2/2"];
+
+//    self.title = @"找回密码2/2";
+//    self.navigationController.navigationBarHidden = YES;
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
     
@@ -30,14 +32,14 @@
     _backBtn.frame = CGRectMake(5, 27, 35, 35);
     [_backBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"] forState:UIControlStateNormal];
     [_backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_backBtn];
+//    [self.view addSubview:_backBtn];
     
-    //设置登陆Label
+    //设置登录Label
     _loginLabel = [[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 60)/2, 30, 100, 30)];
     _loginLabel.text = @"设置新密码";
     _loginLabel.textColor = [UIColor colorWithRed:248/255.0 green:144/255.0 blue:34/255.0 alpha:1.0];
     _loginLabel.font = [UIFont systemFontOfSize:17];
-    [self.view addSubview:_loginLabel];
+//    [self.view addSubview:_loginLabel];
     
     [self createTextFileds];
 }

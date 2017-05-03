@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class HomeViewController: SelectedAdressViewController {
@@ -36,7 +32,8 @@ class HomeViewController: SelectedAdressViewController {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.barTintColor = LFBNavigationYellowColor
-        
+//        self.navigationController?.setNavigationBarHidden(true, animated: true)
+
         if collectionView != nil {
             collectionView.reloadData()
         }

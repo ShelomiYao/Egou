@@ -41,12 +41,6 @@ class Supermarket: NSObject, DictModelProtocol {
             
             let modelTool = DictModelManager.sharedManager
             let data = modelTool.objectWithDictionary(dict, cls: Supermarket.self) as? Supermarket
-            print("66666666666666666-------------------------------------------------")
-            
-            print("66666666666666666supermarket = ------------------------",data.self)
-
-            print("66666666666666666-------------------------------------------------")
-
             completion(data: data, error: nil)
         }
     }

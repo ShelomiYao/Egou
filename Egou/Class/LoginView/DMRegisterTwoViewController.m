@@ -21,8 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"注册2/3";
-    self.navigationController.navigationBarHidden = YES;
+    self.navigationItem.title = @"注册2/3";
+//    self.navigationController.navigationBarHidden = YES;
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
     
@@ -30,14 +30,14 @@
     _backBtn.frame = CGRectMake(5, 27, 35, 35);
     [_backBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"] forState:UIControlStateNormal];
     [_backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_backBtn];
+//    [self.view addSubview:_backBtn];
     
-    //设置登陆Label
+    //设置登录Label
     _loginLabel = [[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 30)/2, 30, 50, 30)];
     _loginLabel.text = @"登录";
     _loginLabel.textColor = [UIColor colorWithRed:248/255.0 green:144/255.0 blue:34/255.0 alpha:1.0];
     _loginLabel.font = [UIFont systemFontOfSize:17];
-    [self.view addSubview:_loginLabel];
+//    [self.view addSubview:_loginLabel];
     
     [self createTextFileds];
 }
@@ -95,8 +95,9 @@
         [self presentViewController:alert animated:YES completion:nil];
     }
     else{
-        DMRegisterThreeViewController *vc = [[DMRegisterThreeViewController alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
+//        DMRegisterThreeViewController *vc = [[DMRegisterThreeViewController alloc]init];
+//        [self.navigationController pushViewController:vc animated:YES];
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -105,10 +106,12 @@
     [_pwdTextFiled resignFirstResponder];
     return YES;
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 

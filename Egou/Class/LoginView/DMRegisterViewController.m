@@ -8,20 +8,22 @@
 
 #import "DMRegisterViewController.h"
 #import "UITextField+Shake.h"
-#import "DMRegisterTwoViewController.h"
 
 @interface DMRegisterViewController ()<UITextFieldDelegate>
 @property (nonatomic ,strong)UILabel *ZCLabel;
 @property (nonatomic ,strong)UIView *baceView;
 @property (nonatomic ,strong)UITextField *phoneTextFiled;
-@property (nonatomic ,strong)UITextField *pwdTextFiled;
+@property (nonatomic ,strong)UITextField *verificationCodeTextFiled;
+@property (nonatomic ,strong)UITextField *userNameTextFiled;
+@property (nonatomic ,strong)UITextField *passwordTextFiled;
+
 @property (nonatomic ,strong)UIButton *yzButton;
-@property(nonatomic, copy) NSString *oUserPhoneNum;
-@property(assign, nonatomic) NSInteger timeCount;
-@property(strong, nonatomic) NSTimer *timer;
-@property(nonatomic ,strong)NSString *code;
+@property (nonatomic, copy) NSString *oUserPhoneNum;
+@property (assign, nonatomic) NSInteger timeCount;
+@property (strong, nonatomic) NSTimer *timer;
+@property (nonatomic ,strong)NSString *code;
 //验证码
-@property(copy, nonatomic) NSString *smsId;
+@property (copy, nonatomic) NSString *smsId;
 @property (nonatomic ,strong)UIButton *backBtn;
 @property (nonatomic ,strong)UILabel *loginLabel;
 
@@ -31,23 +33,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"注册1/3";
-    self.navigationController.navigationBarHidden = YES;
+    [self.navigationItem setTitle:@"注 册"];
+
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
-    
-    _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _backBtn.frame = CGRectMake(5, 27, 35, 35);
-    [_backBtn setImage:[UIImage imageNamed:@"goback_back_orange_on"] forState:UIControlStateNormal];
-    [_backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_backBtn];
-    
-    //设置登陆Label
-    _loginLabel = [[UILabel alloc]initWithFrame:CGRectMake((self.view.frame.size.width - 30)/2, 30, 50, 30)];
-    _loginLabel.text = @"注  册";
-    _loginLabel.textColor = [UIColor colorWithRed:248/255.0 green:144/255.0 blue:34/255.0 alpha:1.0];
-    _loginLabel.font = [UIFont systemFontOfSize:17];
-    [self.view addSubview:_loginLabel];
     
     [self createTextFiled];
 }
@@ -59,44 +48,65 @@
 
 -(void)createTextFiled
 {
-    UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(30, 75, self.view.frame.size.width-90, 30)];
-    label.text=@"请输入11位手机号";
-    label.textColor=[UIColor grayColor];
-    label.textAlignment = NSTextAlignmentLeft;
-    label.font=[UIFont systemFontOfSize:13];
-    [self.view addSubview:label];
-    
-    _baceView = [[UIView alloc]initWithFrame:CGRectMake(10, 110, self.view.frame.size.width - 20, 100)];
+    _baceView = [[UIView alloc]initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, 200)];
     _baceView.layer.cornerRadius = 5.0;
     _baceView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_baceView];
     
-    _phoneTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 10, 200, 30) font:[UIFont systemFontOfSize:14] placeholder:@"请输入11位手机号"];
+    _userNameTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 10, 200, 30) font:[UIFont systemFontOfSize:14] placeholder:@"请输入昵称"];
+    _userNameTextFiled.clearButtonMode = UITextFieldViewModeWhileEditing;
+    _userNameTextFiled.delegate = self;
+    [_baceView addSubview:_userNameTextFiled];
+    
+    _passwordTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 60, 200, 30) font:[UIFont systemFontOfSize:14] placeholder:@"请输入密码"];
+    _passwordTextFiled.clearButtonMode = UITextFieldViewModeWhileEditing;
+    _passwordTextFiled.delegate = self;
+    _passwordTextFiled.secureTextEntry = YES;
+    _passwordTextFiled.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+    [_baceView addSubview:_passwordTextFiled];
+    
+    UILabel *userNameLabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 12, 50, 25)];
+    userNameLabel.text=@"昵  称";
+    userNameLabel.textColor=[UIColor blackColor];
+    userNameLabel.textAlignment=NSTextAlignmentLeft;
+    userNameLabel.font=[UIFont systemFontOfSize:14];
+    [_baceView addSubview:userNameLabel];
+    
+    UILabel *codelabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 62, 50, 25)];
+    codelabel.text=@"密  码";
+    codelabel.textColor=[UIColor blackColor];
+    codelabel.textAlignment=NSTextAlignmentLeft;
+    codelabel.font=[UIFont systemFontOfSize:14];
+    [_baceView addSubview:codelabel];
+    
+    _phoneTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 110, 200, 30) font:[UIFont systemFontOfSize:14] placeholder:@"请输入11位手机号"];
     _phoneTextFiled.clearButtonMode = UITextFieldViewModeWhileEditing;
+    _phoneTextFiled.keyboardType = UIKeyboardTypePhonePad;
     _phoneTextFiled.delegate = self;
     [_baceView addSubview:_phoneTextFiled];
     
-    _pwdTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 60, 90, 30) font:[UIFont systemFontOfSize:14] placeholder:@"请输入4位验证码"];
-    _pwdTextFiled.clearButtonMode = UITextFieldViewModeWhileEditing;
-    _pwdTextFiled.delegate = self;
-    _pwdTextFiled.secureTextEntry = YES;
-    [_baceView addSubview:_pwdTextFiled];
+    _verificationCodeTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 160, 90, 30) font:[UIFont systemFontOfSize:14] placeholder:@"短信验证码"];
+    _verificationCodeTextFiled.clearButtonMode = UITextFieldViewModeWhileEditing;
+    _verificationCodeTextFiled.keyboardType = UIKeyboardTypeNumberPad;
+    _verificationCodeTextFiled.delegate = self;
+    _verificationCodeTextFiled.secureTextEntry = NO;
+    [_baceView addSubview:_verificationCodeTextFiled];
     
-    UILabel *phonelabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 12, 50, 25)];
+    UILabel *phonelabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 112, 50, 25)];
     phonelabel.text=@"手机号";
     phonelabel.textColor=[UIColor blackColor];
     phonelabel.textAlignment=NSTextAlignmentLeft;
     phonelabel.font=[UIFont systemFontOfSize:14];
     [_baceView addSubview:phonelabel];
     
-    UILabel *codelabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 62, 50, 25)];
-    codelabel.text=@"验证码";
-    codelabel.textColor=[UIColor blackColor];
-    codelabel.textAlignment=NSTextAlignmentLeft;
-    codelabel.font=[UIFont systemFontOfSize:14];
-    [_baceView addSubview:codelabel];
+    UILabel *verificationCodeLabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 162, 50, 25)];
+    verificationCodeLabel.text=@"验证码";
+    verificationCodeLabel.textColor=[UIColor blackColor];
+    verificationCodeLabel.textAlignment=NSTextAlignmentLeft;
+    verificationCodeLabel.font=[UIFont systemFontOfSize:14];
+    [_baceView addSubview:verificationCodeLabel];
     
-    _yzButton=[[UIButton alloc]initWithFrame:CGRectMake(_baceView.frame.size.width-100-20, 62, 100, 30)];
+    _yzButton=[[UIButton alloc]initWithFrame:CGRectMake(_baceView.frame.size.width-120, 162, 100, 30)];
     //yzButton.layer.cornerRadius=3.0f;
     //yzButton.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
     [_yzButton setTitle:@"获取验证码" forState:UIControlStateNormal];
@@ -109,16 +119,71 @@
     line1.backgroundColor = [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:0.3];
     [_baceView addSubview:line1];
     
-    UIButton *landBtn = [[UIButton alloc]initWithFrame:CGRectMake(10,_baceView.frame.size.height + _baceView.frame.origin.y + 30, _baceView.frame.size.width - 20, 37)];
-    [landBtn setTitle:@"下一步" forState:UIControlStateNormal];
-    [landBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    landBtn.titleLabel.font = [UIFont systemFontOfSize:17];
-    [landBtn addTarget:self action:@selector(next:) forControlEvents:UIControlEventTouchUpInside];
-    landBtn.backgroundColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
-    landBtn.layer.cornerRadius=5.0;
-    [self.view addSubview:landBtn];
+    UIImageView *line2 = [[UIImageView alloc]initWithFrame:CGRectMake(20, 100, _baceView.frame.size.width - 40, 1)];
+    line2.backgroundColor = [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:0.3];
+    [_baceView addSubview:line2];
+
+    UIImageView *line3 = [[UIImageView alloc]initWithFrame:CGRectMake(20, 150, _baceView.frame.size.width - 40, 1)];
+    line3.backgroundColor = [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:0.3];
+    [_baceView addSubview:line3];
+
+    
+    UIButton *registSubmitBtn = [[UIButton alloc]initWithFrame:CGRectMake(10,_baceView.frame.size.height + _baceView.frame.origin.y + 30, _baceView.frame.size.width, 37)];
+    [registSubmitBtn setTitle:@"注  册" forState:UIControlStateNormal];
+    [registSubmitBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    registSubmitBtn.titleLabel.font = [UIFont systemFontOfSize:17];
+    [registSubmitBtn addTarget:self action:@selector(registSubmitBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    registSubmitBtn.backgroundColor=[UIColor colorWithRed:248/255.0f green:144/255.0f blue:34/255.0f alpha:1];
+    registSubmitBtn.layer.cornerRadius=5.0;
+    [self.view addSubview:registSubmitBtn];
     
 }
+
+#pragma 正则匹配手机号
+- (BOOL)checkTelNumber:(NSString *) telNumber{
+    NSString *pattern = @"^1+[3578]+[0-9]{9}";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:telNumber];
+    return isMatch;
+}
+
+
+#pragma 正则匹配用户密码6-18位数字和字母组合
+- (BOOL)checkPassword:(NSString *) password{
+    NSString *pattern = @"^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,18}";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:password];
+    return isMatch;
+    
+}
+
+#pragma 正则匹配用户姓名,20位的中文或英文
+- (BOOL)checkUserName : (NSString *) userName{
+    NSString *pattern = @"^[a-zA-Z一-龥]{1,20}";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:userName];
+    return isMatch;
+    
+}
+
+#pragma 正则匹配URL
+- (BOOL)checkURL : (NSString *) url{
+    NSString *pattern = @"^[0-9A-Za-z]{1,50}";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:url];
+    return isMatch;
+    
+}
+
+#pragma 正则匹配验证码
+- (BOOL)checkVerificationCode : (NSString *) verificationCode{
+    NSString *pattern = @"^[0-9]{4}$";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:verificationCode];
+    return isMatch;
+}
+
+
 
 -(void)getValidCode:(UIButton *)sender
 {
@@ -126,12 +191,8 @@
     int val;
     BOOL PureInt = [scan scanInt:&val]&&[scan isAtEnd];
     NSLog(@"%d",PureInt);
-    if (!PureInt || _phoneTextFiled.text.length !=11)
-    {
-        [_phoneTextFiled shake];
-    }
-    else
-    {
+    
+    if ([self checkUserInfo]) {
         _oUserPhoneNum =_phoneTextFiled.text;
         //__weak MMZCHMViewController *weakSelf = self;
         sender.userInteractionEnabled = YES;
@@ -139,9 +200,10 @@
         self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(reduceTime:) userInfo:sender repeats:YES];
         _code = [NSString stringWithFormat:@"%i%i%i%i",arc4random()%10,arc4random()%10,arc4random()%10,arc4random()%10];
         NSLog(@"%@",_code);
-        _pwdTextFiled.text = _code;
+        _verificationCodeTextFiled.text = _code;
     }
 }
+
 -(void)reduceTime:(NSTimer *)codeTimer
 {
     self.timeCount--;
@@ -159,22 +221,60 @@
         
     }
 }
--(void)next:(UIButton *)button
+
+-(void)registSubmitBtnClick:(UIButton *)button
 {
-    if (_phoneTextFiled.text.length == 11 && _pwdTextFiled.text == _code) {
-        DMRegisterTwoViewController *vc = [[DMRegisterTwoViewController alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
+    if ([self checkUserInfo]) {
+        if (_verificationCodeTextFiled.text != _code){
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"验证失败，手机号或验证码有误" message:nil preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+        else{
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }
+    
+}
+
+- (BOOL) checkUserInfo{
+    BOOL bValidUserInfo = NO;
+    BOOL bValidUsername;
+    BOOL bValidPhoneNumber;
+    BOOL bValidPassword;
+    NSString *alertAessage;
+    
+    bValidUsername = [self checkUserName:self.userNameTextFiled.text];
+    bValidPassword = [self checkPassword:self.passwordTextFiled.text];
+    bValidPhoneNumber = [self checkTelNumber:self.phoneTextFiled.text];
+    
+    if (!bValidUsername) {
+        alertAessage = @"昵称格式有误";
+        [_userNameTextFiled shake];
+    }
+    else if (!bValidPassword){
+        alertAessage = @"密码格式有误";
+        [_passwordTextFiled shake];
+    }
+    else if (!bValidPhoneNumber){
+        alertAessage = @"手机号码格式有误";
+        [_phoneTextFiled shake];
     }
     else{
-        [_pwdTextFiled shake];
-        [_phoneTextFiled shake];
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"请输入正确的手机号码和验证码" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        bValidUserInfo = YES;
+    }
+    
+    if(!bValidUserInfo){
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:alertAessage message:nil preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
         [alert addAction:action];
         [self presentViewController:alert animated:YES completion:nil];
     }
-   
+    
+    return bValidUserInfo;
 }
+
 -(UITextField *)createTextFiledWithFrame:(CGRect)frame font:(UIFont *)font placeholder:(NSString *)placeholder
 {
     UITextField *textField=[[UITextField alloc]initWithFrame:frame];
@@ -195,16 +295,23 @@
     if (textField == _phoneTextFiled) {
         [_phoneTextFiled resignFirstResponder];
     }
-    if (textField == _pwdTextFiled) {
-        [_pwdTextFiled resignFirstResponder];
+    if (textField == _verificationCodeTextFiled) {
+        [_verificationCodeTextFiled resignFirstResponder];
     }
     return YES;
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.phoneTextFiled resignFirstResponder];
+    [self.passwordTextFiled resignFirstResponder];
+    [self.userNameTextFiled resignFirstResponder];
+    [self.verificationCodeTextFiled resignFirstResponder];
+}
 
 
 @end
