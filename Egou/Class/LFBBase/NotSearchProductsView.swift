@@ -39,7 +39,7 @@ class NotSearchProductsView: UIView {
         
         searchLabel.textColor = UIColor.colorWithCustom(252, g: 185, b: 47)
         searchLabel.font = UIFont.systemFontOfSize(12)
-        searchLabel.text = "换其他关键词试试看,但是并没有什么卵用~"
+        searchLabel.text = "没有该商品，换其他关键词试试看"
         searchLabel.frame = CGRectMake(productLabel.x, CGRectGetMaxY(productLabel.frame) + 5, width * 0.7, 15)
         addSubview(searchLabel)
         
