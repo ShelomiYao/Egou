@@ -62,7 +62,7 @@ class ShopCartGoodsListView: UIView {
         finePriceLabel.textAlignment = NSTextAlignment.Right
         finePriceLabel.textColor = UIColor.redColor()
         finePriceLabel.font = UIFont.systemFontOfSize(14)
-        finePriceLabel.text = "合计:$" + UserShopCarTool.sharedUserShopCar.getAllProductsPrice()
+        finePriceLabel.text = "合计:￥" + UserShopCarTool.sharedUserShopCar.getAllProductsPrice()
         addSubview(finePriceLabel)
         
         let lineView1 = UIView(frame: CGRectMake(0, goodsHeight - 1, ScreenWidth, 1))
