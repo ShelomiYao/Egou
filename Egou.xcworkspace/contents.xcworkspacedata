@@ -1,6 +1,333 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:Egou/Class/GestureLockAndTouchID"
+      name = "GestureLockAndTouchID">
+      <FileRef
+         location = "group:GestureBaseViewController.h">
+      </FileRef>
+      <FileRef
+         location = "group:GestureBaseViewController.m">
+      </FileRef>
+      <Group
+         location = "group:GesturePwd"
+         name = "GesturePwd">
+         <Group
+            location = "group:GestureClass"
+            name = "GestureClass">
+            <FileRef
+               location = "group:DrawPatternLockView.h">
+            </FileRef>
+            <FileRef
+               location = "group:DrawPatternLockView.m">
+            </FileRef>
+            <FileRef
+               location = "group:DrawPatternLockViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:DrawPatternLockViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:GestureInternalViews.h">
+            </FileRef>
+            <FileRef
+               location = "group:GestureInternalViews.m">
+            </FileRef>
+            <FileRef
+               location = "group:GestureLockScreen.h">
+            </FileRef>
+            <FileRef
+               location = "group:GestureLockScreen.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:GestureImages"
+            name = "GestureImages">
+            <FileRef
+               location = "group:gesture_circle_nor.png">
+            </FileRef>
+            <FileRef
+               location = "group:gesture_circle_nor@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:gesture_circle_pre.png">
+            </FileRef>
+            <FileRef
+               location = "group:gesture_circle_pre@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:gesture_introduce.png">
+            </FileRef>
+            <FileRef
+               location = "group:gesture_introduce@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:gesture_introduce@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:gesture_unlock.png">
+            </FileRef>
+            <FileRef
+               location = "group:gesture_unlock@2x.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:GestureTools"
+            name = "GestureTools">
+            <FileRef
+               location = "group:GestureDefine.h">
+            </FileRef>
+            <FileRef
+               location = "group:GestureTool_Private.h">
+            </FileRef>
+            <FileRef
+               location = "group:GestureTool_Private.m">
+            </FileRef>
+            <FileRef
+               location = "group:GestureTool_Public.h">
+            </FileRef>
+            <FileRef
+               location = "group:GestureTool_Public.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:TouchIdClass"
+            name = "TouchIdClass">
+            <FileRef
+               location = "group:TouchIdUnlock.h">
+            </FileRef>
+            <FileRef
+               location = "group:TouchIdUnlock.m">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:GestureSetting"
+         name = "GestureSetting">
+         <Group
+            location = "group:CoreLock"
+            name = "CoreLock">
+            <Group
+               location = "group:FrameWork"
+               name = "FrameWork">
+               <Group
+                  location = "group:CoreArchive"
+                  name = "CoreArchive">
+                  <Group
+                     location = "group:Category"
+                     name = "Category">
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:CoreExtend"
+                  name = "CoreExtend">
+               </Group>
+            </Group>
+            <Group
+               location = "group:Lib"
+               name = "Lib">
+               <Group
+                  location = "group:Category"
+                  name = "Category">
+               </Group>
+               <Group
+                  location = "group:Const"
+                  name = "Const">
+               </Group>
+               <Group
+                  location = "group:Controller"
+                  name = "Controller">
+               </Group>
+               <Group
+                  location = "group:View"
+                  name = "View">
+               </Group>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:GestureIntroduceViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:GestureIntroduceViewController.m">
+         </FileRef>
+         <FileRef
+            location = "group:GestureSettingViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:GestureSettingViewController.m">
+         </FileRef>
+         <FileRef
+            location = "group:GestureSetupViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:GestureSetupViewController.m">
+         </FileRef>
+         <Group
+            location = "group:gestureUnlock"
+            name = "gestureUnlock">
+            <Group
+               location = "group:CoreLock"
+               name = "CoreLock">
+               <Group
+                  location = "group:Lib"
+                  name = "Lib">
+                  <Group
+                     location = "group:Category"
+                     name = "Category">
+                  </Group>
+                  <Group
+                     location = "group:Const"
+                     name = "Const">
+                  </Group>
+                  <Group
+                     location = "group:Controller"
+                     name = "Controller">
+                  </Group>
+                  <Group
+                     location = "group:View"
+                     name = "View">
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:FrameWork"
+               name = "FrameWork">
+               <Group
+                  location = "group:CoreArchive"
+                  name = "CoreArchive">
+                  <Group
+                     location = "group:Category"
+                     name = "Category">
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:CoreExtend"
+                  name = "CoreExtend">
+               </Group>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:gestureUnlock"
+         name = "gestureUnlock">
+         <Group
+            location = "group:CoreLock"
+            name = "CoreLock">
+            <FileRef
+               location = "group:CLLockVC.h">
+            </FileRef>
+            <FileRef
+               location = "group:CLLockVC.m">
+            </FileRef>
+            <FileRef
+               location = "group:CLLockVC.xib">
+            </FileRef>
+            <Group
+               location = "group:Lib"
+               name = "Lib">
+               <Group
+                  location = "group:Category"
+                  name = "Category">
+                  <FileRef
+                     location = "group:CALayer+Anim.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CALayer+Anim.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Const"
+                  name = "Const">
+                  <FileRef
+                     location = "group:CoreLockConst.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CoreLockConst.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Controller"
+                  name = "Controller">
+                  <FileRef
+                     location = "group:CLLockNavVC.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockNavVC.m">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:View"
+                  name = "View">
+                  <FileRef
+                     location = "group:CLLockInfoView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockInfoView.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockItemView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockItemView.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockLabel.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockLabel.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockMainView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockMainView.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CLLockView.m">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:FrameWork"
+            name = "FrameWork">
+            <Group
+               location = "group:CoreArchive"
+               name = "CoreArchive">
+               <Group
+                  location = "group:Category"
+                  name = "Category">
+                  <FileRef
+                     location = "group:NSString+File.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NSString+File.m">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:CoreArchive.h">
+               </FileRef>
+               <FileRef
+                  location = "group:CoreArchive.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:CoreExtend"
+               name = "CoreExtend">
+               <FileRef
+                  location = "group:CoreConst.h">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:SystemDefine.h">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Egou.xcodeproj">
    </FileRef>
