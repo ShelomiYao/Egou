@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class ProductCell: UITableViewCell {
@@ -104,6 +100,8 @@ class ProductCell: UITableViewCell {
     var goods: Goods? {
         didSet {
             goodsImageView.sd_setImageWithURL(NSURL(string: goods!.img!), placeholderImage: UIImage(named: "v2_placeholder_square"))
+//            goodsImageView.image = UIImage(named: goods!.img!)
+
             nameLabel.text = goods?.name
             if goods!.pm_desc == "买一赠一" {
                 giveImageView.hidden = false

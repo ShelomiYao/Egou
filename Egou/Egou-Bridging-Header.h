@@ -11,12 +11,20 @@
 #import "UMSocialWechatHandler.h"
 #import "UMSocialQQHandler.h"
 #import <BmobSDK/Bmob.h>
-//#import <SVProgressHUD/SVProgressHUD.h>
 
 
 #import "DMLoginViewController.h"
 #import "DMRegisterViewController.h"
 #import "ForgotPassWordViewController.h"
+
+
+#pragma mark - 手势
+#import "SystemDefine.h"
+#import "TouchIdUnlock.h"           //指纹解锁
+#import "GestureLockScreen.h"       //手势锁屏
+#import "GestureTool_Public.h"      //手势工具
+#import "GestureSetupViewController.h"
+
 
 //#import "HomeViewController-Swift.h"
 

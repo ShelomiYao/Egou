@@ -118,12 +118,14 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
             cell.mineModel = mines[indexPath.row]
         } else if 1 == indexPath.section {
             cell.mineModel = mines[2]
-        } else {
+        } else if 2 == indexPath.section {
             if indexPath.row == 0 {
                 cell.mineModel = mines[3]
             } else {
                 cell.mineModel = mines[4]
             }
+        }else {
+            cell.mineModel = mines[5]
         }
         
         return cell
@@ -138,7 +140,7 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -146,8 +148,10 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
             return 2
         } else if (1 == section) {
             return 1
-        } else {
+        } else if (2 == section) {
             return 2
+        } else {
+            return 1
         }
     }
     
@@ -169,10 +173,16 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource {
                 let helpVc = HelpViewController()
                 navigationController?.pushViewController(helpVc, animated: true)
             } else if 1 == indexPath.row {
-                let ideaVC = IdeaViewController()
-                ideaVC.mineVC = self
-                navigationController!.pushViewController(ideaVC, animated: true)
+                let gestureSetupVC = GestureSetupViewController()
+                self.navigationController!.navigationBar.hidden = true;
+                navigationController?.pushViewController(gestureSetupVC, animated: true)
+//                self.presentViewController(gestureSetupVC, animated: true, completion: nil)
             }
+        }
+        else if 3 == indexPath.row {
+            let ideaVC = IdeaViewController()
+            ideaVC.mineVC = self
+            navigationController!.pushViewController(ideaVC, animated: true)
         }
     }
 }

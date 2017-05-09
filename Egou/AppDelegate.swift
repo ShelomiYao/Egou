@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setUM()
         
+        bLockEgouApp()
+        
         setAppSubject()
         
         addNotification()
@@ -99,3 +101,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+func applicationDidEnterBackground(application: UIApplication!) {
+    bLockEgouApp()
+}
+
+func applicationWillEnterForeground(application: UIApplication!) {
+    bLockEgouApp()
+}
+
+
+func bLockEgouApp() {
+    let num = NSUserDefaults.standardUserDefaults().objectForKey(KEY_UserDefaults_isGestureLockEnabledOrNotByUser)
+    let isGestureLockEnabledOrNotByUser = num?.boolValue
+    let isHasGestureSavedInNSUserDefaults = GestureTool_Public.isHasGesturePwdStringWhichSavedInNSUserDefaults()
+    
+    if ((isGestureLockEnabledOrNotByUser != nil) && isHasGestureSavedInNSUserDefaults) {
+        GestureLockScreen.sharedInstance().showGestureWindowByType(GestureLockScreenTypeGesturePwdVerify)
+    }
+    
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    NSNumber * num = [defaults objectForKey:KEY_UserDefaults_isGestureLockEnabledOrNotByUser];
+//    BOOL isGestureLockEnabledOrNotByUser = [num boolValue];
+//    BOOL isHasGestureSavedInNSUserDefaults = [GestureTool_Public isHasGesturePwdStringWhichSavedInNSUserDefaults];
+//    if (isGestureLockEnabledOrNotByUser &&
+//        isHasGestureSavedInNSUserDefaults)
+//    {
+//        [[GestureLockScreen sharedInstance] showGestureWindowByType: GestureLockScreenTypeGesturePwdVerify];
+//    }
+
+}
