@@ -2,7 +2,7 @@
 //  NSString+File.h
 //  CoreCategory
 //
-//  Created by 成林 on 15/4/6.
+//  Created by ShelomiYao on 15/4/6.
 //  Copyright (c) 2015年 沐汐. All rights reserved.
 //
 

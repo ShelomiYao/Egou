@@ -54,6 +54,7 @@ UITableViewDelegate>
      */
     _isTouchIdAllowBySystem = [[TouchIdUnlock sharedInstance] isTouchIdEnabledOrNotBySystem];
     
+    
     UIView * mainView = [[UIView alloc] initWithFrame:m_mainContentViewFrame];
     
     
@@ -76,8 +77,6 @@ UITableViewDelegate>
     [super viewDidLoad];
     
     self.title = @"手势";
-    
-    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [self showCustomNavigationLeftButtonWithTitle:nil
                                             image:[UIImage imageNamed:@"nav_btn_back_nor"]

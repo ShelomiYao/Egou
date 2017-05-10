@@ -193,39 +193,39 @@
 		041A2EAE1EB73A0700C3594A /* ForgotPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */; };
 		041A2EB01EB73A0700C3594A /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EA81EB73A0600C3594A /* UITextField+Shake.m */; };
 		041A2EB41EB7518400C3594A /* UserSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EB31EB7518400C3594A /* UserSingle.swift */; };
-		041B22B31EC22D110063A31F /* GestureBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22541EC22D110063A31F /* GestureBaseViewController.m */; };
-		041B22B41EC22D110063A31F /* DrawPatternLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22561EC22D110063A31F /* DrawPatternLockView.m */; };
-		041B22B51EC22D110063A31F /* DrawPatternLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22581EC22D110063A31F /* DrawPatternLockViewController.m */; };
-		041B22B61EC22D110063A31F /* GestureInternalViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B225A1EC22D110063A31F /* GestureInternalViews.m */; };
-		041B22B71EC22D110063A31F /* GestureLockScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B225C1EC22D110063A31F /* GestureLockScreen.m */; };
-		041B22B81EC22D110063A31F /* gesture_circle_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B225E1EC22D110063A31F /* gesture_circle_nor.png */; };
-		041B22B91EC22D110063A31F /* gesture_circle_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B225F1EC22D110063A31F /* gesture_circle_nor@2x.png */; };
-		041B22BA1EC22D110063A31F /* gesture_circle_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B22601EC22D110063A31F /* gesture_circle_pre.png */; };
-		041B22BB1EC22D110063A31F /* gesture_circle_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B22611EC22D110063A31F /* gesture_circle_pre@2x.png */; };
-		041B22BC1EC22D110063A31F /* gesture_introduce.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B22621EC22D110063A31F /* gesture_introduce.png */; };
-		041B22BD1EC22D110063A31F /* gesture_introduce@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B22631EC22D110063A31F /* gesture_introduce@2x.png */; };
-		041B22BE1EC22D110063A31F /* gesture_introduce@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B22641EC22D110063A31F /* gesture_introduce@3x.png */; };
-		041B22BF1EC22D110063A31F /* gesture_unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B22651EC22D110063A31F /* gesture_unlock.png */; };
-		041B22C01EC22D110063A31F /* gesture_unlock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041B22661EC22D110063A31F /* gesture_unlock@2x.png */; };
-		041B22C11EC22D110063A31F /* GestureTool_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B226A1EC22D110063A31F /* GestureTool_Private.m */; };
-		041B22C21EC22D110063A31F /* GestureTool_Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B226C1EC22D110063A31F /* GestureTool_Public.m */; };
-		041B22C31EC22D110063A31F /* TouchIdUnlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B226F1EC22D110063A31F /* TouchIdUnlock.m */; };
-		041B22C41EC22D110063A31F /* GestureIntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B227D1EC22D110063A31F /* GestureIntroduceViewController.m */; };
-		041B22C51EC22D110063A31F /* GestureSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B227F1EC22D110063A31F /* GestureSettingViewController.m */; };
-		041B22C61EC22D110063A31F /* GestureSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22811EC22D110063A31F /* GestureSetupViewController.m */; };
-		041B22C71EC22D110063A31F /* CLLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B228F1EC22D110063A31F /* CLLockVC.m */; };
-		041B22C81EC22D110063A31F /* CLLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041B22901EC22D110063A31F /* CLLockVC.xib */; };
-		041B22C91EC22D110063A31F /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22921EC22D110063A31F /* CALayer+Anim.m */; };
-		041B22CA1EC22D110063A31F /* CoreLockConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22951EC22D110063A31F /* CoreLockConst.m */; };
-		041B22CB1EC22D110063A31F /* CLLockNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22981EC22D110063A31F /* CLLockNavVC.m */; };
-		041B22CC1EC22D110063A31F /* CLLockInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B229B1EC22D110063A31F /* CLLockInfoView.m */; };
-		041B22CD1EC22D110063A31F /* CLLockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B229D1EC22D110063A31F /* CLLockItemView.m */; };
-		041B22CE1EC22D110063A31F /* CLLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B229F1EC22D110063A31F /* CLLockLabel.m */; };
-		041B22CF1EC22D110063A31F /* CLLockMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22A11EC22D110063A31F /* CLLockMainView.m */; };
-		041B22D01EC22D110063A31F /* CLLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22A31EC22D110063A31F /* CLLockView.m */; };
-		041B22D11EC22D110063A31F /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22A81EC22D110063A31F /* NSString+File.m */; };
-		041B22D21EC22D110063A31F /* CoreArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B22AB1EC22D110063A31F /* CoreArchive.m */; };
 		04764B8A1EB86F8500B37825 /* MineEmptyViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04764B891EB86F8500B37825 /* MineEmptyViewControll.swift */; };
+		04B23B8C1EC30C0C007BD619 /* GestureBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B391EC30C0C007BD619 /* GestureBaseViewController.m */; };
+		04B23B8D1EC30C0C007BD619 /* DrawPatternLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B3D1EC30C0C007BD619 /* DrawPatternLockView.m */; };
+		04B23B8E1EC30C0C007BD619 /* DrawPatternLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B3F1EC30C0C007BD619 /* DrawPatternLockViewController.m */; };
+		04B23B8F1EC30C0C007BD619 /* GestureInternalViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B411EC30C0C007BD619 /* GestureInternalViews.m */; };
+		04B23B901EC30C0C007BD619 /* GestureLockScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B431EC30C0C007BD619 /* GestureLockScreen.m */; };
+		04B23B911EC30C0C007BD619 /* gesture_circle_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B451EC30C0C007BD619 /* gesture_circle_nor.png */; };
+		04B23B921EC30C0C007BD619 /* gesture_circle_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B461EC30C0C007BD619 /* gesture_circle_nor@2x.png */; };
+		04B23B931EC30C0C007BD619 /* gesture_circle_pre.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B471EC30C0C007BD619 /* gesture_circle_pre.png */; };
+		04B23B941EC30C0C007BD619 /* gesture_circle_pre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B481EC30C0C007BD619 /* gesture_circle_pre@2x.png */; };
+		04B23B951EC30C0C007BD619 /* gesture_introduce.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B491EC30C0C007BD619 /* gesture_introduce.png */; };
+		04B23B961EC30C0C007BD619 /* gesture_introduce@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B4A1EC30C0C007BD619 /* gesture_introduce@2x.png */; };
+		04B23B971EC30C0C007BD619 /* gesture_introduce@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B4B1EC30C0C007BD619 /* gesture_introduce@3x.png */; };
+		04B23B981EC30C0C007BD619 /* gesture_unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B4C1EC30C0C007BD619 /* gesture_unlock.png */; };
+		04B23B991EC30C0C007BD619 /* gesture_unlock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B4D1EC30C0C007BD619 /* gesture_unlock@2x.png */; };
+		04B23B9A1EC30C0C007BD619 /* GestureTool_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B511EC30C0C007BD619 /* GestureTool_Private.m */; };
+		04B23B9B1EC30C0C007BD619 /* GestureTool_Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B531EC30C0C007BD619 /* GestureTool_Public.m */; };
+		04B23B9C1EC30C0C007BD619 /* TouchIdUnlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B561EC30C0C007BD619 /* TouchIdUnlock.m */; };
+		04B23B9D1EC30C0C007BD619 /* CLLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B5A1EC30C0C007BD619 /* CLLockVC.m */; };
+		04B23B9E1EC30C0C007BD619 /* CLLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B23B5B1EC30C0C007BD619 /* CLLockVC.xib */; };
+		04B23B9F1EC30C0C007BD619 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B601EC30C0C007BD619 /* NSString+File.m */; };
+		04B23BA01EC30C0C007BD619 /* CoreArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B621EC30C0C007BD619 /* CoreArchive.m */; };
+		04B23BA11EC30C0C007BD619 /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B681EC30C0C007BD619 /* CALayer+Anim.m */; };
+		04B23BA21EC30C0C007BD619 /* CoreLockConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B6B1EC30C0C007BD619 /* CoreLockConst.m */; };
+		04B23BA31EC30C0C007BD619 /* CLLockNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B6E1EC30C0C007BD619 /* CLLockNavVC.m */; };
+		04B23BA41EC30C0C007BD619 /* CLLockInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B711EC30C0C007BD619 /* CLLockInfoView.m */; };
+		04B23BA51EC30C0C007BD619 /* CLLockItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B731EC30C0C007BD619 /* CLLockItemView.m */; };
+		04B23BA61EC30C0C007BD619 /* CLLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B751EC30C0C007BD619 /* CLLockLabel.m */; };
+		04B23BA71EC30C0C007BD619 /* CLLockMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B771EC30C0C007BD619 /* CLLockMainView.m */; };
+		04B23BA81EC30C0C007BD619 /* CLLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B791EC30C0C007BD619 /* CLLockView.m */; };
+		04B23BA91EC30C0C007BD619 /* GestureIntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B7B1EC30C0C007BD619 /* GestureIntroduceViewController.m */; };
+		04B23BAA1EC30C0C007BD619 /* GestureSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B7D1EC30C0C007BD619 /* GestureSettingViewController.m */; };
+		04B23BAB1EC30C0C007BD619 /* GestureSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B7F1EC30C0C007BD619 /* GestureSetupViewController.m */; };
 		173966D05D1CD356D49D6A2A /* Pods_Egou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9AF2BB06E86E83238DE125 /* Pods_Egou.framework */; };
 		B34711651C508017000FE63E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711641C508017000FE63E /* Security.framework */; };
 		B34711671C508041000FE63E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711661C508041000FE63E /* libiconv.tbd */; };
@@ -512,64 +512,64 @@
 		041A2EA71EB73A0600C3594A /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
 		041A2EA81EB73A0600C3594A /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
 		041A2EB31EB7518400C3594A /* UserSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSingle.swift; sourceTree = "<group>"; };
-		041B22531EC22D110063A31F /* GestureBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureBaseViewController.h; sourceTree = "<group>"; };
-		041B22541EC22D110063A31F /* GestureBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureBaseViewController.m; sourceTree = "<group>"; };
-		041B22551EC22D110063A31F /* DrawPatternLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPatternLockView.h; sourceTree = "<group>"; };
-		041B22561EC22D110063A31F /* DrawPatternLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPatternLockView.m; sourceTree = "<group>"; };
-		041B22571EC22D110063A31F /* DrawPatternLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPatternLockViewController.h; sourceTree = "<group>"; };
-		041B22581EC22D110063A31F /* DrawPatternLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPatternLockViewController.m; sourceTree = "<group>"; };
-		041B22591EC22D110063A31F /* GestureInternalViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureInternalViews.h; sourceTree = "<group>"; };
-		041B225A1EC22D110063A31F /* GestureInternalViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureInternalViews.m; sourceTree = "<group>"; };
-		041B225B1EC22D110063A31F /* GestureLockScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureLockScreen.h; sourceTree = "<group>"; };
-		041B225C1EC22D110063A31F /* GestureLockScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureLockScreen.m; sourceTree = "<group>"; };
-		041B225E1EC22D110063A31F /* gesture_circle_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_circle_nor.png; sourceTree = "<group>"; };
-		041B225F1EC22D110063A31F /* gesture_circle_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_circle_nor@2x.png"; sourceTree = "<group>"; };
-		041B22601EC22D110063A31F /* gesture_circle_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_circle_pre.png; sourceTree = "<group>"; };
-		041B22611EC22D110063A31F /* gesture_circle_pre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_circle_pre@2x.png"; sourceTree = "<group>"; };
-		041B22621EC22D110063A31F /* gesture_introduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_introduce.png; sourceTree = "<group>"; };
-		041B22631EC22D110063A31F /* gesture_introduce@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_introduce@2x.png"; sourceTree = "<group>"; };
-		041B22641EC22D110063A31F /* gesture_introduce@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_introduce@3x.png"; sourceTree = "<group>"; };
-		041B22651EC22D110063A31F /* gesture_unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_unlock.png; sourceTree = "<group>"; };
-		041B22661EC22D110063A31F /* gesture_unlock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_unlock@2x.png"; sourceTree = "<group>"; };
-		041B22681EC22D110063A31F /* GestureDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureDefine.h; sourceTree = "<group>"; };
-		041B22691EC22D110063A31F /* GestureTool_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureTool_Private.h; sourceTree = "<group>"; };
-		041B226A1EC22D110063A31F /* GestureTool_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureTool_Private.m; sourceTree = "<group>"; };
-		041B226B1EC22D110063A31F /* GestureTool_Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureTool_Public.h; sourceTree = "<group>"; };
-		041B226C1EC22D110063A31F /* GestureTool_Public.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureTool_Public.m; sourceTree = "<group>"; };
-		041B226E1EC22D110063A31F /* TouchIdUnlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIdUnlock.h; sourceTree = "<group>"; };
-		041B226F1EC22D110063A31F /* TouchIdUnlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIdUnlock.m; sourceTree = "<group>"; };
-		041B227C1EC22D110063A31F /* GestureIntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureIntroduceViewController.h; sourceTree = "<group>"; };
-		041B227D1EC22D110063A31F /* GestureIntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureIntroduceViewController.m; sourceTree = "<group>"; };
-		041B227E1EC22D110063A31F /* GestureSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureSettingViewController.h; sourceTree = "<group>"; };
-		041B227F1EC22D110063A31F /* GestureSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureSettingViewController.m; sourceTree = "<group>"; };
-		041B22801EC22D110063A31F /* GestureSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureSetupViewController.h; sourceTree = "<group>"; };
-		041B22811EC22D110063A31F /* GestureSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureSetupViewController.m; sourceTree = "<group>"; };
-		041B228E1EC22D110063A31F /* CLLockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockVC.h; sourceTree = "<group>"; };
-		041B228F1EC22D110063A31F /* CLLockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockVC.m; sourceTree = "<group>"; };
-		041B22901EC22D110063A31F /* CLLockVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLLockVC.xib; sourceTree = "<group>"; };
-		041B22911EC22D110063A31F /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
-		041B22921EC22D110063A31F /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
-		041B22941EC22D110063A31F /* CoreLockConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLockConst.h; sourceTree = "<group>"; };
-		041B22951EC22D110063A31F /* CoreLockConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLockConst.m; sourceTree = "<group>"; };
-		041B22971EC22D110063A31F /* CLLockNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockNavVC.h; sourceTree = "<group>"; };
-		041B22981EC22D110063A31F /* CLLockNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockNavVC.m; sourceTree = "<group>"; };
-		041B229A1EC22D110063A31F /* CLLockInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockInfoView.h; sourceTree = "<group>"; };
-		041B229B1EC22D110063A31F /* CLLockInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockInfoView.m; sourceTree = "<group>"; };
-		041B229C1EC22D110063A31F /* CLLockItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockItemView.h; sourceTree = "<group>"; };
-		041B229D1EC22D110063A31F /* CLLockItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockItemView.m; sourceTree = "<group>"; };
-		041B229E1EC22D110063A31F /* CLLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockLabel.h; sourceTree = "<group>"; };
-		041B229F1EC22D110063A31F /* CLLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockLabel.m; sourceTree = "<group>"; };
-		041B22A01EC22D110063A31F /* CLLockMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockMainView.h; sourceTree = "<group>"; };
-		041B22A11EC22D110063A31F /* CLLockMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockMainView.m; sourceTree = "<group>"; };
-		041B22A21EC22D110063A31F /* CLLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockView.h; sourceTree = "<group>"; };
-		041B22A31EC22D110063A31F /* CLLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockView.m; sourceTree = "<group>"; };
-		041B22A71EC22D110063A31F /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
-		041B22A81EC22D110063A31F /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
-		041B22AA1EC22D110063A31F /* CoreArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreArchive.h; sourceTree = "<group>"; };
-		041B22AB1EC22D110063A31F /* CoreArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreArchive.m; sourceTree = "<group>"; };
-		041B22AD1EC22D110063A31F /* CoreConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreConst.h; sourceTree = "<group>"; };
-		041B22B11EC22D110063A31F /* SystemDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemDefine.h; sourceTree = "<group>"; };
 		04764B891EB86F8500B37825 /* MineEmptyViewControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineEmptyViewControll.swift; sourceTree = "<group>"; };
+		04B23B381EC30C0C007BD619 /* GestureBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureBaseViewController.h; sourceTree = "<group>"; };
+		04B23B391EC30C0C007BD619 /* GestureBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureBaseViewController.m; sourceTree = "<group>"; };
+		04B23B3C1EC30C0C007BD619 /* DrawPatternLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPatternLockView.h; sourceTree = "<group>"; };
+		04B23B3D1EC30C0C007BD619 /* DrawPatternLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPatternLockView.m; sourceTree = "<group>"; };
+		04B23B3E1EC30C0C007BD619 /* DrawPatternLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPatternLockViewController.h; sourceTree = "<group>"; };
+		04B23B3F1EC30C0C007BD619 /* DrawPatternLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPatternLockViewController.m; sourceTree = "<group>"; };
+		04B23B401EC30C0C007BD619 /* GestureInternalViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureInternalViews.h; sourceTree = "<group>"; };
+		04B23B411EC30C0C007BD619 /* GestureInternalViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureInternalViews.m; sourceTree = "<group>"; };
+		04B23B421EC30C0C007BD619 /* GestureLockScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureLockScreen.h; sourceTree = "<group>"; };
+		04B23B431EC30C0C007BD619 /* GestureLockScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureLockScreen.m; sourceTree = "<group>"; };
+		04B23B451EC30C0C007BD619 /* gesture_circle_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_circle_nor.png; sourceTree = "<group>"; };
+		04B23B461EC30C0C007BD619 /* gesture_circle_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_circle_nor@2x.png"; sourceTree = "<group>"; };
+		04B23B471EC30C0C007BD619 /* gesture_circle_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_circle_pre.png; sourceTree = "<group>"; };
+		04B23B481EC30C0C007BD619 /* gesture_circle_pre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_circle_pre@2x.png"; sourceTree = "<group>"; };
+		04B23B491EC30C0C007BD619 /* gesture_introduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_introduce.png; sourceTree = "<group>"; };
+		04B23B4A1EC30C0C007BD619 /* gesture_introduce@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_introduce@2x.png"; sourceTree = "<group>"; };
+		04B23B4B1EC30C0C007BD619 /* gesture_introduce@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_introduce@3x.png"; sourceTree = "<group>"; };
+		04B23B4C1EC30C0C007BD619 /* gesture_unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_unlock.png; sourceTree = "<group>"; };
+		04B23B4D1EC30C0C007BD619 /* gesture_unlock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_unlock@2x.png"; sourceTree = "<group>"; };
+		04B23B4F1EC30C0C007BD619 /* GestureDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureDefine.h; sourceTree = "<group>"; };
+		04B23B501EC30C0C007BD619 /* GestureTool_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureTool_Private.h; sourceTree = "<group>"; };
+		04B23B511EC30C0C007BD619 /* GestureTool_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureTool_Private.m; sourceTree = "<group>"; };
+		04B23B521EC30C0C007BD619 /* GestureTool_Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureTool_Public.h; sourceTree = "<group>"; };
+		04B23B531EC30C0C007BD619 /* GestureTool_Public.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureTool_Public.m; sourceTree = "<group>"; };
+		04B23B551EC30C0C007BD619 /* TouchIdUnlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIdUnlock.h; sourceTree = "<group>"; };
+		04B23B561EC30C0C007BD619 /* TouchIdUnlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIdUnlock.m; sourceTree = "<group>"; };
+		04B23B591EC30C0C007BD619 /* CLLockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockVC.h; sourceTree = "<group>"; };
+		04B23B5A1EC30C0C007BD619 /* CLLockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockVC.m; sourceTree = "<group>"; };
+		04B23B5B1EC30C0C007BD619 /* CLLockVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLLockVC.xib; sourceTree = "<group>"; };
+		04B23B5F1EC30C0C007BD619 /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
+		04B23B601EC30C0C007BD619 /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
+		04B23B611EC30C0C007BD619 /* CoreArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreArchive.h; sourceTree = "<group>"; };
+		04B23B621EC30C0C007BD619 /* CoreArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreArchive.m; sourceTree = "<group>"; };
+		04B23B641EC30C0C007BD619 /* CoreConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreConst.h; sourceTree = "<group>"; };
+		04B23B671EC30C0C007BD619 /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		04B23B681EC30C0C007BD619 /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		04B23B6A1EC30C0C007BD619 /* CoreLockConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLockConst.h; sourceTree = "<group>"; };
+		04B23B6B1EC30C0C007BD619 /* CoreLockConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLockConst.m; sourceTree = "<group>"; };
+		04B23B6D1EC30C0C007BD619 /* CLLockNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockNavVC.h; sourceTree = "<group>"; };
+		04B23B6E1EC30C0C007BD619 /* CLLockNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockNavVC.m; sourceTree = "<group>"; };
+		04B23B701EC30C0C007BD619 /* CLLockInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockInfoView.h; sourceTree = "<group>"; };
+		04B23B711EC30C0C007BD619 /* CLLockInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockInfoView.m; sourceTree = "<group>"; };
+		04B23B721EC30C0C007BD619 /* CLLockItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockItemView.h; sourceTree = "<group>"; };
+		04B23B731EC30C0C007BD619 /* CLLockItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockItemView.m; sourceTree = "<group>"; };
+		04B23B741EC30C0C007BD619 /* CLLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockLabel.h; sourceTree = "<group>"; };
+		04B23B751EC30C0C007BD619 /* CLLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockLabel.m; sourceTree = "<group>"; };
+		04B23B761EC30C0C007BD619 /* CLLockMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockMainView.h; sourceTree = "<group>"; };
+		04B23B771EC30C0C007BD619 /* CLLockMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockMainView.m; sourceTree = "<group>"; };
+		04B23B781EC30C0C007BD619 /* CLLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLockView.h; sourceTree = "<group>"; };
+		04B23B791EC30C0C007BD619 /* CLLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLockView.m; sourceTree = "<group>"; };
+		04B23B7A1EC30C0C007BD619 /* GestureIntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureIntroduceViewController.h; sourceTree = "<group>"; };
+		04B23B7B1EC30C0C007BD619 /* GestureIntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureIntroduceViewController.m; sourceTree = "<group>"; };
+		04B23B7C1EC30C0C007BD619 /* GestureSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureSettingViewController.h; sourceTree = "<group>"; };
+		04B23B7D1EC30C0C007BD619 /* GestureSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureSettingViewController.m; sourceTree = "<group>"; };
+		04B23B7E1EC30C0C007BD619 /* GestureSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureSetupViewController.h; sourceTree = "<group>"; };
+		04B23B7F1EC30C0C007BD619 /* GestureSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureSetupViewController.m; sourceTree = "<group>"; };
+		04B23B8B1EC30C0C007BD619 /* SystemDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemDefine.h; sourceTree = "<group>"; };
 		106E1BAB244C5E200BC6988F /* Pods-Egou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egou.release.xcconfig"; path = "Pods/Target Support Files/Pods-Egou/Pods-Egou.release.xcconfig"; sourceTree = "<group>"; };
 		3883B53AB34A62AD75F02FD9 /* Pods-Egou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Egou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Egou/Pods-Egou.debug.xcconfig"; sourceTree = "<group>"; };
 		4C9AF2BB06E86E83238DE125 /* Pods_Egou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Egou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -662,7 +662,7 @@
 		0405A7EB1EABCE32001C897B /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				041B22B21EC22D110063A31F /* GestureLockAndTouchID */,
+				04B23B371EC30C0C007BD619 /* GestureLockAndTouchID */,
 				041A2E921EB73A0600C3594A /* LoginView */,
 				0405A7EC1EABCE32001C897B /* Extension */,
 				0405A7F21EABCE32001C897B /* FreshReserve */,
@@ -1196,372 +1196,284 @@
 			path = mm_normal.imageset;
 			sourceTree = "<group>";
 		};
-		041B225D1EC22D110063A31F /* GestureClass */ = {
+		04B23B371EC30C0C007BD619 /* GestureLockAndTouchID */ = {
 			isa = PBXGroup;
 			children = (
-				041B22551EC22D110063A31F /* DrawPatternLockView.h */,
-				041B22561EC22D110063A31F /* DrawPatternLockView.m */,
-				041B22571EC22D110063A31F /* DrawPatternLockViewController.h */,
-				041B22581EC22D110063A31F /* DrawPatternLockViewController.m */,
-				041B22591EC22D110063A31F /* GestureInternalViews.h */,
-				041B225A1EC22D110063A31F /* GestureInternalViews.m */,
-				041B225B1EC22D110063A31F /* GestureLockScreen.h */,
-				041B225C1EC22D110063A31F /* GestureLockScreen.m */,
+				04B23B381EC30C0C007BD619 /* GestureBaseViewController.h */,
+				04B23B391EC30C0C007BD619 /* GestureBaseViewController.m */,
+				04B23B3A1EC30C0C007BD619 /* GesturePwd */,
+				04B23B571EC30C0C007BD619 /* GestureSetting */,
+				04B23B8B1EC30C0C007BD619 /* SystemDefine.h */,
 			);
-			path = GestureClass;
+			path = GestureLockAndTouchID;
 			sourceTree = "<group>";
 		};
-		041B22671EC22D110063A31F /* GestureImages */ = {
+		04B23B3A1EC30C0C007BD619 /* GesturePwd */ = {
 			isa = PBXGroup;
 			children = (
-				041B225E1EC22D110063A31F /* gesture_circle_nor.png */,
-				041B225F1EC22D110063A31F /* gesture_circle_nor@2x.png */,
-				041B22601EC22D110063A31F /* gesture_circle_pre.png */,
-				041B22611EC22D110063A31F /* gesture_circle_pre@2x.png */,
-				041B22621EC22D110063A31F /* gesture_introduce.png */,
-				041B22631EC22D110063A31F /* gesture_introduce@2x.png */,
-				041B22641EC22D110063A31F /* gesture_introduce@3x.png */,
-				041B22651EC22D110063A31F /* gesture_unlock.png */,
-				041B22661EC22D110063A31F /* gesture_unlock@2x.png */,
-			);
-			path = GestureImages;
-			sourceTree = "<group>";
-		};
-		041B226D1EC22D110063A31F /* GestureTools */ = {
-			isa = PBXGroup;
-			children = (
-				041B22681EC22D110063A31F /* GestureDefine.h */,
-				041B22691EC22D110063A31F /* GestureTool_Private.h */,
-				041B226A1EC22D110063A31F /* GestureTool_Private.m */,
-				041B226B1EC22D110063A31F /* GestureTool_Public.h */,
-				041B226C1EC22D110063A31F /* GestureTool_Public.m */,
-			);
-			path = GestureTools;
-			sourceTree = "<group>";
-		};
-		041B22701EC22D110063A31F /* TouchIdClass */ = {
-			isa = PBXGroup;
-			children = (
-				041B226E1EC22D110063A31F /* TouchIdUnlock.h */,
-				041B226F1EC22D110063A31F /* TouchIdUnlock.m */,
-			);
-			path = TouchIdClass;
-			sourceTree = "<group>";
-		};
-		041B22711EC22D110063A31F /* GesturePwd */ = {
-			isa = PBXGroup;
-			children = (
-				041B225D1EC22D110063A31F /* GestureClass */,
-				041B22671EC22D110063A31F /* GestureImages */,
-				041B226D1EC22D110063A31F /* GestureTools */,
-				041B22701EC22D110063A31F /* TouchIdClass */,
+				04B23B3B1EC30C0C007BD619 /* GestureClass */,
+				04B23B441EC30C0C007BD619 /* GestureImages */,
+				04B23B4E1EC30C0C007BD619 /* GestureTools */,
+				04B23B541EC30C0C007BD619 /* TouchIdClass */,
 			);
 			path = GesturePwd;
 			sourceTree = "<group>";
 		};
-		041B22721EC22D110063A31F /* Category */ = {
+		04B23B3B1EC30C0C007BD619 /* GestureClass */ = {
 			isa = PBXGroup;
 			children = (
+				04B23B3C1EC30C0C007BD619 /* DrawPatternLockView.h */,
+				04B23B3D1EC30C0C007BD619 /* DrawPatternLockView.m */,
+				04B23B3E1EC30C0C007BD619 /* DrawPatternLockViewController.h */,
+				04B23B3F1EC30C0C007BD619 /* DrawPatternLockViewController.m */,
+				04B23B401EC30C0C007BD619 /* GestureInternalViews.h */,
+				04B23B411EC30C0C007BD619 /* GestureInternalViews.m */,
+				04B23B421EC30C0C007BD619 /* GestureLockScreen.h */,
+				04B23B431EC30C0C007BD619 /* GestureLockScreen.m */,
 			);
-			path = Category;
+			path = GestureClass;
 			sourceTree = "<group>";
 		};
-		041B22731EC22D110063A31F /* CoreArchive */ = {
+		04B23B441EC30C0C007BD619 /* GestureImages */ = {
 			isa = PBXGroup;
 			children = (
-				041B22721EC22D110063A31F /* Category */,
+				04B23B451EC30C0C007BD619 /* gesture_circle_nor.png */,
+				04B23B461EC30C0C007BD619 /* gesture_circle_nor@2x.png */,
+				04B23B471EC30C0C007BD619 /* gesture_circle_pre.png */,
+				04B23B481EC30C0C007BD619 /* gesture_circle_pre@2x.png */,
+				04B23B491EC30C0C007BD619 /* gesture_introduce.png */,
+				04B23B4A1EC30C0C007BD619 /* gesture_introduce@2x.png */,
+				04B23B4B1EC30C0C007BD619 /* gesture_introduce@3x.png */,
+				04B23B4C1EC30C0C007BD619 /* gesture_unlock.png */,
+				04B23B4D1EC30C0C007BD619 /* gesture_unlock@2x.png */,
 			);
-			path = CoreArchive;
+			path = GestureImages;
 			sourceTree = "<group>";
 		};
-		041B22741EC22D110063A31F /* CoreExtend */ = {
+		04B23B4E1EC30C0C007BD619 /* GestureTools */ = {
 			isa = PBXGroup;
 			children = (
+				04B23B4F1EC30C0C007BD619 /* GestureDefine.h */,
+				04B23B501EC30C0C007BD619 /* GestureTool_Private.h */,
+				04B23B511EC30C0C007BD619 /* GestureTool_Private.m */,
+				04B23B521EC30C0C007BD619 /* GestureTool_Public.h */,
+				04B23B531EC30C0C007BD619 /* GestureTool_Public.m */,
 			);
-			path = CoreExtend;
+			path = GestureTools;
 			sourceTree = "<group>";
 		};
-		041B22751EC22D110063A31F /* FrameWork */ = {
+		04B23B541EC30C0C007BD619 /* TouchIdClass */ = {
 			isa = PBXGroup;
 			children = (
-				041B22731EC22D110063A31F /* CoreArchive */,
-				041B22741EC22D110063A31F /* CoreExtend */,
+				04B23B551EC30C0C007BD619 /* TouchIdUnlock.h */,
+				04B23B561EC30C0C007BD619 /* TouchIdUnlock.m */,
 			);
-			path = FrameWork;
+			path = TouchIdClass;
 			sourceTree = "<group>";
 		};
-		041B22761EC22D110063A31F /* Category */ = {
+		04B23B571EC30C0C007BD619 /* GestureSetting */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		041B22771EC22D110063A31F /* Const */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Const;
-			sourceTree = "<group>";
-		};
-		041B22781EC22D110063A31F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		041B22791EC22D110063A31F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		041B227A1EC22D110063A31F /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				041B22761EC22D110063A31F /* Category */,
-				041B22771EC22D110063A31F /* Const */,
-				041B22781EC22D110063A31F /* Controller */,
-				041B22791EC22D110063A31F /* View */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		041B227B1EC22D110063A31F /* CoreLock */ = {
-			isa = PBXGroup;
-			children = (
-				041B22751EC22D110063A31F /* FrameWork */,
-				041B227A1EC22D110063A31F /* Lib */,
-			);
-			path = CoreLock;
-			sourceTree = "<group>";
-		};
-		041B22821EC22D110063A31F /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		041B22831EC22D110063A31F /* Const */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Const;
-			sourceTree = "<group>";
-		};
-		041B22841EC22D110063A31F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		041B22851EC22D110063A31F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		041B22861EC22D110063A31F /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				041B22821EC22D110063A31F /* Category */,
-				041B22831EC22D110063A31F /* Const */,
-				041B22841EC22D110063A31F /* Controller */,
-				041B22851EC22D110063A31F /* View */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		041B22871EC22D110063A31F /* CoreLock */ = {
-			isa = PBXGroup;
-			children = (
-				041B22861EC22D110063A31F /* Lib */,
-			);
-			path = CoreLock;
-			sourceTree = "<group>";
-		};
-		041B22881EC22D110063A31F /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		041B22891EC22D110063A31F /* CoreArchive */ = {
-			isa = PBXGroup;
-			children = (
-				041B22881EC22D110063A31F /* Category */,
-			);
-			path = CoreArchive;
-			sourceTree = "<group>";
-		};
-		041B228A1EC22D110063A31F /* CoreExtend */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreExtend;
-			sourceTree = "<group>";
-		};
-		041B228B1EC22D110063A31F /* FrameWork */ = {
-			isa = PBXGroup;
-			children = (
-				041B22891EC22D110063A31F /* CoreArchive */,
-				041B228A1EC22D110063A31F /* CoreExtend */,
-			);
-			path = FrameWork;
-			sourceTree = "<group>";
-		};
-		041B228C1EC22D110063A31F /* gestureUnlock */ = {
-			isa = PBXGroup;
-			children = (
-				041B22871EC22D110063A31F /* CoreLock */,
-				041B228B1EC22D110063A31F /* FrameWork */,
-			);
-			path = gestureUnlock;
-			sourceTree = "<group>";
-		};
-		041B228D1EC22D110063A31F /* GestureSetting */ = {
-			isa = PBXGroup;
-			children = (
-				041B227B1EC22D110063A31F /* CoreLock */,
-				041B227C1EC22D110063A31F /* GestureIntroduceViewController.h */,
-				041B227D1EC22D110063A31F /* GestureIntroduceViewController.m */,
-				041B227E1EC22D110063A31F /* GestureSettingViewController.h */,
-				041B227F1EC22D110063A31F /* GestureSettingViewController.m */,
-				041B22801EC22D110063A31F /* GestureSetupViewController.h */,
-				041B22811EC22D110063A31F /* GestureSetupViewController.m */,
-				041B228C1EC22D110063A31F /* gestureUnlock */,
+				04B23B581EC30C0C007BD619 /* CoreLock */,
+				04B23B7A1EC30C0C007BD619 /* GestureIntroduceViewController.h */,
+				04B23B7B1EC30C0C007BD619 /* GestureIntroduceViewController.m */,
+				04B23B7C1EC30C0C007BD619 /* GestureSettingViewController.h */,
+				04B23B7D1EC30C0C007BD619 /* GestureSettingViewController.m */,
+				04B23B7E1EC30C0C007BD619 /* GestureSetupViewController.h */,
+				04B23B7F1EC30C0C007BD619 /* GestureSetupViewController.m */,
+				04B23B801EC30C0C007BD619 /* gestureUnlock */,
 			);
 			path = GestureSetting;
 			sourceTree = "<group>";
 		};
-		041B22931EC22D110063A31F /* Category */ = {
+		04B23B581EC30C0C007BD619 /* CoreLock */ = {
 			isa = PBXGroup;
 			children = (
-				041B22911EC22D110063A31F /* CALayer+Anim.h */,
-				041B22921EC22D110063A31F /* CALayer+Anim.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		041B22961EC22D110063A31F /* Const */ = {
-			isa = PBXGroup;
-			children = (
-				041B22941EC22D110063A31F /* CoreLockConst.h */,
-				041B22951EC22D110063A31F /* CoreLockConst.m */,
-			);
-			path = Const;
-			sourceTree = "<group>";
-		};
-		041B22991EC22D110063A31F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				041B22971EC22D110063A31F /* CLLockNavVC.h */,
-				041B22981EC22D110063A31F /* CLLockNavVC.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		041B22A41EC22D110063A31F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				041B229A1EC22D110063A31F /* CLLockInfoView.h */,
-				041B229B1EC22D110063A31F /* CLLockInfoView.m */,
-				041B229C1EC22D110063A31F /* CLLockItemView.h */,
-				041B229D1EC22D110063A31F /* CLLockItemView.m */,
-				041B229E1EC22D110063A31F /* CLLockLabel.h */,
-				041B229F1EC22D110063A31F /* CLLockLabel.m */,
-				041B22A01EC22D110063A31F /* CLLockMainView.h */,
-				041B22A11EC22D110063A31F /* CLLockMainView.m */,
-				041B22A21EC22D110063A31F /* CLLockView.h */,
-				041B22A31EC22D110063A31F /* CLLockView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		041B22A51EC22D110063A31F /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				041B22931EC22D110063A31F /* Category */,
-				041B22961EC22D110063A31F /* Const */,
-				041B22991EC22D110063A31F /* Controller */,
-				041B22A41EC22D110063A31F /* View */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		041B22A61EC22D110063A31F /* CoreLock */ = {
-			isa = PBXGroup;
-			children = (
-				041B228E1EC22D110063A31F /* CLLockVC.h */,
-				041B228F1EC22D110063A31F /* CLLockVC.m */,
-				041B22901EC22D110063A31F /* CLLockVC.xib */,
-				041B22A51EC22D110063A31F /* Lib */,
+				04B23B591EC30C0C007BD619 /* CLLockVC.h */,
+				04B23B5A1EC30C0C007BD619 /* CLLockVC.m */,
+				04B23B5B1EC30C0C007BD619 /* CLLockVC.xib */,
+				04B23B5C1EC30C0C007BD619 /* FrameWork */,
+				04B23B651EC30C0C007BD619 /* Lib */,
 			);
 			path = CoreLock;
 			sourceTree = "<group>";
 		};
-		041B22A91EC22D110063A31F /* Category */ = {
+		04B23B5C1EC30C0C007BD619 /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				041B22A71EC22D110063A31F /* NSString+File.h */,
-				041B22A81EC22D110063A31F /* NSString+File.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		041B22AC1EC22D110063A31F /* CoreArchive */ = {
-			isa = PBXGroup;
-			children = (
-				041B22A91EC22D110063A31F /* Category */,
-				041B22AA1EC22D110063A31F /* CoreArchive.h */,
-				041B22AB1EC22D110063A31F /* CoreArchive.m */,
-			);
-			path = CoreArchive;
-			sourceTree = "<group>";
-		};
-		041B22AE1EC22D110063A31F /* CoreExtend */ = {
-			isa = PBXGroup;
-			children = (
-				041B22AD1EC22D110063A31F /* CoreConst.h */,
-			);
-			path = CoreExtend;
-			sourceTree = "<group>";
-		};
-		041B22AF1EC22D110063A31F /* FrameWork */ = {
-			isa = PBXGroup;
-			children = (
-				041B22AC1EC22D110063A31F /* CoreArchive */,
-				041B22AE1EC22D110063A31F /* CoreExtend */,
+				04B23B5D1EC30C0C007BD619 /* CoreArchive */,
+				04B23B631EC30C0C007BD619 /* CoreExtend */,
 			);
 			path = FrameWork;
 			sourceTree = "<group>";
 		};
-		041B22B01EC22D110063A31F /* gestureUnlock */ = {
+		04B23B5D1EC30C0C007BD619 /* CoreArchive */ = {
 			isa = PBXGroup;
 			children = (
-				041B22A61EC22D110063A31F /* CoreLock */,
-				041B22AF1EC22D110063A31F /* FrameWork */,
+				04B23B5E1EC30C0C007BD619 /* Category */,
+				04B23B611EC30C0C007BD619 /* CoreArchive.h */,
+				04B23B621EC30C0C007BD619 /* CoreArchive.m */,
+			);
+			path = CoreArchive;
+			sourceTree = "<group>";
+		};
+		04B23B5E1EC30C0C007BD619 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B5F1EC30C0C007BD619 /* NSString+File.h */,
+				04B23B601EC30C0C007BD619 /* NSString+File.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04B23B631EC30C0C007BD619 /* CoreExtend */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B641EC30C0C007BD619 /* CoreConst.h */,
+			);
+			path = CoreExtend;
+			sourceTree = "<group>";
+		};
+		04B23B651EC30C0C007BD619 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B661EC30C0C007BD619 /* Category */,
+				04B23B691EC30C0C007BD619 /* Const */,
+				04B23B6C1EC30C0C007BD619 /* Controller */,
+				04B23B6F1EC30C0C007BD619 /* View */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		04B23B661EC30C0C007BD619 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B671EC30C0C007BD619 /* CALayer+Anim.h */,
+				04B23B681EC30C0C007BD619 /* CALayer+Anim.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04B23B691EC30C0C007BD619 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B6A1EC30C0C007BD619 /* CoreLockConst.h */,
+				04B23B6B1EC30C0C007BD619 /* CoreLockConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		04B23B6C1EC30C0C007BD619 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B6D1EC30C0C007BD619 /* CLLockNavVC.h */,
+				04B23B6E1EC30C0C007BD619 /* CLLockNavVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B23B6F1EC30C0C007BD619 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B701EC30C0C007BD619 /* CLLockInfoView.h */,
+				04B23B711EC30C0C007BD619 /* CLLockInfoView.m */,
+				04B23B721EC30C0C007BD619 /* CLLockItemView.h */,
+				04B23B731EC30C0C007BD619 /* CLLockItemView.m */,
+				04B23B741EC30C0C007BD619 /* CLLockLabel.h */,
+				04B23B751EC30C0C007BD619 /* CLLockLabel.m */,
+				04B23B761EC30C0C007BD619 /* CLLockMainView.h */,
+				04B23B771EC30C0C007BD619 /* CLLockMainView.m */,
+				04B23B781EC30C0C007BD619 /* CLLockView.h */,
+				04B23B791EC30C0C007BD619 /* CLLockView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B23B801EC30C0C007BD619 /* gestureUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B811EC30C0C007BD619 /* CoreLock */,
+				04B23B871EC30C0C007BD619 /* FrameWork */,
 			);
 			path = gestureUnlock;
 			sourceTree = "<group>";
 		};
-		041B22B21EC22D110063A31F /* GestureLockAndTouchID */ = {
+		04B23B811EC30C0C007BD619 /* CoreLock */ = {
 			isa = PBXGroup;
 			children = (
-				041B22531EC22D110063A31F /* GestureBaseViewController.h */,
-				041B22541EC22D110063A31F /* GestureBaseViewController.m */,
-				041B22711EC22D110063A31F /* GesturePwd */,
-				041B228D1EC22D110063A31F /* GestureSetting */,
-				041B22B01EC22D110063A31F /* gestureUnlock */,
-				041B22B11EC22D110063A31F /* SystemDefine.h */,
+				04B23B821EC30C0C007BD619 /* Lib */,
 			);
-			path = GestureLockAndTouchID;
+			path = CoreLock;
+			sourceTree = "<group>";
+		};
+		04B23B821EC30C0C007BD619 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B831EC30C0C007BD619 /* Category */,
+				04B23B841EC30C0C007BD619 /* Const */,
+				04B23B851EC30C0C007BD619 /* Controller */,
+				04B23B861EC30C0C007BD619 /* View */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		04B23B831EC30C0C007BD619 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04B23B841EC30C0C007BD619 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		04B23B851EC30C0C007BD619 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B23B861EC30C0C007BD619 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B23B871EC30C0C007BD619 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B881EC30C0C007BD619 /* CoreArchive */,
+				04B23B8A1EC30C0C007BD619 /* CoreExtend */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
+		04B23B881EC30C0C007BD619 /* CoreArchive */ = {
+			isa = PBXGroup;
+			children = (
+				04B23B891EC30C0C007BD619 /* Category */,
+			);
+			path = CoreArchive;
+			sourceTree = "<group>";
+		};
+		04B23B891EC30C0C007BD619 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04B23B8A1EC30C0C007BD619 /* CoreExtend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreExtend;
 			sourceTree = "<group>";
 		};
 		77FC2016DC7E5E33DA950B3E /* Frameworks */ = {
@@ -1722,45 +1634,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B23B931EC30C0C007BD619 /* gesture_circle_pre.png in Resources */,
+				04B23B951EC30C0C007BD619 /* gesture_introduce.png in Resources */,
 				0405A9981EABCE33001C897B /* UMSocialLocalizable.strings in Resources */,
 				0405A9511EABCE33001C897B /* MyAdress in Resources */,
 				0405A9831EABCE33001C897B /* MJRefresh.bundle in Resources */,
-				041B22B81EC22D110063A31F /* gesture_circle_nor.png in Resources */,
 				0405A94D1EABCE33001C897B /* FocusURL.plist in Resources */,
-				041B22BA1EC22D110063A31F /* gesture_circle_pre.png in Resources */,
 				0405A9A11EABCE33001C897B /* UMSShareListController.xib in Resources */,
-				041B22BC1EC22D110063A31F /* gesture_introduce.png in Resources */,
+				04B23B981EC30C0C007BD619 /* gesture_unlock.png in Resources */,
 				0405A9A21EABCE33001C897B /* UMSocialSDKResourcesNew.bundle in Resources */,
-				041B22B91EC22D110063A31F /* gesture_circle_nor@2x.png in Resources */,
 				0405A8FA1EABCE33001C897B /* Assets.xcassets in Resources */,
-				041B22C01EC22D110063A31F /* gesture_unlock@2x.png in Resources */,
+				04B23B941EC30C0C007BD619 /* gesture_circle_pre@2x.png in Resources */,
 				0405A9571EABCE33001C897B /* SystemMessage in Resources */,
 				0405A99C1EABCE33001C897B /* UMSCommentInputControlleriPad.xib in Resources */,
 				0405A99A1EABCE33001C897B /* UMSCommentDetailController.xib in Resources */,
 				0405A9591EABCE33001C897B /* SalesPromotion in Resources */,
 				0405A95A1EABCE33001C897B /* 系统消息 in Resources */,
-				041B22BE1EC22D110063A31F /* gesture_introduce@3x.png in Resources */,
 				0405A99F1EABCE33001C897B /* UMSLoginViewController.xib in Resources */,
 				0405A9A51EABCE33001C897B /* WeiboSDK.bundle in Resources */,
+				04B23B921EC30C0C007BD619 /* gesture_circle_nor@2x.png in Resources */,
 				0405A9551EABCE33001C897B /* SearchProduct in Resources */,
 				0405A94F1EABCE33001C897B /* Mine in Resources */,
-				041B22C81EC22D110063A31F /* CLLockVC.xib in Resources */,
 				0405A9A81EABCE33001C897B /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				041A2EA91EB73A0700C3594A /* Assets2.xcassets in Resources */,
 				0405A9521EABCE33001C897B /* MyCoupon in Resources */,
 				0405A9561EABCE33001C897B /* supermarket in Resources */,
 				0405A9531EABCE33001C897B /* MyOrders in Resources */,
-				041B22BB1EC22D110063A31F /* gesture_circle_pre@2x.png in Resources */,
+				04B23B9E1EC30C0C007BD619 /* CLLockVC.xib in Resources */,
 				0405A95B1EABCE33001C897B /* HotProduct in Resources */,
 				0405A9541EABCE33001C897B /* Search in Resources */,
+				04B23B991EC30C0C007BD619 /* gesture_unlock@2x.png in Resources */,
 				0405A99B1EABCE33001C897B /* UMSCommentInputController.xib in Resources */,
 				0405A9A01EABCE33001C897B /* UMSnsAccountViewController.xib in Resources */,
 				0405A95C1EABCE33001C897B /* FocusButton in Resources */,
-				041B22BD1EC22D110063A31F /* gesture_introduce@2x.png in Resources */,
+				04B23B961EC30C0C007BD619 /* gesture_introduce@2x.png in Resources */,
 				0405A94E1EABCE33001C897B /* HelpPlist.plist in Resources */,
+				04B23B911EC30C0C007BD619 /* gesture_circle_nor.png in Resources */,
 				0405A9501EABCE33001C897B /* MinePlist.plist in Resources */,
-				041B22BF1EC22D110063A31F /* gesture_unlock.png in Resources */,
 				0405A99E1EABCE33001C897B /* UMShareEditViewControlleriPad.xib in Resources */,
+				04B23B971EC30C0C007BD619 /* gesture_introduce@3x.png in Resources */,
 				0405A94C1EABCE33001C897B /* AD in Resources */,
 				0405A99D1EABCE33001C897B /* UMShareEditViewController.xib in Resources */,
 				0405A9581EABCE33001C897B /* UserMessage in Resources */,
@@ -1845,10 +1757,10 @@
 				0405A9941EABCE33001C897B /* UIImage+WebP.m in Sources */,
 				0405A9151EABCE33001C897B /* LeftImageRightTextButton.swift in Sources */,
 				0405A9811EABCE33001C897B /* MJRefreshNormalHeader.m in Sources */,
+				04B23BA41EC30C0C007BD619 /* CLLockInfoView.m in Sources */,
 				0405A90D1EABCE33001C897B /* WebViewController.swift in Sources */,
-				041B22CC1EC22D110063A31F /* CLLockInfoView.m in Sources */,
 				0405A9631EABCE33001C897B /* ShopCartGoodsListView.swift in Sources */,
-				041B22C21EC22D110063A31F /* GestureTool_Public.m in Sources */,
+				04B23B9B1EC30C0C007BD619 /* GestureTool_Public.m in Sources */,
 				0405A9391EABCE33001C897B /* MineHeadView.swift in Sources */,
 				0405A9101EABCE33001C897B /* AnimationViewController.swift in Sources */,
 				0405A9691EABCE33001C897B /* ProductCell.swift in Sources */,
@@ -1857,7 +1769,7 @@
 				0405A9381EABCE33001C897B /* MineCell.swift in Sources */,
 				0405A8F91EABCE33001C897B /* AppDelegate.swift in Sources */,
 				0405A98B1EABCE33001C897B /* SDWebImageCompat.m in Sources */,
-				041B22B61EC22D110063A31F /* GestureInternalViews.m in Sources */,
+				04B23B8F1EC30C0C007BD619 /* GestureInternalViews.m in Sources */,
 				0405A92C1EABCE33001C897B /* CouponCell.swift in Sources */,
 				0405A9661EABCE33001C897B /* ShopCartViewController.swift in Sources */,
 				0405A91D1EABCE33001C897B /* NotSearchProductsView.swift in Sources */,
@@ -1867,18 +1779,19 @@
 				0405A9121EABCE33001C897B /* BaseViewController.swift in Sources */,
 				0405A9971EABCE33001C897B /* UIView+WebCacheOperation.m in Sources */,
 				0405A90A1EABCE33001C897B /* MainAD.swift in Sources */,
+				04B23B9D1EC30C0C007BD619 /* CLLockVC.m in Sources */,
 				0405A9261EABCE33001C897B /* AboltAuthorViewController.swift in Sources */,
-				041B22C51EC22D110063A31F /* GestureSettingViewController.m in Sources */,
 				0405A93F1EABCE33001C897B /* OrderData.swift in Sources */,
-				041B22C11EC22D110063A31F /* GestureTool_Private.m in Sources */,
+				04B23B9A1EC30C0C007BD619 /* GestureTool_Private.m in Sources */,
+				04B23BA21EC30C0C007BD619 /* CoreLockConst.m in Sources */,
 				0405A9461EABCE33001C897B /* OrderViewController.swift in Sources */,
 				0405A90E1EABCE33001C897B /* AdressTitleView.swift in Sources */,
 				0405A92E1EABCE33001C897B /* EditAdressViewController.swift in Sources */,
 				0405A8FF1EABCE33001C897B /* UIView+Extension.swift in Sources */,
 				0405A9871EABCE33001C897B /* UIView+MJExtension.m in Sources */,
-				041B22C31EC22D110063A31F /* TouchIdUnlock.m in Sources */,
+				04B23B9C1EC30C0C007BD619 /* TouchIdUnlock.m in Sources */,
+				04B23BA01EC30C0C007BD619 /* CoreArchive.m in Sources */,
 				0405A9251EABCE33001C897B /* YellowShopCarView.swift in Sources */,
-				041B22D01EC22D110063A31F /* CLLockView.m in Sources */,
 				0405A92F1EABCE33001C897B /* GuideCell.swift in Sources */,
 				0405A96A1EABCE33001C897B /* ProductsViewController.swift in Sources */,
 				0405A9901EABCE33001C897B /* SDWebImagePrefetcher.m in Sources */,
@@ -1888,19 +1801,21 @@
 				0405A93A1EABCE33001C897B /* MineTabeHeadView.swift in Sources */,
 				0405A97B1EABCE33001C897B /* MJRefreshAutoNormalFooter.m in Sources */,
 				0405A98A1EABCE33001C897B /* SDImageCache.m in Sources */,
+				04B23BA51EC30C0C007BD619 /* CLLockItemView.m in Sources */,
 				0405A9211EABCE33001C897B /* SearchProductViewController.swift in Sources */,
 				0405A9001EABCE33001C897B /* ScheduleViewController.swift in Sources */,
 				0405A9731EABCE33001C897B /* UserInfo.swift in Sources */,
 				0405A9301EABCE33001C897B /* GuideViewController.swift in Sources */,
 				0405A9881EABCE33001C897B /* MKAnnotationView+WebCache.m in Sources */,
 				0405A9601EABCE33001C897B /* ReceiptAddressView.swift in Sources */,
+				04B23BA91EC30C0C007BD619 /* GestureIntroduceViewController.m in Sources */,
+				04B23BA81EC30C0C007BD619 /* CLLockView.m in Sources */,
 				0405A9421EABCE33001C897B /* OrderGoodsListView.swift in Sources */,
-				041B22D21EC22D110063A31F /* CoreArchive.m in Sources */,
+				04B23BA11EC30C0C007BD619 /* CALayer+Anim.m in Sources */,
 				041A2EAA1EB73A0700C3594A /* DMLoginViewController.m in Sources */,
 				0405A9221EABCE33001C897B /* SearchView.swift in Sources */,
 				0405A91E1EABCE33001C897B /* PageScrollView.swift in Sources */,
 				0405A9961EABCE33001C897B /* UIImageView+WebCache.m in Sources */,
-				041B22CA1EC22D110063A31F /* CoreLockConst.m in Sources */,
 				0405A9141EABCE33001C897B /* DiscountPriceView.swift in Sources */,
 				0405A9491EABCE33001C897B /* SystemMessageCell.swift in Sources */,
 				0405A9291EABCE33001C897B /* AnswerCell.swift in Sources */,
@@ -1920,13 +1835,14 @@
 				0405A9851EABCE33001C897B /* UIScrollView+MJExtension.m in Sources */,
 				0405A97D1EABCE33001C897B /* MJRefreshBackGifFooter.m in Sources */,
 				0405A9041EABCE33001C897B /* HomeCell.swift in Sources */,
+				04B23BAA1EC30C0C007BD619 /* GestureSettingViewController.m in Sources */,
 				0405A9911EABCE33001C897B /* UIButton+WebCache.m in Sources */,
 				0405A9341EABCE33001C897B /* HelpViewController.swift in Sources */,
-				041B22CD1EC22D110063A31F /* CLLockItemView.m in Sources */,
 				0405A9761EABCE33001C897B /* MJRefreshBackFooter.m in Sources */,
 				0405A91C1EABCE33001C897B /* MainViewController.swift in Sources */,
 				0405A93D1EABCE33001C897B /* MyOrderCell.swift in Sources */,
-				041B22B51EC22D110063A31F /* DrawPatternLockViewController.m in Sources */,
+				04B23B8E1EC30C0C007BD619 /* DrawPatternLockViewController.m in Sources */,
+				04B23BA71EC30C0C007BD619 /* CLLockMainView.m in Sources */,
 				0405A97A1EABCE33001C897B /* MJRefreshAutoGifFooter.m in Sources */,
 				0405A92B1EABCE33001C897B /* CoupinRuleViewController.swift in Sources */,
 				0405A9131EABCE33001C897B /* BuyView.swift in Sources */,
@@ -1941,30 +1857,27 @@
 				0405A9241EABCE33001C897B /* UpImageDownTextButton.swift in Sources */,
 				0405A96C1EABCE33001C897B /* SupermarketHeadView.swift in Sources */,
 				0405A9201EABCE33001C897B /* SearchProducts.swift in Sources */,
-				041B22C41EC22D110063A31F /* GestureIntroduceViewController.m in Sources */,
 				0405A9021EABCE33001C897B /* FreshHot.swift in Sources */,
 				0405A96E1EABCE33001C897B /* ADViewController.swift in Sources */,
 				0405A98C1EABCE33001C897B /* SDWebImageDecoder.m in Sources */,
 				0405A9741EABCE33001C897B /* UserShopCarTool.swift in Sources */,
 				0405A93E1EABCE33001C897B /* MyShopViewController.swift in Sources */,
 				0405A9431EABCE33001C897B /* OrderStatusCell.swift in Sources */,
-				041B22B31EC22D110063A31F /* GestureBaseViewController.m in Sources */,
+				04B23B8C1EC30C0C007BD619 /* GestureBaseViewController.m in Sources */,
 				0405A9771EABCE33001C897B /* MJRefreshComponent.m in Sources */,
 				0405A9841EABCE33001C897B /* MJRefreshConst.m in Sources */,
 				0405A91A1EABCE33001C897B /* LFBTableView.swift in Sources */,
 				0405A9331EABCE33001C897B /* HelpHeadView.swift in Sources */,
 				0405A9371EABCE33001C897B /* Mine.swift in Sources */,
-				041B22CB1EC22D110063A31F /* CLLockNavVC.m in Sources */,
 				0405A9891EABCE33001C897B /* NSData+ImageContentType.m in Sources */,
 				041A2EB01EB73A0700C3594A /* UITextField+Shake.m in Sources */,
 				0405A9861EABCE33001C897B /* UIScrollView+MJRefresh.m in Sources */,
 				0405A9671EABCE33001C897B /* String + Extension.swift in Sources */,
-				041B22B41EC22D110063A31F /* DrawPatternLockView.m in Sources */,
-				041B22C71EC22D110063A31F /* CLLockVC.m in Sources */,
+				04B23B8D1EC30C0C007BD619 /* DrawPatternLockView.m in Sources */,
 				0405A96F1EABCE33001C897B /* FileToll.swift in Sources */,
 				0405A8FC1EABCE33001C897B /* UIBarButtonItem+Extension.swift in Sources */,
 				0405A98F1EABCE33001C897B /* SDWebImageManager.m in Sources */,
-				041B22B71EC22D110063A31F /* GestureLockScreen.m in Sources */,
+				04B23B901EC30C0C007BD619 /* GestureLockScreen.m in Sources */,
 				0405A9401EABCE33001C897B /* OrderDetailView.swift in Sources */,
 				0405A95D1EABCE33001C897B /* CostDetailView.swift in Sources */,
 				0405A9621EABCE33001C897B /* ShopCartCommentsView.swift in Sources */,
@@ -1973,23 +1886,24 @@
 				0405A9071EABCE33001C897B /* HomeViewController.swift in Sources */,
 				0405A9451EABCE33001C897B /* OrderUserDetailView.swift in Sources */,
 				0405A8FD1EABCE33001C897B /* UIDevice + Extension.swift in Sources */,
-				041B22C61EC22D110063A31F /* GestureSetupViewController.m in Sources */,
 				0405A92A1EABCE33001C897B /* BindingCouponView.swift in Sources */,
 				0405A9701EABCE33001C897B /* ProgressHUDManager.swift in Sources */,
 				0405A94B1EABCE33001C897B /* Theme.swift in Sources */,
-				041B22D11EC22D110063A31F /* NSString+File.m in Sources */,
 				0405A96D1EABCE33001C897B /* SupermarketViewController.swift in Sources */,
 				0405A9641EABCE33001C897B /* ShopCartMarkerView.swift in Sources */,
 				0405A7E51EABC36B001C897B /* LoveFreshBeenTests.swift in Sources */,
+				04B23BA31EC30C0C007BD619 /* CLLockNavVC.m in Sources */,
 				0405A9091EABCE33001C897B /* IconImageTextView.swift in Sources */,
 				0405A90F1EABCE33001C897B /* AnimationTabBarController.swift in Sources */,
-				041B22C91EC22D110063A31F /* CALayer+Anim.m in Sources */,
 				0405A9321EABCE33001C897B /* HelpDetailViewController.swift in Sources */,
 				0405A9791EABCE33001C897B /* MJRefreshHeader.m in Sources */,
 				0405A9781EABCE33001C897B /* MJRefreshFooter.m in Sources */,
+				04B23BAB1EC30C0C007BD619 /* GestureSetupViewController.m in Sources */,
 				0405A9361EABCE33001C897B /* MessageViewController.swift in Sources */,
 				0405A91F1EABCE33001C897B /* QRCodeViewController.swift in Sources */,
 				0405A8FB1EABCE33001C897B /* Color+Extension.swift in Sources */,
+				04B23B9F1EC30C0C007BD619 /* NSString+File.m in Sources */,
+				04B23BA61EC30C0C007BD619 /* CLLockLabel.m in Sources */,
 				0405A9801EABCE33001C897B /* MJRefreshGifHeader.m in Sources */,
 				0405A9231EABCE33001C897B /* ShopCarRedDotView.swift in Sources */,
 				0405A9411EABCE33001C897B /* OrderDetailViewController.swift in Sources */,
@@ -2001,11 +1915,9 @@
 				0405A9721EABCE33001C897B /* SwiftDictModel.swift in Sources */,
 				0405A90B1EABCE33001C897B /* ProductDetailViewController.swift in Sources */,
 				0405A9031EABCE33001C897B /* HeadResources.swift in Sources */,
-				041B22CE1EC22D110063A31F /* CLLockLabel.m in Sources */,
 				0405A9081EABCE33001C897B /* HotView.swift in Sources */,
 				0405A9951EABCE33001C897B /* UIImageView+HighlightedWebCache.m in Sources */,
 				0405A9651EABCE33001C897B /* ShopCartSupermarketTableFooterView.swift in Sources */,
-				041B22CF1EC22D110063A31F /* CLLockMainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

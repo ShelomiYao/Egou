@@ -2,8 +2,8 @@
 //  CLLockMainView.m
 //  CoreLock
 //
-//  Created by 冯成林 on 15/4/28.
-//  Copyright (c) 2015年 冯成林. All rights reserved.
+//  Created by ShelomiYao on 15/4/28.
+//  Copyright (c) 2015年 ShelomiYao. All rights reserved.
 //
 
 #import "CLLockMainView.h"
@@ -22,16 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *labelTopMarginC;
 
-
-@property (weak, nonatomic) IBOutlet UIButton *forgetBtn;
-
-
-@property (weak, nonatomic) IBOutlet UIButton *modifyBtn;
-
-
-
 @end
-
 
 
 @implementation CLLockMainView
@@ -56,17 +47,6 @@
 
 
 -(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
-    
-    if(iphone4x_3_5){
-        
-        CGRect forgetFrame = [_forgetBtn convertRect:_forgetBtn.bounds toView:self];
-        
-        CGRect modifyFrame = [_modifyBtn convertRect:_modifyBtn.bounds toView:self];
-        
-        if(CGRectContainsPoint(forgetFrame, point)) return _forgetBtn;
-        if(CGRectContainsPoint(modifyFrame, point)) return _modifyBtn;
-    }
-
     return [super hitTest:point withEvent:event];
 }
 

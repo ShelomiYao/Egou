@@ -2,19 +2,13 @@
 //  GestureBaseViewController.m
 //  GestureSDK_Demo
 //
-//  Created by Mac on 17/5/8.
+//  Created by Mac on 17/5/10.
 //  Copyright © 2017年 OYXJ. All rights reserved.
 //
 
 #import "GestureBaseViewController.h"
 
-/**
- 状态栏高度
- #define heightOfStatusBar   20
- */
 #define heightOfStatusBar   20
-//#define heightOfStatusBar   [[UIApplication sharedApplication] statusBarFrame].size.height
-
 
 
 @interface GestureBaseViewController ()
@@ -163,7 +157,9 @@
     
     UIView *contentView = [self mainContentView];
     NSAssert(contentView!=nil, @"Subclass must implepment mainContentView.");
-        
+    
+    
+    
     UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     [view addSubview:contentView];

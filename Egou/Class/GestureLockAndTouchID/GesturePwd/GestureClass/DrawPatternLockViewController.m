@@ -114,8 +114,7 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
     
-    NSLog(@"x = %f,y = %f\n-yyyyyyyyyyyyyyyyyyy",self.view.frame.origin.x,self.view.frame.origin.y);
-    self.navigationController.navigationBar.translucent = NO;
+    
     /******* 视图 begin ******/
     /*
      创建内部使用的视图
@@ -633,6 +632,7 @@
 {
     _drawPatternCtlType = drawPatternCtlType;
     [self.view setNeedsLayout];
+    
     
     /*
      是否应该恢复手势密码

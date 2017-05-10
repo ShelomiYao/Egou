@@ -251,7 +251,7 @@
  */
 - (void)showAlertIfUserDenied
 {
-    NSString * title = [NSString stringWithFormat:@"您的iPhone未开启指纹解锁"];
+    NSString * title = [NSString stringWithFormat:@"未开启%@指纹解锁", _appName];
     NSString * msg = [NSString stringWithFormat:@"请在%@设置－开启Touch ID指纹解锁", _appName];
     if (_alertMessageToShowWhenUserDisableTouchID.length) {
         msg = _alertMessageToShowWhenUserDisableTouchID;

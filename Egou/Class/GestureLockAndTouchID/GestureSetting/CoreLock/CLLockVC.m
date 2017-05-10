@@ -2,8 +2,8 @@
 //  CLLockVC.m
 //  CoreLock
 //
-//  Created by 成林 on 15/4/21.
-//  Copyright (c) 2015年 冯成林. All rights reserved.
+//  Created by ShelomiYao on 15/4/21.
+//  Copyright (c) 2015年 ShelomiYao. All rights reserved.
 //
 
 #import "CLLockVC.h"
@@ -37,9 +37,6 @@
 
 
 @property (weak, nonatomic) IBOutlet UIView *actionView;
-
-@property (weak, nonatomic) IBOutlet UIButton *modifyBtn;
-
 
 
 /** 直接进入修改页面的 */
@@ -193,11 +190,6 @@
     
 }
 
-
-
-
-
-
 /*
  *  数据传输
  */
@@ -208,12 +200,6 @@
     //传递类型
     self.lockView.type = self.type;
 }
-
-
-
-
-
-
 
 /*
  *  控制器准备
@@ -237,13 +223,9 @@
         
         [_actionView removeFromSuperview];
 
-        if(_isDirectModify) return;
+        if(self.isDirectModify) return;
         
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(dismiss)];
-    }
-    
-    if(![self.class hasPwd]){
-        [_modifyBtn removeFromSuperview];
     }
 }
 
@@ -463,16 +445,5 @@
     
     [self.navigationController pushViewController:lockVC animated:YES];
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @end

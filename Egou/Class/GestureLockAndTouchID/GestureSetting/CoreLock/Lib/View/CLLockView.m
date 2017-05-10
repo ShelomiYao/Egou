@@ -2,8 +2,8 @@
 //  CLLockView.m
 //  CoreLock
 //
-//  Created by 成林 on 15/4/21.
-//  Copyright (c) 2015年 冯成林. All rights reserved.
+//  Created by ShelomiYao on 15/4/21.
+//  Copyright (c) 2015年 ShelomiYao. All rights reserved.
 //
 
 #import "CLLockView.h"
@@ -176,7 +176,7 @@ const CGFloat marginValue = 36.0f;
         CGRect frame = CGRectMake(x, y, itemViewWH, itemViewWH);
         
         //设置tag
-        subview.tag = idx;
+        subview.tag = idx + 1;
         
         subview.frame = frame;
     }];
