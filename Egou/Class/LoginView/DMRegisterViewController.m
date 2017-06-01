@@ -53,12 +53,12 @@
     _baceView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_baceView];
     
-    _userNameTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 10, 200, 30) font:[UIFont systemFontOfSize:14] placeholder:@"请输入昵称"];
+    _userNameTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 10, 200, 30) font:[UIFont systemFontOfSize:13] placeholder:@"昵称由1-20位的字母或中文组成"];
     _userNameTextFiled.clearButtonMode = UITextFieldViewModeWhileEditing;
     _userNameTextFiled.delegate = self;
     [_baceView addSubview:_userNameTextFiled];
     
-    _passwordTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 60, 200, 30) font:[UIFont systemFontOfSize:14] placeholder:@"请输入密码"];
+    _passwordTextFiled = [self createTextFiledWithFrame:CGRectMake(100, 60, 200, 30) font:[UIFont systemFontOfSize:13] placeholder:@"密码为8-18位数字和字母组合"];
     _passwordTextFiled.clearButtonMode = UITextFieldViewModeWhileEditing;
     _passwordTextFiled.delegate = self;
     _passwordTextFiled.secureTextEntry = YES;
@@ -148,9 +148,9 @@
 }
 
 
-#pragma 正则匹配用户密码6-18位数字和字母组合
+#pragma 正则匹配用户密码8-18位数字和字母组合
 - (BOOL)checkPassword:(NSString *) password{
-    NSString *pattern = @"^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,18}";
+    NSString *pattern = @"^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{8,18}";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
     BOOL isMatch = [pred evaluateWithObject:password];
     return isMatch;

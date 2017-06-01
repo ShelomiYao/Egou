@@ -226,7 +226,7 @@
 		04B23BA91EC30C0C007BD619 /* GestureIntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B7B1EC30C0C007BD619 /* GestureIntroduceViewController.m */; };
 		04B23BAA1EC30C0C007BD619 /* GestureSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B7D1EC30C0C007BD619 /* GestureSettingViewController.m */; };
 		04B23BAB1EC30C0C007BD619 /* GestureSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B7F1EC30C0C007BD619 /* GestureSetupViewController.m */; };
-		173966D05D1CD356D49D6A2A /* Pods_Egou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9AF2BB06E86E83238DE125 /* Pods_Egou.framework */; };
+		173966D05D1CD356D49D6A2A /* Pods_Egou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9AF2BB06E86E83238DE125 /* Pods_Egou.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		B34711651C508017000FE63E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711641C508017000FE63E /* Security.framework */; };
 		B34711671C508041000FE63E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711661C508041000FE63E /* libiconv.tbd */; };
 		B34711691C50804B000FE63E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34711681C50804B000FE63E /* SystemConfiguration.framework */; };
