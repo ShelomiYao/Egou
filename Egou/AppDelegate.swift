@@ -10,8 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK:- public方法
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         NSThread.sleepForTimeInterval(1.0)
-        
-        Bmob.registerWithAppKey("f1f7fa19cb507333e21b9b72305593f7")
+
+        SMSSDK.registerApp("1e50e2985848c", withSecret: "513af83179eecbff2b67281b1b18f865")
         
         setUM()
         

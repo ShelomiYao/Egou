@@ -1,15 +1,19 @@
 PODS:
-  - BmobSDK (1.7.2)
+  - MOBFoundation_IDFA (2.2.19)
+  - SMSSDK (2.1.5):
+    - MOBFoundation_IDFA
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
-  - BmobSDK (~> 1.7.0)
+  - MOBFoundation_IDFA
+  - SMSSDK
   - SVProgressHUD (~> 2.1)
 
 SPEC CHECKSUMS:
-  BmobSDK: e188cb31d6a8417ab668aee821da227d7512b865
+  MOBFoundation_IDFA: 4561562ab2364873a904a590dcdffea9f10ab8c6
+  SMSSDK: 7d19654f9d36392988e96bf697afdac983808b1a
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 3681e78e5cfa0ab5963fc7b84a81ea85348999f4
+PODFILE CHECKSUM: a67b2b87ce00a5a3b54de2eb5aa55cf4de88dccf
 
 COCOAPODS: 1.2.1

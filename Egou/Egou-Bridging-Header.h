@@ -10,13 +10,12 @@
 #import "UMSocialSinaSSOHandler.h"
 #import "UMSocialWechatHandler.h"
 #import "UMSocialQQHandler.h"
-#import <BmobSDK/Bmob.h>
-
 
 #import "DMLoginViewController.h"
 #import "DMRegisterViewController.h"
 #import "ForgotPassWordViewController.h"
-
+#import <SMS_SDK/SMSSDK.h>
+#import <SMS_SDK/Extend/SMSSDK+AddressBookMethods.h>
 
 #pragma mark - 手势
 #import "SystemDefine.h"

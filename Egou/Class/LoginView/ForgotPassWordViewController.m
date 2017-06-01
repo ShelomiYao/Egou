@@ -8,6 +8,8 @@
 
 #import "ForgotPassWordViewController.h"
 #import "UITextField+Shake.h"
+#import <SMS_SDK/SMSSDK.h>
+#import <SMS_SDK/Extend/SMSSDK+AddressBookMethods.h>
 
 @interface ForgotPassWordViewController ()<UITextFieldDelegate>
 @property (nonatomic ,strong)UILabel *ZCLabel;
@@ -153,14 +155,17 @@
     NSLog(@"%d",PureInt);
     
     if ([self checkUserInfo]) {
-        _oUserPhoneNum =_phoneTextFiled.text;
-        //__weak MMZCHMViewController *weakSelf = self;
-        sender.userInteractionEnabled = YES;
-        self.timeCount = 60;
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(reduceTime:) userInfo:sender repeats:YES];
-        _code = [NSString stringWithFormat:@"%i%i%i%i",arc4random()%10,arc4random()%10,arc4random()%10,arc4random()%10];
-        NSLog(@"%@",_code);
-        _verificationCodeTextFiled.text = _code;
+        [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:self.phoneTextFiled.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
+            if (nil != error) {
+                NSString *alertMessage = @"获取验证码失败";
+                [self showAlert:alertMessage];
+            }else{
+                _oUserPhoneNum =_phoneTextFiled.text;
+                sender.userInteractionEnabled = YES;
+                self.timeCount = 60;
+                self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(reduceTime:) userInfo:sender repeats:YES];
+            }
+        }];
     }
 }
 
@@ -185,15 +190,18 @@
 -(void)submitBtnClick:(UIButton *)button
 {
     if ([self checkUserInfo]) {
-        if (_verificationCodeTextFiled.text != _code){
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"验证失败，手机号码或验证码有误" message:nil preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
-            [alert addAction:action];
-            [self presentViewController:alert animated:YES completion:nil];
-        }
-        else{
-            [self.navigationController popViewControllerAnimated:YES];
-        }
+        [SMSSDK commitVerificationCode:self.verificationCodeTextFiled.text phoneNumber:self.phoneTextFiled.text zone:@"86" result:^(SMSSDKUserInfo *userInfo, NSError *error){
+            if (nil != error){
+                [self showAlert:@"手机号码或验证码有误"];
+            }else{
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"重置密码成功" message:nil preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                    [self.navigationController popViewControllerAnimated:YES];
+                }];
+                [alert addAction:action];
+                [self presentViewController:alert animated:YES completion:nil];
+            }
+        }];
     }
     
 }
@@ -203,28 +211,17 @@
     BOOL bValidPhoneNumber;
     BOOL bValidPassword;
     
-    NSString *alertAessage;
-    
     bValidPassword = [self checkPassword:self.NewPwdTextFiled.text];
     bValidPhoneNumber = [self checkTelNumber:self.phoneTextFiled.text];
     
     if (!bValidPassword){
-        alertAessage = @"密码格式有误";
         [_NewPwdTextFiled shake];
     }
     else if (!bValidPhoneNumber){
-        alertAessage = @"手机号码格式有误";
         [_phoneTextFiled shake];
     }
     else{
         bValidUserInfo = YES;
-    }
-    
-    if(!bValidUserInfo){
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:alertAessage message:nil preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
-        [alert addAction:action];
-        [self presentViewController:alert animated:YES completion:nil];
     }
     
     return bValidUserInfo;
@@ -265,6 +262,13 @@
     [self.phoneTextFiled resignFirstResponder];
     [self.NewPwdTextFiled resignFirstResponder];
     [self.verificationCodeTextFiled resignFirstResponder];
+}
+
+-(void)showAlert:(NSString *)message{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:message message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end
