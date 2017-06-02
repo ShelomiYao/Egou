@@ -82,7 +82,7 @@ class SearchProductViewController: AnimationViewController {
         
         let navVC = navigationController as! BaseNavigationController
         let leftBtn = navigationItem.leftBarButtonItem?.customView as? UIButton
-        leftBtn!.addTarget(self, action: "leftButtonClcik", forControlEvents: UIControlEvents.TouchUpInside)
+        leftBtn!.addTarget(self, action: #selector(SearchProductViewController.leftButtonClcik), forControlEvents: UIControlEvents.TouchUpInside)
         navVC.isAnimation = false
     }
     
@@ -155,7 +155,7 @@ class SearchProductViewController: AnimationViewController {
         cleanHistoryButton.layer.borderColor = UIColor.colorWithCustom(200, g: 200, b: 200).CGColor
         cleanHistoryButton.layer.borderWidth = 0.5
         cleanHistoryButton.hidden = true
-        cleanHistoryButton.addTarget(self, action: "cleanSearchHistorySearch", forControlEvents: UIControlEvents.TouchUpInside)
+        cleanHistoryButton.addTarget(self, action: #selector(SearchProductViewController.cleanSearchHistorySearch), forControlEvents: UIControlEvents.TouchUpInside)
         contentScrollView.addSubview(cleanHistoryButton)
     }
     

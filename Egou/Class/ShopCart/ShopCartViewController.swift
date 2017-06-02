@@ -63,9 +63,9 @@ class ShopCartViewController: BaseViewController {
     
     // MARK - Add Notification KVO Action
     private func addNSNotification() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarProductsDidRemove", name: LFBShopCarDidRemoveProductNSNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ShopCartViewController.shopCarProductsDidRemove), name: LFBShopCarDidRemoveProductNSNotification, object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarBuyPriceDidChange", name: LFBShopCarBuyPriceDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ShopCartViewController.shopCarBuyPriceDidChange), name: LFBShopCarBuyPriceDidChangeNotification, object: nil)
     }
     
     func shopCarProductsDidRemove() {
@@ -108,7 +108,7 @@ class ShopCartViewController: BaseViewController {
         emptyButton.setBackgroundImage(UIImage(named: "btn.png"), forState: UIControlState.Normal)
         emptyButton.setTitle("去逛逛", forState: UIControlState.Normal)
         emptyButton.setTitleColor(UIColor.colorWithCustom(100, g: 100, b: 100), forState: UIControlState.Normal)
-        emptyButton.addTarget(self, action: "leftNavigitonItemClick", forControlEvents: UIControlEvents.TouchUpInside)
+        emptyButton.addTarget(self, action: #selector(ShopCartViewController.leftNavigitonItemClick), forControlEvents: UIControlEvents.TouchUpInside)
         emptyButton.hidden = true
         view.addSubview(emptyButton)
     }
@@ -185,7 +185,7 @@ class ShopCartViewController: BaseViewController {
         signTimeView.backgroundColor = UIColor.whiteColor()
         tableHeadView.addSubview(signTimeView)
         
-        let tap = UITapGestureRecognizer(target: self, action: "modifySignTimeViewClick")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ShopCartViewController.modifySignTimeViewClick))
         tableHeadView.addGestureRecognizer(tap)
         
         let signTimeTitleLabel = UILabel()

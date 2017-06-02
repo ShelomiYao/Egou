@@ -45,7 +45,7 @@ class PayWayView: UIView {
         lineView.alpha = 0.1
         addSubview(lineView)
         
-        let tap = UITapGestureRecognizer(target: self, action: "selectedPayView")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PayWayView.selectedPayView))
         addGestureRecognizer(tap)
     }
     

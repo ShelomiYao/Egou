@@ -36,7 +36,7 @@ class OrderStatuslViewController: BaseViewController {
                     btn.titleLabel?.font = UIFont.systemFontOfSize(13)
                     btn.layer.cornerRadius = 5;
                     btn.tag = order!.detail_buttons![i].type
-                    btn.addTarget(self, action: "detailButtonClick:", forControlEvents: UIControlEvents.TouchUpInside)
+                    btn.addTarget(self, action: #selector(OrderStatuslViewController.detailButtonClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
                     view.addSubview(btn)
                 }
             }
@@ -54,7 +54,7 @@ class OrderStatuslViewController: BaseViewController {
     }
     
     private func buildNavigationItem() {
-        let rightItem = UIBarButtonItem.barButton("投诉", titleColor: LFBTextBlackColor, target: self, action: "rightItemButtonClick")
+        let rightItem = UIBarButtonItem.barButton("投诉", titleColor: LFBTextBlackColor, target: self, action: #selector(OrderStatuslViewController.rightItemButtonClick))
         navigationItem.rightBarButtonItem = rightItem
         weak var tmpSelf = self
         segment = LFBSegmentedControl(items: ["订单状态", "订单详情"], didSelectedIndex: { (index) -> () in

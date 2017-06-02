@@ -65,7 +65,7 @@ class PlaceholderTextView: UITextView {
         placeholderColor = UIColor.grayColor()
         placeholderLabel.alpha = 0.6
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "textDidChange", name: UITextViewTextDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlaceholderTextView.textDidChange), name: UITextViewTextDidChangeNotification, object: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

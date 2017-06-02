@@ -3,11 +3,6 @@
 //  LoveFreshBeen
 //
 
-
-
-
-
-
 import UIKit
 
 class ProductsViewController: AnimationViewController {
@@ -42,7 +37,7 @@ class ProductsViewController: AnimationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarBuyProductNumberDidChange", name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ProductsViewController.shopCarBuyProductNumberDidChange), name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
         
         view = UIView(frame: CGRectMake(ScreenWidth * 0.25, 0, ScreenWidth * 0.75, ScreenHeight - NavigationH))
         buildProductsTableView()
@@ -62,7 +57,7 @@ class ProductsViewController: AnimationViewController {
         productsTableView?.registerClass(SupermarketHeadView.self, forHeaderFooterViewReuseIdentifier: headViewIdentifier)
         productsTableView?.tableFooterView = buildProductsTableViewTableFooterView()
         
-        let headView = LFBRefreshHeader(refreshingTarget: self, refreshingAction: "startRefreshUpPull")
+        let headView = LFBRefreshHeader(refreshingTarget: self, refreshingAction: #selector(ProductsViewController.startRefreshUpPull))
         productsTableView?.mj_header = headView
         
         view.addSubview(productsTableView!)
@@ -135,13 +130,13 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
         
-        if delegate != nil && delegate!.respondsToSelector("didEndDisplayingHeaderView:") && isScrollDown {
+        if delegate != nil && delegate!.respondsToSelector(#selector(ProductsViewControllerDelegate.didEndDisplayingHeaderView(_:))) && isScrollDown {
             delegate!.didEndDisplayingHeaderView!(section)
         }
     }
     
     func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        if delegate != nil && delegate!.respondsToSelector("willDisplayHeaderView:") && !isScrollDown {
+        if delegate != nil && delegate!.respondsToSelector(#selector(ProductsViewControllerDelegate.willDisplayHeaderView(_:))) && !isScrollDown {
             delegate!.willDisplayHeaderView!(section)
         }
     }

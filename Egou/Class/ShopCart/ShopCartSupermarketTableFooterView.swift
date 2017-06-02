@@ -43,7 +43,7 @@ class ShopCartSupermarketTableFooterView: UIView {
         determineButton.setTitle("选好了", forState: UIControlState.Normal)
         determineButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
         determineButton.titleLabel?.font = UIFont.systemFontOfSize(14)
-        determineButton.addTarget(self, action: "determineButtonClick", forControlEvents: .TouchUpInside)
+        determineButton.addTarget(self, action: #selector(ShopCartSupermarketTableFooterView.determineButtonClick), forControlEvents: .TouchUpInside)
         addSubview(determineButton)
         
         addSubview(lineView(CGRectMake(0, ShopCartRowHeight - 0.5, ScreenWidth, 0.5)))

@@ -53,7 +53,7 @@ class SearchView: UIView {
             btn.layer.cornerRadius = 15
             btn.layer.borderWidth = 0.5
             btn.layer.borderColor = UIColor.colorWithCustom(200, g: 200, b: 200).CGColor
-            btn.addTarget(self, action: "searchButtonClick:", forControlEvents: UIControlEvents.TouchUpInside)
+            btn.addTarget(self, action: #selector(SearchView.searchButtonClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             btnW = btn.titleLabel!.width + addW
             
             if frame.width - lastX > btnW {

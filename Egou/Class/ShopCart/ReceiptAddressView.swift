@@ -44,7 +44,7 @@ class ReceiptAddressView: UIView {
         
         modifyButton.setTitle("修改", forState: UIControlState.Normal)
         modifyButton.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
-        modifyButton.addTarget(self, action: "modifyButtonClick", forControlEvents: UIControlEvents.TouchUpInside)
+        modifyButton.addTarget(self, action: #selector(ReceiptAddressView.modifyButtonClick), forControlEvents: UIControlEvents.TouchUpInside)
         modifyButton.titleLabel?.font = UIFont.systemFontOfSize(15)
         addSubview(modifyButton)
         

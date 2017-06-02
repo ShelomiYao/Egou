@@ -129,7 +129,7 @@ class MyAdressViewController: BaseViewController {
         addAdressButton?.layer.masksToBounds = true
         addAdressButton?.layer.cornerRadius = 8
         addAdressButton?.titleLabel?.font = UIFont.systemFontOfSize(15)
-        addAdressButton?.addTarget(self, action: "addAdressButtonClick", forControlEvents: UIControlEvents.TouchUpInside)
+        addAdressButton?.addTarget(self, action: #selector(MyAdressViewController.addAdressButtonClick), forControlEvents: UIControlEvents.TouchUpInside)
         bottomView.addSubview(addAdressButton!)
     }
     

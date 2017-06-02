@@ -140,7 +140,7 @@ class QRCodeViewController: BaseViewController, AVCaptureMetadataOutputObjectsDe
         animationLineView.image = UIImage(named: "yellowlight")
         view.addSubview(animationLineView)
         
-        timer = NSTimer(timeInterval: 2.5, target: self, selector: "startYellowViewAnimation", userInfo: nil, repeats: true)
+        timer = NSTimer(timeInterval: 2.5, target: self, selector: #selector(QRCodeViewController.startYellowViewAnimation), userInfo: nil, repeats: true)
         let runloop = NSRunLoop.currentRunLoop()
         runloop.addTimer(timer!, forMode: NSRunLoopCommonModes)
         timer!.fire()

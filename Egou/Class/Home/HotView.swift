@@ -50,7 +50,7 @@ class HotView: UIView {
                     
                     icon.tag = i
                     icon.activitie = headData!.icons![i]
-                    let tap = UITapGestureRecognizer(target: self, action: "iconClick:")
+                    let tap = UITapGestureRecognizer(target: self, action: #selector(HotView.iconClick(_:)))
                     icon.addGestureRecognizer(tap)
                     addSubview(icon)
                 }

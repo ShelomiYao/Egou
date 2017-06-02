@@ -3,11 +3,6 @@
 //  LoveFreshBeen
 //
 
-
-
-
-
-
 import UIKit
 
 class ProductDetailViewController: BaseViewController {
@@ -222,7 +217,7 @@ class ProductDetailViewController: BaseViewController {
     private func buildNavigationItem(titleText: String) {
         self.navigationItem.title = titleText
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem.barButton("分享", titleColor: UIColor.colorWithCustom(100, g: 100, b: 100), target: self, action: "rightItemClick")
+        navigationItem.rightBarButtonItem = UIBarButtonItem.barButton("分享", titleColor: UIColor.colorWithCustom(100, g: 100, b: 100), target: self, action: #selector(ProductDetailViewController.rightItemClick))
     }
     
     // MARK: - Action

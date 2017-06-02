@@ -87,7 +87,7 @@ class PageScrollView: UIView {
         
         for _ in 0..<3 {
             let imageView = UIImageView()
-            let tap = UITapGestureRecognizer(target: self, action: "imageViewClick:")
+            let tap = UITapGestureRecognizer(target: self, action: #selector(PageScrollView.imageViewClick(_:)))
             imageView.addGestureRecognizer(tap)
             imageScrollView.addSubview(imageView)
         }
@@ -108,9 +108,9 @@ class PageScrollView: UIView {
             var index = pageControl.currentPage
             
             if i == 0 {
-                index--
+                index -= 1
             } else if 2 == i {
-                index++
+                index += 1
             }
             
             if index < 0 {
@@ -131,7 +131,7 @@ class PageScrollView: UIView {
 
     // MARK: Timer
     private func startTimer() {
-        timer = NSTimer(timeInterval: 3.0, target: self, selector: "next", userInfo: nil, repeats: true)
+        timer = NSTimer(timeInterval: 3.0, target: self, selector: #selector(PageScrollView.next), userInfo: nil, repeats: true)
         NSRunLoop.mainRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
     }
     

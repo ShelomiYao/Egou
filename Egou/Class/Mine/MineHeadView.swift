@@ -3,11 +3,6 @@
 //  LoveFreshBeen
 //
 
-
-
-
-
-
 import UIKit
 
 class MineHeadView: UIImageView {
@@ -20,7 +15,7 @@ class MineHeadView: UIImageView {
         super.init(frame: frame)
         image = UIImage(named: "v2_my_avatar_bg")
         setUpBtn.setImage(UIImage(named: "v2_my_settings_icon"), forState: .Normal)
-        setUpBtn.addTarget(self, action: "setUpButtonClick", forControlEvents: .TouchUpInside)
+        setUpBtn.addTarget(self, action: #selector(MineHeadView.setUpButtonClick), forControlEvents: .TouchUpInside)
         addSubview(setUpBtn)
         addSubview(iconView)
         self.userInteractionEnabled = true

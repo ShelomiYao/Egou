@@ -88,7 +88,7 @@ class EditAdressViewController: BaseViewController {
         
         navigationItem.title = "修改地址"
         
-        let rightItemButton = UIBarButtonItem.barButton("保存", titleColor: UIColor.lightGrayColor(), target: self, action: "saveButtonClick")
+        let rightItemButton = UIBarButtonItem.barButton("保存", titleColor: UIColor.lightGrayColor(), target: self, action: #selector(EditAdressViewController.saveButtonClick))
         navigationItem.rightBarButtonItem = rightItemButton
     }
     
@@ -103,7 +103,7 @@ class EditAdressViewController: BaseViewController {
         deleteLabel.font = UIFont.systemFontOfSize(15)
         deleteView.addSubview(deleteLabel)
         
-        let tap = UITapGestureRecognizer(target: self, action: "deleteViewClick")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(EditAdressViewController.deleteViewClick))
         deleteView.addGestureRecognizer(tap)
         deleteView.hidden = true
     }
@@ -218,14 +218,14 @@ class EditAdressViewController: BaseViewController {
         
         let cancleButton = UIButton(frame: CGRectMake(0, 0, 80, toolBar.height))
         cancleButton.tag = 10
-        cancleButton.addTarget(self, action: "selectedCityTextFieldDidChange:", forControlEvents: .TouchUpInside)
+        cancleButton.addTarget(self, action: #selector(EditAdressViewController.selectedCityTextFieldDidChange(_:)), forControlEvents: .TouchUpInside)
         cancleButton.setTitle("取消", forState: .Normal)
         cancleButton.setTitleColor(UIColor.colorWithCustom(82, g: 188, b: 248), forState: .Normal)
         toolBar.addSubview(cancleButton)
         
         let determineButton = UIButton(frame: CGRectMake(view.width - 80, 0, 80, toolBar.height))
         determineButton.tag = 11
-        determineButton.addTarget(self, action: "selectedCityTextFieldDidChange:", forControlEvents: .TouchUpInside)
+        determineButton.addTarget(self, action: #selector(EditAdressViewController.selectedCityTextFieldDidChange(_:)), forControlEvents: .TouchUpInside)
         determineButton.setTitleColor(UIColor.colorWithCustom(82, g: 188, b: 248), forState: .Normal)
         determineButton.setTitle("确定", forState: .Normal)
         toolBar.addSubview(determineButton)
@@ -237,7 +237,7 @@ class EditAdressViewController: BaseViewController {
         button.tag = tag
         button.setImage(UIImage(named: "v2_noselected"), forState: UIControlState.Normal)
         button.setImage(UIImage(named: "v2_selected"), forState: UIControlState.Selected)
-        button.addTarget(self, action: "genderButtonClick:", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(EditAdressViewController.genderButtonClick(_:)), forControlEvents: .TouchUpInside)
         button.setTitle(title, forState: UIControlState.Normal)
         button.frame = frame
         button.setTitleColor(LFBTextBlackColor, forState: .Normal)

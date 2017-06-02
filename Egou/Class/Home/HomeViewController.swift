@@ -47,9 +47,9 @@ class HomeViewController: SelectedAdressViewController {
     
     // MARK:- addNotifiation
     func addHomeNotification() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "homeTableHeadViewHeightDidChange:", name: HomeTableHeadViewHeightDidChange, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "goodsInventoryProblem:", name: HomeGoodsInventoryProblem, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarBuyProductNumberDidChange", name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeViewController.homeTableHeadViewHeightDidChange(_:)), name: HomeTableHeadViewHeightDidChange, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeViewController.goodsInventoryProblem(_:)), name: HomeGoodsInventoryProblem, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeViewController.shopCarBuyProductNumberDidChange), name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
     }
     
     // MARK:- Creat UI
@@ -91,7 +91,7 @@ class HomeViewController: SelectedAdressViewController {
         collectionView.registerClass(HomeCollectionFooterView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "footerView")
         view.addSubview(collectionView)
         
-        let refreshHeadView = LFBRefreshHeader(refreshingTarget: self, refreshingAction: "headRefresh")
+        let refreshHeadView = LFBRefreshHeader(refreshingTarget: self, refreshingAction: #selector(HomeViewController.headRefresh))
         refreshHeadView.gifView?.frame = CGRectMake(0, 30, 100, 100)
         collectionView.mj_header = refreshHeadView
     }
@@ -291,7 +291,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             footerView.hideLabel()
             footerView.tag = 1
         }
-        let tap = UITapGestureRecognizer(target: self, action: "moreGoodsClick:")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.moreGoodsClick(_:)))
         footerView.addGestureRecognizer(tap)
         
         return footerView

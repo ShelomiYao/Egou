@@ -57,7 +57,7 @@ class HelpViewController: BaseViewController {
         label.tag = type.hashValue
         backView.addSubview(label)
         
-        let tap = UITapGestureRecognizer(target: self, action: "cellClick:")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(HelpViewController.cellClick(_:)))
         label.addGestureRecognizer(tap)
     }
     

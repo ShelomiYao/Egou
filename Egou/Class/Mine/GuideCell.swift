@@ -24,7 +24,7 @@ class GuideCell: UICollectionViewCell {
         contentView.addSubview(newImageView)
         
         nextButton.setBackgroundImage(UIImage(named: "icon_next"), forState: UIControlState.Normal)
-        nextButton.addTarget(self, action: "nextButtonClick", forControlEvents: UIControlEvents.TouchUpInside)
+        nextButton.addTarget(self, action: #selector(GuideCell.nextButtonClick), forControlEvents: UIControlEvents.TouchUpInside)
         nextButton.hidden = true
         contentView.addSubview(nextButton)
     }

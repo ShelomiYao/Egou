@@ -3,11 +3,6 @@
 //  LoveFreshBeen
 //
 
-
-
-
-
-
 import UIKit
 
 extension String {
@@ -22,7 +17,7 @@ extension String {
         while offset > 0 {
             s = newStr.substringWithRange(NSMakeRange(offset, 1))
             if s.isEqualToString("0") || s.isEqualToString(".") {
-                offset--
+                offset -= 1
             } else {
                 break
             }

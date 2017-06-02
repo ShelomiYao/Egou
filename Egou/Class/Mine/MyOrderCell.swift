@@ -80,7 +80,7 @@ class MyOrderCell: UITableViewCell {
         weak var tmpSelf = self
         buttons = OrderButtons(frame: CGRectZero, buttonClickCallBack: { (type) -> () in
             if tmpSelf?.delegate != nil {
-                if tmpSelf!.delegate!.respondsToSelector("orderCellButtonDidClick:buttonType:") {
+                if tmpSelf!.delegate!.respondsToSelector(#selector(MyOrderCellDelegate.orderCellButtonDidClick(_:buttonType:))) {
                     tmpSelf!.delegate!.orderCellButtonDidClick!(tmpSelf!.indexPath!, buttonType: type)
                 }
             }
@@ -228,7 +228,7 @@ class OrderButtons: UIView {
                 btn.layer.cornerRadius = 5
                 btn.backgroundColor = LFBNavigationYellowColor
                 btn.setTitle(buttons![i].text, forState: UIControlState.Normal)
-                btn.addTarget(self, action: "orderButtonClick:", forControlEvents: UIControlEvents.TouchUpInside)
+                btn.addTarget(self, action: #selector(OrderButtons.orderButtonClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
                 addSubview(btn)
             }
         }

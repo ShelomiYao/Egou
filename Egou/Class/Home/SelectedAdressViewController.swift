@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class SelectedAdressViewController: AnimationViewController {
@@ -27,7 +23,7 @@ class SelectedAdressViewController: AnimationViewController {
             titleView.frame = CGRectMake(0, 0, titleView.adressWidth, 30)
             navigationItem.titleView = titleView
             
-            let tap = UITapGestureRecognizer(target: self, action: "titleViewClick")
+            let tap = UITapGestureRecognizer(target: self, action: #selector(SelectedAdressViewController.titleViewClick))
             navigationItem.titleView?.addGestureRecognizer(tap)
         }
     }
@@ -36,17 +32,17 @@ class SelectedAdressViewController: AnimationViewController {
     private func buildNavigationItem() {
         navigationItem.leftBarButtonItem = UIBarButtonItem.barButton("扫一扫", titleColor: UIColor.blackColor(),
             image: UIImage(named: "icon_black_scancode")!, hightLightImage: nil,
-            target: self, action: "leftItemClick", type: ItemButtonType.Left)
+            target: self, action: #selector(SelectedAdressViewController.leftItemClick), type: ItemButtonType.Left)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem.barButton("搜 索", titleColor: UIColor.blackColor(),
             image: UIImage(named: "icon_search")!,hightLightImage: nil,
-            target: self, action: "rightItemClick", type: ItemButtonType.Right)
+            target: self, action: #selector(SelectedAdressViewController.rightItemClick), type: ItemButtonType.Right)
         
         let titleView = AdressTitleView(frame: CGRectMake(0, 0, 0, 30))
         titleView.frame = CGRectMake(0, 0, titleView.adressWidth, 30)
         navigationItem.titleView = titleView
         
-        let tap = UITapGestureRecognizer(target: self, action: "titleViewClick")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(SelectedAdressViewController.titleViewClick))
         navigationItem.titleView?.addGestureRecognizer(tap)
     }
     
@@ -72,7 +68,7 @@ class SelectedAdressViewController: AnimationViewController {
             tmpSelf?.navigationItem.titleView = titleView
             UserInfo.sharedUserInfo.setDefaultAdress(adress)
             
-            let tap = UITapGestureRecognizer(target: self, action: "titleViewClick")
+            let tap = UITapGestureRecognizer(target: self, action: #selector(SelectedAdressViewController.titleViewClick))
             tmpSelf?.navigationItem.titleView?.addGestureRecognizer(tap)
         }
         adressVC.isSelectVC = true

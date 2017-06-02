@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class WebViewController: BaseViewController {
@@ -54,7 +50,7 @@ class WebViewController: BaseViewController {
         let rightButton = UIButton(frame: CGRectMake(0, 0, 60, 44))
         rightButton.setImage(UIImage(named: "v2_refresh"), forState: UIControlState.Normal)
         rightButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -53)
-        rightButton.addTarget(self, action: "refreshClick", forControlEvents: UIControlEvents.TouchUpInside)
+        rightButton.addTarget(self, action: #selector(WebViewController.refreshClick), forControlEvents: UIControlEvents.TouchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
     }
     

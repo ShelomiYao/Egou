@@ -75,7 +75,7 @@ class SystemMessageCell: UITableViewCell {
         showMoreButton?.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         showMoreButton?.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Highlighted)
         showMoreButton!.titleLabel?.textAlignment = NSTextAlignment.Center
-        showMoreButton!.addTarget(self, action: "showMoreButtonClick", forControlEvents: UIControlEvents.TouchUpInside)
+        showMoreButton!.addTarget(self, action: #selector(SystemMessageCell.showMoreButtonClick), forControlEvents: UIControlEvents.TouchUpInside)
         showMoreButton?.hidden = true
         titleView!.addSubview(showMoreButton!)
         
