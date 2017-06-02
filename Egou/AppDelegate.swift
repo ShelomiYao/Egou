@@ -33,7 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func bLockEgouApp() {
         let num = NSUserDefaults.standardUserDefaults().objectForKey(KEY_UserDefaults_isGestureLockEnabledOrNotByUser)
-        let isGestureLockEnabledOrNotByUser = num!.boolValue
+        let bGestureLockEnabledOrNotByUser = num?.boolValue
+        var isGestureLockEnabledOrNotByUser = true
+
+        if nil == bGestureLockEnabledOrNotByUser {
+            isGestureLockEnabledOrNotByUser = false
+        }
         let isHasGestureSavedInNSUserDefaults = GestureTool_Public.isHasGesturePwdStringWhichSavedInNSUserDefaults()
         
         if ((isGestureLockEnabledOrNotByUser) && isHasGestureSavedInNSUserDefaults) {
