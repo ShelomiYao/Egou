@@ -1646,8 +1646,6 @@
     //读取
     NSString *gesturePwdStr=(NSString *)[defaults objectForKey:KEY_UserDefaults_GesturePassword];
     BOOL res = [curGesturePwdStr isEqualToString:gesturePwdStr];
-    NSLog(@"curGesturePwdStr = %@1111111111111111111111111111",curGesturePwdStr);
-    NSLog(@"gesturePwdStr = %@2222222222222222222222222222222",gesturePwdStr);
 
     if (curGesturePwdStr.length > 0 && res)
     {

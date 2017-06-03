@@ -159,8 +159,8 @@ class OrderImageViews: UIView {
                     subImageView.sd_setImageWithURL(NSURL(string: order_goods![i][0].img!), placeholderImage: UIImage(named: "author"))
                 }
             }
-            
-            for var i = order_goods!.count; i < 4; i++ {
+//            for var i = order_goods!.count; i < 4; i++ {
+            for i in order_goods!.count ..< 4 {
                 let subImageView = imageViewsSubViews![i]
                 subImageView.hidden = true
             }
@@ -211,7 +211,8 @@ class OrderButtons: UIView {
     
     var buttons: [OrderButton]? {
         didSet {
-            for var i = subviews.count; i > 0; i-- {
+//            for var i = subviews.count; i > 0; i-- {
+            for var i = subviews.count; i > 0; i -= 1 {
                 let subBtnView = self.subviews[i-1]
                 subBtnView.removeFromSuperview()
             }

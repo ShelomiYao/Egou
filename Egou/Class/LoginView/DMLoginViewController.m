@@ -6,6 +6,7 @@
 //  Copyright © 2016年 PCEBG. All rights reserved.
 //
 
+#import<CommonCrypto/CommonDigest.h>
 #import "DMLoginViewController.h"
 #import "UITextField+Shake.h"
 #import "DMRegisterViewController.h"
@@ -183,8 +184,8 @@
 
 -(void)loginButtonClick:(UIButton *)button
 {
-    if (_phoneTextFiled.text.length == 11 && _passwordTextFiled.text.length <= 16 && _passwordTextFiled.text.length >= 8) {
-        
+    if ([self checkPhoneAndPassword]) {
+        NSLog(@"登录成功");
         [self.navigationController popViewControllerAnimated:YES];
     }
     else{
@@ -238,6 +239,27 @@
     return YES;
 }
 
+-(BOOL)checkPhoneAndPassword{
+    BOOL bValidPhoneAndPassword = NO;
+    NSArray *userInfoArr = @[@{@"phone": @"18866668888",@"password":@"6a86232350b1c5c5aa2ae7bdc70d838c"},
+  @{@"phone": @"18600009999",@"password":@"5a69d368c7d9e9ad5358e555c1b09c82"},
+  @{@"phone": @"15078331961",@"password":@"18e0e5f3389efa0b31738c2fd44630d8"}];
+    NSString *phone = _phoneTextFiled.text;
+    NSString *password = _passwordTextFiled.text;
+    NSString *passwordMD5 = [self md5:password];
+    NSLog(@"passwordMD5 = %@",passwordMD5);
+    
+    for (NSUInteger i = 0;i < userInfoArr.count;i++) {
+        NSDictionary *dic = userInfoArr[i];
+        if ([phone isEqualToString:[dic valueForKey:@"phone"]]&&[passwordMD5 isEqualToString:[dic valueForKey:@"password"]]) {
+            bValidPhoneAndPassword = YES;
+            break;
+        }
+    }
+    
+    return bValidPhoneAndPassword;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -247,5 +269,17 @@
     [self.passwordTextFiled resignFirstResponder];
 }
 
+- (NSString *) md5:(NSString *) input {
+    const char *cStr = [input UTF8String];
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
+    
+    NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    
+    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+        [output appendFormat:@"%02x", digest[i]];
+    
+    return output;
+}
 
 @end

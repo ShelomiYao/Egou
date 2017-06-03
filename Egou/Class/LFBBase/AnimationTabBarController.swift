@@ -160,7 +160,7 @@ class AnimationTabBarController: UITabBarController {
         tabBar.addSubview(viewContainer)
         viewContainer.tag = index
         
-        let tap = UITapGestureRecognizer(target: self, action: Selector("tabBarClick:"))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(AnimationTabBarController.tabBarClick(_:)))
         viewContainer.addGestureRecognizer(tap)
         
         return viewContainer
@@ -264,4 +264,10 @@ class AnimationTabBarController: UITabBarController {
         toIV.image = UIImage(named: iconsSelectedImageName[to])
         items[to].playAnimation(toIV, textLabel: iconsView[to].textLabel)
     }
+    
+    func tabBarClick(message:NSString) -> Void {
+        print("No method!")
+    }
 }
+
+

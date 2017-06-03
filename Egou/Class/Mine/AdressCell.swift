@@ -57,7 +57,7 @@ class AdressCell: UITableViewCell {
         modifyImageView.contentMode = UIViewContentMode.Center
         contentView.addSubview(modifyImageView)
         
-        let tap = UITapGestureRecognizer(target: self, action: "modifyImageViewClick:")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(AdressCell.modifyImageViewClick(_:)))
         modifyImageView.userInteractionEnabled = true
         modifyImageView.addGestureRecognizer(tap)
         

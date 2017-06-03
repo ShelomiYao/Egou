@@ -19,7 +19,7 @@ class LFBSegmentedControl: UISegmentedControl {
         tintColor = LFBNavigationYellowColor
         setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.blackColor()], forState: UIControlState.Selected)
         setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.colorWithCustom(100, g: 100, b: 100)], forState: UIControlState.Normal)
-        addTarget(self, action: "segmentedControlDidValuechange:", forControlEvents: UIControlEvents.ValueChanged)
+        addTarget(self, action: #selector(LFBSegmentedControl.segmentedControlDidValuechange(_:)), forControlEvents: UIControlEvents.ValueChanged)
         selectedSegmentIndex = 0
     }
     

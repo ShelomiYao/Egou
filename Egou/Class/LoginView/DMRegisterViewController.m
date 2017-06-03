@@ -185,13 +185,11 @@
     return isMatch;
 }
 
-
-
 -(void)getValidCode:(UIButton *)sender{
     NSScanner *scan = [NSScanner scannerWithString:_phoneTextFiled.text];
     int val;
-    BOOL PureInt = [scan scanInt:&val]&&[scan isAtEnd];
-    NSLog(@"%d",PureInt);
+    
+    [scan scanInt:&val]&&[scan isAtEnd];
     
     if ([self checkUserInfo]) {
         [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:self.phoneTextFiled.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
@@ -250,7 +248,7 @@
     BOOL bValidUsername;
     BOOL bValidPhoneNumber;
     BOOL bValidPassword;
-    
+
     bValidUsername = [self checkUserName:self.userNameTextFiled.text];
     bValidPassword = [self checkPassword:self.passwordTextFiled.text];
     bValidPhoneNumber = [self checkTelNumber:self.phoneTextFiled.text];
@@ -258,13 +256,27 @@
     if (!bValidUsername) {
         [_userNameTextFiled shake];
     }
-    else if (!bValidPassword){
+    if (!bValidPassword){
         [_passwordTextFiled shake];
     }
-    else if (!bValidPhoneNumber){
+    
+    NSArray *userPhoneArr = @[@"18866668888",@"16800009999",@"15078331961"];
+    for (int i = 0; i < userPhoneArr.count; i++) {
+        if ([_phoneTextFiled.text isEqualToString:userPhoneArr[i]]) {
+            bValidPhoneNumber = NO;
+            [_phoneTextFiled shake];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"该号码已经注册过" message:nil preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:nil];
+            break;
+        }
+    }
+    if (!bValidPhoneNumber){
         [_phoneTextFiled shake];
     }
-    else{
+    
+    if (bValidPassword && bValidUsername && bValidPhoneNumber){
         bValidUserInfo = YES;
     }
     

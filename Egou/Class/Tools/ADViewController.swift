@@ -59,7 +59,7 @@ class ADViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(backImageView)
+//        view.addSubview(backImageView)
         UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.None)
     }
 }

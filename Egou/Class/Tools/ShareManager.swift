@@ -83,15 +83,10 @@ class ShareManager: NSObject {
     }
     
     class func showSuccessAlert() {
-        
-        let alert = UIAlertView(title: "成功", message: "分享成功", delegate: nil, cancelButtonTitle: "知道了")
-        alert.show()
+        print("分享成功")
     }
     
     class func showErrorAlert() {
-        
-        let alert = UIAlertView(title: "失败", message: "分享失败", delegate: nil, cancelButtonTitle: "知道了")
-        alert.show()
-        
+        print("分享失败")
     }
 }

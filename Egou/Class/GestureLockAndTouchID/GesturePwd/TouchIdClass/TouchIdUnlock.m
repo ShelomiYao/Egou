@@ -256,15 +256,11 @@
     if (_alertMessageToShowWhenUserDisableTouchID.length) {
         msg = _alertMessageToShowWhenUserDisableTouchID;
     }
-    
-    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle: title
-                                                         message: msg
-                                                        delegate: nil
-                                               cancelButtonTitle: @"知道了"
-                                               otherButtonTitles: nil,
-                               nil];
-    
-    [alertView show];
+   
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:action];
+
 }
 
 

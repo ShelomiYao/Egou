@@ -2,7 +2,7 @@
 //  UserSingle.swift
 //  Egou
 //
-//  Created by Mac on 17/5/1.
+//  Created by Mac on 17/4/1.
 //  Copyright © 2017年 ShelomiYao. All rights reserved.
 //
 

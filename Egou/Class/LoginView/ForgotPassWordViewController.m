@@ -210,17 +210,37 @@
     BOOL bValidUserInfo = NO;
     BOOL bValidPhoneNumber;
     BOOL bValidPassword;
-    
+    BOOL bPhoneRegiste = NO;
+    NSArray *userPhoneArr = @[@"18866668888",@"16800009999",@"15078331961"];
+
     bValidPassword = [self checkPassword:self.NewPwdTextFiled.text];
     bValidPhoneNumber = [self checkTelNumber:self.phoneTextFiled.text];
     
     if (!bValidPassword){
         [_NewPwdTextFiled shake];
     }
-    else if (!bValidPhoneNumber){
+    if (!bValidPhoneNumber){
         [_phoneTextFiled shake];
     }
     else{
+        for (int i = 0; i < userPhoneArr.count; i++) {
+            if ([_phoneTextFiled.text isEqualToString:userPhoneArr[i]]) {
+                bPhoneRegiste = YES;
+                break;
+            }
+        }
+        if (!bPhoneRegiste) {
+            bValidPhoneNumber = NO;
+            [_phoneTextFiled shake];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"该号码没有注册" message:nil preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+
+    }
+    
+    if (bValidPhoneNumber && bValidPassword){
         bValidUserInfo = YES;
     }
     

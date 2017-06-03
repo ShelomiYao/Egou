@@ -66,8 +66,8 @@ class HelpViewController: BaseViewController {
      
         switch tap.view!.tag {
         case HelpCellType.Phone.hashValue :
-            let alertView = UIAlertView(title: "", message: "400-8000-842", delegate: self, cancelButtonTitle: "取消", otherButtonTitles: "拨打")
-            alertView.show()
+//            let alertView = UIAlertView(title: "", message: "400-8000-842", delegate: self, cancelButtonTitle: "取消", otherButtonTitles: "拨打")
+//            alertView.show()
             break
         case HelpCellType.Question.hashValue :
             let helpDetailVC = HelpDetailViewController()

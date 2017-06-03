@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class PageScrollView: UIView {
@@ -103,7 +99,8 @@ class PageScrollView: UIView {
     
     //MARK: 更新内容
     private func updatePageScrollView() {
-        for var i = 0; i < imageScrollView.subviews.count; i++ {    
+//        for var i = 0; i < imageScrollView.subviews.count; i++ {
+        for i in 0 ..< imageScrollView.subviews.count {
             let imageView = imageScrollView.subviews[i] as! UIImageView
             var index = pageControl.currentPage
             
