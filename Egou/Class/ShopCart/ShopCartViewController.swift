@@ -242,7 +242,7 @@ class ShopCartViewController: BaseViewController {
     }
     
     func modifySignTimeViewClick() {
-        print("修改收货时间")
+        navigationController?.pushViewController(MyAdressViewController(), animated: true)
     }
     
     func selectedSignTimeTextFieldDidChange(sender: UIButton) {

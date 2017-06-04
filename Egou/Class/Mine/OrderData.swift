@@ -4,9 +4,6 @@
 //
 
 
-
-
-
 import UIKit
 
 class OrderData: NSObject, DictModelProtocol {

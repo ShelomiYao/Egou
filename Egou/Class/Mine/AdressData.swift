@@ -23,7 +23,9 @@ class AdressData: NSObject, DictModelProtocol {
     class func loadMyAdressData(completion:(data: AdressData?, error: NSError?) -> Void) {
         let path = NSBundle.mainBundle().pathForResource("MyAdress", ofType: nil)
         let data = NSData(contentsOfFile: path!)
-        if data != nil {
+        print("data = \(data)")
+//        if data != nil {
+        if false{
             let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
             
             let modelTool = DictModelManager.sharedManager

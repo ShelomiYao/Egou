@@ -159,8 +159,7 @@ class OrderImageViews: UIView {
                     subImageView.sd_setImageWithURL(NSURL(string: order_goods![i][0].img!), placeholderImage: UIImage(named: "author"))
                 }
             }
-//            for var i = order_goods!.count; i < 4; i++ {
-            for i in order_goods!.count ..< 4 {
+            for var i = order_goods!.count; i < 4; i++ {
                 let subImageView = imageViewsSubViews![i]
                 subImageView.hidden = true
             }

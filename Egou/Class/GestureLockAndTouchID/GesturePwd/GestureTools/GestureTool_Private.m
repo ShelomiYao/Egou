@@ -1,7 +1,7 @@
 //
 //  GestureTool_Private.m
 //  v1.0
-//  by ShelomiYao, Hawking.HK@gmail.com
+//  by ShelomiYao, ShelomiYao@gmail.com
 
 #import "GestureTool_Private.h"
 #import "GestureDefine.h"

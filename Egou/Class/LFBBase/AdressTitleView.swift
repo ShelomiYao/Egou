@@ -3,11 +3,6 @@
 //  LoveFreshBeen
 //
 
-
-
-
-
-
 import UIKit
 
 class AdressTitleView: UIView {

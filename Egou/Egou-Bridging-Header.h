@@ -24,6 +24,9 @@
 #import "GestureTool_Public.h"      //手势工具
 #import "GestureSetupViewController.h"
 
+#import "UserEntity.h"
+#import "Util.h"
+
 
 //#import "HomeViewController-Swift.h"
 

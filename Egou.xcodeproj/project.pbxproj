@@ -192,7 +192,8 @@
 		041A2EAD1EB73A0700C3594A /* DMRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9C1EB73A0600C3594A /* DMRegisterViewController.m */; };
 		041A2EAE1EB73A0700C3594A /* ForgotPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */; };
 		041A2EB01EB73A0700C3594A /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EA81EB73A0600C3594A /* UITextField+Shake.m */; };
-		041A2EB41EB7518400C3594A /* UserSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A2EB31EB7518400C3594A /* UserSingle.swift */; };
+		04310A351EE3E19000394608 /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 04310A341EE3E19000394608 /* UserEntity.m */; };
+		04310A381EE3E30300394608 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 04310A371EE3E30300394608 /* Util.m */; };
 		04764B8A1EB86F8500B37825 /* MineEmptyViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04764B891EB86F8500B37825 /* MineEmptyViewControll.swift */; };
 		04B23B8C1EC30C0C007BD619 /* GestureBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B391EC30C0C007BD619 /* GestureBaseViewController.m */; };
 		04B23B8D1EC30C0C007BD619 /* DrawPatternLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B23B3D1EC30C0C007BD619 /* DrawPatternLockView.m */; };
@@ -511,7 +512,10 @@
 		041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPassWordViewController.m; sourceTree = "<group>"; };
 		041A2EA71EB73A0600C3594A /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
 		041A2EA81EB73A0600C3594A /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
-		041A2EB31EB7518400C3594A /* UserSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSingle.swift; sourceTree = "<group>"; };
+		04310A331EE3E19000394608 /* UserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEntity.h; sourceTree = "<group>"; };
+		04310A341EE3E19000394608 /* UserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEntity.m; sourceTree = "<group>"; };
+		04310A361EE3E30300394608 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		04310A371EE3E30300394608 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		04764B891EB86F8500B37825 /* MineEmptyViewControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineEmptyViewControll.swift; sourceTree = "<group>"; };
 		04B23B381EC30C0C007BD619 /* GestureBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureBaseViewController.h; sourceTree = "<group>"; };
 		04B23B391EC30C0C007BD619 /* GestureBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureBaseViewController.m; sourceTree = "<group>"; };
@@ -663,7 +667,7 @@
 			isa = PBXGroup;
 			children = (
 				04B23B371EC30C0C007BD619 /* GestureLockAndTouchID */,
-				041A2E921EB73A0600C3594A /* LoginView */,
+				041A2E921EB73A0600C3594A /* Login */,
 				0405A7EC1EABCE32001C897B /* Extension */,
 				0405A7F21EABCE32001C897B /* FreshReserve */,
 				0405A7F41EABCE32001C897B /* Home */,
@@ -791,7 +795,6 @@
 				0405A83E1EABCE32001C897B /* SettingViewController.swift */,
 				0405A83F1EABCE32001C897B /* SystemMessageCell.swift */,
 				0405A8401EABCE32001C897B /* UserMessage.swift */,
-				041A2EB31EB7518400C3594A /* UserSingle.swift */,
 				04764B891EB86F8500B37825 /* MineEmptyViewControll.swift */,
 			);
 			path = Mine;
@@ -1124,76 +1127,25 @@
 			path = Wechat;
 			sourceTree = "<group>";
 		};
-		041A2E921EB73A0600C3594A /* LoginView */ = {
+		041A2E921EB73A0600C3594A /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				041A2E931EB73A0600C3594A /* Assets2.xcassets */,
-				041A2E941EB73A0600C3594A /* bg4.imageset */,
 				041A2E951EB73A0600C3594A /* DMLoginViewController.h */,
 				041A2E961EB73A0600C3594A /* DMLoginViewController.m */,
 				041A2E9B1EB73A0600C3594A /* DMRegisterViewController.h */,
 				041A2E9C1EB73A0600C3594A /* DMRegisterViewController.m */,
 				041A2E9D1EB73A0600C3594A /* ForgotPassWordViewController.h */,
 				041A2E9E1EB73A0600C3594A /* ForgotPassWordViewController.m */,
-				041A2EA11EB73A0600C3594A /* goback_back_orange_on.imageset */,
-				041A2EA21EB73A0600C3594A /* ic_landing_microblog.imageset */,
-				041A2EA31EB73A0600C3594A /* ic_landing_nickname.imageset */,
-				041A2EA41EB73A0600C3594A /* ic_landing_qq.imageset */,
-				041A2EA51EB73A0600C3594A /* ic_landing_wechat.imageset */,
-				041A2EA61EB73A0600C3594A /* mm_normal.imageset */,
 				041A2EA71EB73A0600C3594A /* UITextField+Shake.h */,
 				041A2EA81EB73A0600C3594A /* UITextField+Shake.m */,
+				04310A331EE3E19000394608 /* UserEntity.h */,
+				04310A341EE3E19000394608 /* UserEntity.m */,
+				04310A361EE3E30300394608 /* Util.h */,
+				04310A371EE3E30300394608 /* Util.m */,
 			);
+			name = Login;
 			path = LoginView;
-			sourceTree = "<group>";
-		};
-		041A2E941EB73A0600C3594A /* bg4.imageset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = bg4.imageset;
-			sourceTree = "<group>";
-		};
-		041A2EA11EB73A0600C3594A /* goback_back_orange_on.imageset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = goback_back_orange_on.imageset;
-			sourceTree = "<group>";
-		};
-		041A2EA21EB73A0600C3594A /* ic_landing_microblog.imageset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ic_landing_microblog.imageset;
-			sourceTree = "<group>";
-		};
-		041A2EA31EB73A0600C3594A /* ic_landing_nickname.imageset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ic_landing_nickname.imageset;
-			sourceTree = "<group>";
-		};
-		041A2EA41EB73A0600C3594A /* ic_landing_qq.imageset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ic_landing_qq.imageset;
-			sourceTree = "<group>";
-		};
-		041A2EA51EB73A0600C3594A /* ic_landing_wechat.imageset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ic_landing_wechat.imageset;
-			sourceTree = "<group>";
-		};
-		041A2EA61EB73A0600C3594A /* mm_normal.imageset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = mm_normal.imageset;
 			sourceTree = "<group>";
 		};
 		04B23B371EC30C0C007BD619 /* GestureLockAndTouchID */ = {
@@ -1765,6 +1717,7 @@
 				0405A9101EABCE33001C897B /* AnimationViewController.swift in Sources */,
 				0405A9691EABCE33001C897B /* ProductCell.swift in Sources */,
 				0405A94A1EABCE33001C897B /* UserMessage.swift in Sources */,
+				04310A381EE3E30300394608 /* Util.m in Sources */,
 				0405A9681EABCE33001C897B /* CategoryCell.swift in Sources */,
 				0405A9381EABCE33001C897B /* MineCell.swift in Sources */,
 				0405A8F91EABCE33001C897B /* AppDelegate.swift in Sources */,
@@ -1831,11 +1784,11 @@
 				0405A9921EABCE33001C897B /* UIImage+GIF.m in Sources */,
 				0405A9191EABCE33001C897B /* LFBSegmentedControl.swift in Sources */,
 				0405A9011EABCE33001C897B /* CouponData.swift in Sources */,
-				041A2EB41EB7518400C3594A /* UserSingle.swift in Sources */,
 				0405A9851EABCE33001C897B /* UIScrollView+MJExtension.m in Sources */,
 				0405A97D1EABCE33001C897B /* MJRefreshBackGifFooter.m in Sources */,
 				0405A9041EABCE33001C897B /* HomeCell.swift in Sources */,
 				04B23BAA1EC30C0C007BD619 /* GestureSettingViewController.m in Sources */,
+				04310A351EE3E19000394608 /* UserEntity.m in Sources */,
 				0405A9911EABCE33001C897B /* UIButton+WebCache.m in Sources */,
 				0405A9341EABCE33001C897B /* HelpViewController.swift in Sources */,
 				0405A9761EABCE33001C897B /* MJRefreshBackFooter.m in Sources */,

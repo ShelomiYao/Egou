@@ -2,7 +2,7 @@
 //  UITextField+Shake.m
 //  Shake
 //
-//  Created by lanouhn on 16/3/1.
+//  Created by ShelomiYao on 16/3/1.
 //  Copyright © 2016年 LGQ. All rights reserved.
 //
 

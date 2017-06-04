@@ -68,7 +68,7 @@ class AboltAuthorViewController: BaseViewController {
         bulidTextLabel(blogLabel, text: "技术博客: " + "\(BlogURLString)", tag: 3)
     }
     
-    let buttonTitles = ["小E的Github", "小E的微博", "小E的技术博客"]
+    let buttonTitles = ["小姚的Github", "小姚的微博", "小姚的技术博客"]
     let btnW: CGFloat = 80
     private func buildURLButton() {
         for i in 0...2 {

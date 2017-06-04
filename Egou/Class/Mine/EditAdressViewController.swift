@@ -247,17 +247,17 @@ class EditAdressViewController: BaseViewController {
     // MARK: - Action
     func saveButtonClick() {
         if contactsTextField?.text?.characters.count <= 1 {
-            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "我们需要你的大名~")
+            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "我们需要您的大名~")
             return
         }
         
         if !manButton!.selected && !womenButton!.selected {
-            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "人妖么,不男不女的~")
+            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "不选择性别默认是人妖哦")
             return
         }
         
         if phoneNumberTextField!.text?.characters.count != 13 {
-            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "没电话,特么怎么联系你~")
+            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "没电话,我们无法联系您~")
             return
         }
         
@@ -267,12 +267,12 @@ class EditAdressViewController: BaseViewController {
         }
         
         if areaTextField?.text?.characters.count <= 2 {
-            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "你的位置啊~")
+            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "您的位置啊~")
             return
         }
         
         if adressTextField?.text?.characters.count <= 2 {
-            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "在哪里呢啊~上哪找你去啊~")
+            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "在哪里呢啊~上哪找您去啊~")
             return
         }
         

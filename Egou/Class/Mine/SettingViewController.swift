@@ -4,10 +4,6 @@
 //
 
 
-
-
-
-
 import UIKit
 
 class SettingViewController: BaseViewController {
@@ -18,7 +14,7 @@ class SettingViewController: BaseViewController {
     private var cleanCacheView: UIView!
     private var cacheNumberLabel: UILabel!
     private var logoutView: UIView!
-    
+    private var logoutButton: UIButton!
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +46,7 @@ class SettingViewController: BaseViewController {
         aboutMeView.addGestureRecognizer(tap)
         
         let aboutLabel = UILabel(frame: CGRectMake(20, 0, 200, subViewHeight))
-        aboutLabel.text = "关于小E"
+        aboutLabel.text = "关于小姚"
         aboutLabel.font = UIFont.systemFontOfSize(16)
         aboutMeView.addSubview(aboutLabel)
         
@@ -89,15 +85,22 @@ class SettingViewController: BaseViewController {
         logoutView.backgroundColor = UIColor.whiteColor()
         view.addSubview(logoutView)
         
-        let logoutLabel = UILabel(frame: CGRectMake(0, 0, ScreenWidth, subViewHeight))
-        logoutLabel.text = "退出当前账号"
-        logoutLabel.textColor = UIColor.colorWithCustom(60, g: 60, b: 60)
-        logoutLabel.font = UIFont.systemFontOfSize(15)
-        logoutLabel.textAlignment = NSTextAlignment.Center
-        logoutView.addSubview(logoutLabel)
+        logoutButton = UIButton(frame: CGRectMake(0, 0, ScreenWidth, subViewHeight))
+        if Util.getCurrentUserInfo().bLogin {
+            logoutButton.setTitle("退出当前账号", forState: UIControlState.Normal)
+        }else{
+            logoutButton.setTitle("登  录", forState: UIControlState.Normal)
+        }
+        logoutButton.layer.cornerRadius = 10;
+        logoutButton.backgroundColor = UIColor.orangeColor()
+        logoutButton.setTitleColor(UIColor.colorWithCustom(60, g: 60, b: 60), forState: UIControlState.Normal)
+        logoutButton.titleLabel?.font = UIFont.systemFontOfSize(18)
+        logoutButton.titleLabel?.textAlignment = NSTextAlignment.Center
+        logoutButton.addTarget(self, action: #selector(SettingViewController.logoutViewClick), forControlEvents: UIControlEvents.TouchUpInside)
+        logoutView.addSubview(logoutButton)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(SettingViewController.logoutViewClick))
-        logoutLabel.addGestureRecognizer(tap)
+        logoutButton.addGestureRecognizer(tap)
     }
     
     // MARK: - Action
@@ -115,5 +118,30 @@ class SettingViewController: BaseViewController {
         }
     }
     
-    func logoutViewClick() {}
+    func logoutViewClick() {
+        if Util.getCurrentUserInfo().bLogin {
+            let alert = UIAlertController(title: "确定要退出登录吗？", message: "", preferredStyle: .ActionSheet)
+            let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
+            let okAction = UIAlertAction(title: "确定", style: .Default) { (UIAlertAction) in
+            self.logoutButton.setTitle("登  录", forState: UIControlState.Normal)
+                Util.getCurrentUserInfo().bLogin = false
+            }
+            alert.addAction(cancelAction)
+            alert.addAction(okAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+
+        }
+        else{
+            self.navigationController?.pushViewController(DMLoginViewController(), animated: true)
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if Util.getCurrentUserInfo().bLogin {
+            logoutButton.setTitle("退出当前账号", forState: UIControlState.Normal)
+        }else{
+            logoutButton.setTitle("登  录", forState: UIControlState.Normal)
+        }
+    }
+    
 }

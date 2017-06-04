@@ -2,7 +2,7 @@
 //  DMRegisterViewController.m
 //  LoginView
 //
-//  Created by SDC201 on 16/3/9.
+//  Created by ShelomiYao on 16/3/9.
 //  Copyright © 2016年 PCEBG. All rights reserved.
 //
 
@@ -36,19 +36,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationItem setTitle:@"注 册"];
-
+    
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     self.view.backgroundColor=[UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1];
     
     [self createTextFiled];
 }
 
--(void)backBtnClick
+- (void)backBtnClick
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
--(void)createTextFiled
+- (void)createTextFiled
 {
     _baceView = [[UIView alloc]initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, 200)];
     _baceView.layer.cornerRadius = 5.0;
@@ -124,11 +124,11 @@
     UIImageView *line2 = [[UIImageView alloc]initWithFrame:CGRectMake(20, 100, _baceView.frame.size.width - 40, 1)];
     line2.backgroundColor = [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:0.3];
     [_baceView addSubview:line2];
-
+    
     UIImageView *line3 = [[UIImageView alloc]initWithFrame:CGRectMake(20, 150, _baceView.frame.size.width - 40, 1)];
     line3.backgroundColor = [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:0.3];
     [_baceView addSubview:line3];
-
+    
     
     UIButton *registSubmitBtn = [[UIButton alloc]initWithFrame:CGRectMake(10,_baceView.frame.size.height + _baceView.frame.origin.y + 30, _baceView.frame.size.width, 37)];
     [registSubmitBtn setTitle:@"注  册" forState:UIControlStateNormal];
@@ -185,7 +185,7 @@
     return isMatch;
 }
 
--(void)getValidCode:(UIButton *)sender{
+- (void)getValidCode:(UIButton *)sender{
     NSScanner *scan = [NSScanner scannerWithString:_phoneTextFiled.text];
     int val;
     
@@ -205,7 +205,7 @@
     }
 }
 
--(void)reduceTime:(NSTimer *)codeTimer
+- (void)reduceTime:(NSTimer *)codeTimer
 {
     self.timeCount--;
     if (self.timeCount == 0) {
@@ -223,19 +223,21 @@
     }
 }
 
--(void)registSubmitBtnClick:(UIButton *)button{
+- (void)registSubmitBtnClick:(UIButton *)button{
     if ([self checkUserInfo]) {
         [SMSSDK commitVerificationCode:self.verificationCodeTextFiled.text phoneNumber:self.phoneTextFiled.text zone:@"86" result:^(SMSSDKUserInfo *userInfo, NSError *error){
-            if (nil != error){
-                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"手机号码或验证码有误" message:nil preferredStyle:UIAlertControllerStyleAlert];
-                UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
-                [alert addAction:action];
-                [self presentViewController:alert animated:YES completion:nil];
-            }else{
+            if (!error){
                 UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"注册成功" message:nil preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     [self.navigationController popViewControllerAnimated:YES];
                 }];
+                [alert addAction:action];
+                [self presentViewController:alert animated:YES completion:nil];
+            }
+            else{
+                NSLog(@"error = %@",error);
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"手机号码或验证码有误" message:nil preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
                 [alert addAction:action];
                 [self presentViewController:alert animated:YES completion:nil];
             }
@@ -248,7 +250,7 @@
     BOOL bValidUsername;
     BOOL bValidPhoneNumber;
     BOOL bValidPassword;
-
+    
     bValidUsername = [self checkUserName:self.userNameTextFiled.text];
     bValidPassword = [self checkPassword:self.passwordTextFiled.text];
     bValidPhoneNumber = [self checkTelNumber:self.phoneTextFiled.text];
@@ -283,7 +285,7 @@
     return bValidUserInfo;
 }
 
--(UITextField *)createTextFiledWithFrame:(CGRect)frame font:(UIFont *)font placeholder:(NSString *)placeholder
+- (UITextField *)createTextFiledWithFrame:(CGRect)frame font:(UIFont *)font placeholder:(NSString *)placeholder
 {
     UITextField *textField=[[UITextField alloc]initWithFrame:frame];
     
@@ -298,7 +300,7 @@
     return textField;
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     if (textField == _phoneTextFiled) {
         [_phoneTextFiled resignFirstResponder];
@@ -314,7 +316,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.phoneTextFiled resignFirstResponder];
     [self.passwordTextFiled resignFirstResponder];
     [self.userNameTextFiled resignFirstResponder];

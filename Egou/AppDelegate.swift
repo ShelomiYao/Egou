@@ -36,12 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bGestureLockEnabledOrNotByUser = num?.boolValue
         var isGestureLockEnabledOrNotByUser = true
 
+        print("bGestureLockEnabledOrNotByUser = \(bGestureLockEnabledOrNotByUser)")
         if nil == bGestureLockEnabledOrNotByUser {
             isGestureLockEnabledOrNotByUser = false
         }
         let isHasGestureSavedInNSUserDefaults = GestureTool_Public.isHasGesturePwdStringWhichSavedInNSUserDefaults()
         
-        if ((isGestureLockEnabledOrNotByUser) && isHasGestureSavedInNSUserDefaults) {
+        if ((isGestureLockEnabledOrNotByUser) && isHasGestureSavedInNSUserDefaults && Util.getCurrentUserInfo().bLogin) {
             GestureLockScreen.sharedInstance().showGestureWindowByType(GestureLockScreenTypeGesturePwdVerify)
             
             let canVerifyTouchID = TouchIdUnlock.sharedInstance().canVerifyTouchID()
@@ -127,5 +128,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navBarnAppearance = UINavigationBar.appearance()
         navBarnAppearance.translucent = false
     }
+    
+    func loadUserInfo() -> Void {
+//        if ([Util getCurrentUserInfo].isLogin == YES)
+//        {
+//            NSString *userName = [Util getCurrentUserInfo].userName;//已经登录状态,获取登录用户名
+//        }
+//        else
+//        {
+//            NSLog(@"未登录状态");
+//        }
+        if Util.getCurrentUserInfo().bLogin {
+            print("已登录")
+        }
+    }
 }
+
+
+//        UserEntity *currenUser = [Util getCurrentUserInfo];
+//        currenUser.bLogin = YES;
+//        currenUser.userName = _phoneTextFiled.text;
+//        currenUser.password = _passwordTextFiled.text;
+//        NSLog(@"currenUser.userName = %@",currenUser.userName);
+//        NSLog(@"currenUser.password = %@",currenUser.password);
+
+
 

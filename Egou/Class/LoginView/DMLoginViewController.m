@@ -2,7 +2,7 @@
 //  DMLoginViewController.m
 //  LoginView
 //
-//  Created by SDC201 on 16/3/9.
+//  Created by ShelomiYao on 16/3/9.
 //  Copyright © 2016年 PCEBG. All rights reserved.
 //
 
@@ -12,6 +12,8 @@
 #import "DMRegisterViewController.h"
 #import "ForgotPassWordViewController.h"
 #import "Egou-Swift.h"
+#import "UserEntity.h"
+#import "Util.h"
 
 @class HomeViewController;
 //@class UserSingle;
@@ -185,8 +187,22 @@
 -(void)loginButtonClick:(UIButton *)button
 {
     if ([self checkPhoneAndPassword]) {
-        NSLog(@"登录成功");
-        [self.navigationController popViewControllerAnimated:YES];
+        //存储登录用户到单例
+        UserEntity *currenUser = [Util getCurrentUserInfo];
+        currenUser.bLogin = YES;
+        currenUser.userName = _phoneTextFiled.text;
+        currenUser.password = _passwordTextFiled.text;
+        NSLog(@"currenUser.bLogin = %i",currenUser.bLogin);
+        NSLog(@"currenUser.userName = %@",currenUser.userName);
+        NSLog(@"currenUser.password = %@",currenUser.password);
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"登录成功" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }];
+        [alert addAction:action];
+        [self presentViewController:alert animated:YES completion:nil];
+
     }
     else{
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"账号或密码错误" message:nil preferredStyle:UIAlertControllerStyleAlert];
@@ -281,5 +297,7 @@
     
     return output;
 }
+
+
 
 @end

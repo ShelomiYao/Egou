@@ -1,11 +1,6 @@
 //
 //  OrderPayWayViewController.swift
 //  LoveFreshBeen
-//
-
-
-
-
 
 
 import UIKit
@@ -125,12 +120,9 @@ class OrderPayWayViewController: BaseViewController {
         let payButton = UIButton(frame: CGRectMake(ScreenWidth - 100, 1, 100, 49))
         payButton.titleLabel?.font = UIFont.systemFontOfSize(14)
         payButton.setTitle("确认付款", forState: UIControlState.Normal)
+        payButton.addTarget(self, action: #selector(OrderPayWayViewController.payButtonClick), forControlEvents: UIControlEvents.TouchUpInside)
         payButton.backgroundColor = LFBNavigationYellowColor
         payButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        if bUsernameEmpty() {
-            payButton.addTarget(self, action:#selector(OrderPayWayViewController.showLoginView) , forControlEvents: UIControlEvents.TouchUpInside)
-        }
-
         bottomView.addSubview(payButton)
     }
     
@@ -149,17 +141,31 @@ class OrderPayWayViewController: BaseViewController {
         addView.addSubview(label)
     }
     
-    func bUsernameEmpty() -> Bool {
-        if userSingle?.userName?.isEmpty == nil {
-            return true
-        }
-        else{
-            return false
-        }
-    }
+//    func showLoginView() -> Void {
+//        navigationController?.pushViewController(DMLoginViewController(), animated: true)
+//    }
     
-    func showLoginView() -> Void {
-        navigationController?.pushViewController(DMLoginViewController(), animated: true)
+    func payButtonClick() {
+        print("Util.getCurrentUserInfo().bLogin = \(Util.getCurrentUserInfo().bLogin)")
+        if !Util.getCurrentUserInfo().bLogin {
+            navigationController?.pushViewController(DMLoginViewController(), animated: true)
+        }else{
+            if !ProgressHUDManager.isVisible() {
+                ProgressHUDManager.setBackgroundColor(UIColor.colorWithCustom(230, g: 230, b: 230))
+                ProgressHUDManager.showWithStatus("正在提交订单")
+            }
+            let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+            dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
+                let alertVC = UIAlertController(title: nil , message: "提交成功", preferredStyle: .Alert)
+                let okAction = UIAlertAction(title: "Ok", style: .Default, handler: {
+                    (action: UIAlertAction) -> Void in
+                    self.navigationController?.popViewControllerAnimated(true)
+                })
+                alertVC.addAction(okAction)
+                self.presentViewController(alertVC, animated: true, completion: nil)
+                ProgressHUDManager.dismiss()
+            }
+        }
     }
 }
 

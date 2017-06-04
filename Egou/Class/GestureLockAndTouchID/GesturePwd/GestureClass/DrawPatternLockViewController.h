@@ -1,7 +1,7 @@
 //
 //  DrawPatternLockViewController.h
 //  v1.0
-//  by ShelomiYao, Hawking.HK@gmail.com
+//  by ShelomiYao, ShelomiYao@gmail.com
 
 
 #import <UIKit/UIKit.h>

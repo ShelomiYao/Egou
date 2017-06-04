@@ -2,7 +2,7 @@
 //  ForgotPassWordViewController.m
 //  LoginView
 //
-//  Created by SDC201 on 16/3/10.
+//  Created by ShelomiYao on 16/3/10.
 //  Copyright © 2016年 PCEBG. All rights reserved.
 //
 
@@ -156,14 +156,15 @@
     
     if ([self checkUserInfo]) {
         [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:self.phoneTextFiled.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
-            if (nil != error) {
-                NSString *alertMessage = @"获取验证码失败";
-                [self showAlert:alertMessage];
-            }else{
+            if (!error){
                 _oUserPhoneNum =_phoneTextFiled.text;
                 sender.userInteractionEnabled = YES;
                 self.timeCount = 60;
                 self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(reduceTime:) userInfo:sender repeats:YES];
+            }
+            else{
+                NSString *alertMessage = @"获取验证码失败";
+                [self showAlert:alertMessage];
             }
         }];
     }

@@ -14,7 +14,7 @@ class ShareManager: NSObject {
     
     static private let blogURLStr = "http://www.jianshu.com/users/5fe7513c7a57/latest_articles"
     static private let authorImage = UIImage(named: "author")
-    static private let shareText = "小ESwift全新开源作品,高仿易购超市,配有blog讲解思路,喜欢的同学star点起来"
+    static private let shareText = "小姚Swift全新开源作品,高仿易购超市,配有blog讲解思路,喜欢的同学star点起来"
     
     class func shareToShareType(shareType: ShareType, vc: UIViewController) {
         
@@ -22,7 +22,7 @@ class ShareManager: NSObject {
             
         case .WeiXinMyFriend:
             UMSocialData.defaultData().extConfig.wechatSessionData.url = blogURLStr
-            UMSocialData.defaultData().extConfig.wechatSessionData.title = "小ESwift开源新作"
+            UMSocialData.defaultData().extConfig.wechatSessionData.title = "小姚Swift开源新作"
             
             
             let shareURL = UMSocialUrlResource(snsResourceType: UMSocialUrlResourceTypeImage, url: blogURLStr)
@@ -40,7 +40,7 @@ class ShareManager: NSObject {
         case .WeiXinCircleOfFriends:
             
             UMSocialData.defaultData().extConfig.wechatTimelineData.url = blogURLStr
-            UMSocialData.defaultData().extConfig.wechatTimelineData.title = "小ESwift开源新作"
+            UMSocialData.defaultData().extConfig.wechatTimelineData.title = "小姚Swift开源新作"
             let shareURL = UMSocialUrlResource(snsResourceType: UMSocialUrlResourceTypeImage, url: blogURLStr)
             UMSocialDataService.defaultDataService().postSNSWithTypes([UMShareToWechatTimeline], content: shareText, image: authorImage, location: nil, urlResource: shareURL, presentedController: nil, completion: { (response) -> Void in
                 if response.responseCode.rawValue == UMSResponseCodeSuccess.rawValue {
@@ -66,7 +66,7 @@ class ShareManager: NSObject {
         case .QQZone:
             
             UMSocialData.defaultData().extConfig.qzoneData.url = blogURLStr
-            UMSocialData.defaultData().extConfig.qzoneData.title = "小ESwift开源新作"
+            UMSocialData.defaultData().extConfig.qzoneData.title = "小姚Swift开源新作"
             let shareURL = UMSocialUrlResource(snsResourceType: UMSocialUrlResourceTypeImage, url: blogURLStr)
             
             UMSocialDataService.defaultDataService().postSNSWithTypes([UMShareToQzone], content: shareText, image: authorImage, location: nil, urlResource: shareURL, presentedController: nil, completion: { (response) -> Void in
